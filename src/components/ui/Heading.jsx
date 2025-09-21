@@ -1,5 +1,8 @@
 import React from 'react'
-
+const colorClasses = {
+  'white':'text-white',
+  'black':'text-black',
+}
 const fontSizeClasses = {
   'default': 'text-[40px]',
   'lg': 'text-lg',
@@ -11,7 +14,12 @@ const fontSizeClasses = {
   '6xl': 'text-6xl',
   '7xl': 'text-7xl',
 }
-
+  const lineHeightClasses = {
+    tight: "leading-tight",
+    normal: "leading-normal",
+    relaxed: "leading-relaxed",
+    loose: "leading-loose",
+  };
 const fontWeightClasses = {
   'semibold': 'font-semibold',
   'bold': 'font-bold',
@@ -19,9 +27,9 @@ const fontWeightClasses = {
   'black': 'font-black'
 }
 
-export default function Heading({children, fontSize = "default", fontWeight = "bold"}) {
+export default function Heading({children, fontSize = "default",lineHeight="normal",color="black", fontWeight = "bold"}) {
   return (
-    <h1 className={`${fontSizeClasses[fontSize]} ${fontWeightClasses[fontWeight]}`}>
+    <h1 className={`${fontSizeClasses[fontSize]} ${fontWeightClasses[fontWeight]} ${lineHeightClasses[lineHeight]} ${colorClasses[color]}`}>
       {children}
     </h1>
   )

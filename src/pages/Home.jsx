@@ -1,11 +1,12 @@
+import Hero from "../components/Home/Hero";
 import Button from "../components/ui/Button";
 import Heading from "../components/ui/Heading";
+import Paragraph from "../components/ui/Paragraph";
 
 export default function Home() {
   return (
     <div>
-      <Heading className="text-4xl font-heading text-primary">Home</Heading>
-      <Button>Get Started</Button>
+      <Hero />
     </div>
   );
 }

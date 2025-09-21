@@ -1,10 +1,11 @@
 import Button from "../components/ui/Button";
+import Heading from "../components/ui/Heading";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-4xl font-heading text-primary">Home</h1>
-      <Button color="white" bgColor="bg-primary">Get Started</Button>
+      <Heading className="text-4xl font-heading text-primary">Home</Heading>
+      <Button>Get Started</Button>
     </div>
   );
 }

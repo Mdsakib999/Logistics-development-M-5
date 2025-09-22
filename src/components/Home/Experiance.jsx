@@ -3,12 +3,14 @@ import Countup from "../../utils/Countup";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
+import useWindowSize from '../../utils/WindowSize';
 export default function Experiance() {
+    const {width} = useWindowSize();
   return (
-    <div className="w-full bg-primary">
-      <Container className="flex py-4">
+    <div className="w-full mt-10 sm:mt-0 bg-primary border">
+      <Container className="flex flex-col w-full md:flex-row py-10 sm:py-4">
         {/* image section */}
-        <div className="border w-[460px] pr-12">
+        <div className="lg:block flex flex-col justify-center w-full sm:w-[460px] mx-auto sm:pr-12">
           <img
             className="w-full rounded-lg"
             src={experianceImg}
@@ -16,8 +18,8 @@ export default function Experiance() {
           />
         </div>
         {/* content section */}
-        <div className="w-[560px] ml-auto border pl-4 flex flex-col space-y-4">
-          <Heading color="white" className="mt-4" fontSize="5xl" lineHeight="tight">Simplify Your Shipping Experience </Heading>
+        <div className="w-full sm:w-[560px] ml-auto pl-4 flex flex-col space-y-4">
+          <Heading color="white" className="mt-4" fontSize={`${width>1080 ? "5xl":width>768 ? "4xl":"3xl"}`} lineHeight="tight">Simplify Your Shipping Experience </Heading>
           <Paragraph>
             Elementum fames et massa molestie. Dolor habitasse id sit cras
             ultricies sit. Morbi sollicitudin quam enim est turpis aliquet. Diam
@@ -25,20 +27,20 @@ export default function Experiance() {
             Porttitor enim duis dui in mi.
           </Paragraph>
           <ul className="flex mt-4">
-            <li className="border-r-1 border-blue-500 pr-10">
-              <span className="text-5xl text-secondary">
+            <li className="border-r-1 border-blue-500 pr-5">
+              <span className= "text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 <Countup>32</Countup> +
               </span>
               <p className="text-[#DEE2DD] text-base mt-1">Years of Experiance</p>
             </li>
-            <li className="border-r-1 border-blue-500 px-8">
-              <span className="text-5xl text-secondary">
+            <li className="border-r-1 border-blue-500 px-4 lg:px-8">
+              <span className="text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 <Countup>12</Countup> K
               </span>
               <p className="text-[#DEE2DD] text-base mt-1">Satisfied Clients</p>
             </li>
-            <li className=" px-8">
-              <span className="text-5xl text-secondary">
+            <li className="px-4 sm:px-8">
+              <span className="text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 <Countup>20</Countup> +
               </span>
               <p className="text-[#DEE2DD] text-base mt-1">Countries Served</p>

@@ -1,6 +1,8 @@
 import { Mail, Phone } from "lucide-react";
 import Container from "../components/layout/Container";
+import useWindowSize from "./ui/WindowSize";
 export default function TopHeader() {
+  const {width} = useWindowSize();
   return (
     <div className="bg-primary py-2 md:py-0 md:h-[62px] flex items-center">
       <Container>
@@ -10,14 +12,14 @@ export default function TopHeader() {
             <p>Get A Discount Of Up To 50% For Orders This Month!</p>
           </div>
           {/* header contact  */}
-          <div className="flex">
-            <div className="flex border-r-2 border-[#E5F67C] gap-2  pr-5">
+          <div className={`flex ${width<387 ? "flex-col gap-2":"flex-row"}`}>
+            <div className={`flex border-[#E5F67C] gap-2 ${width<387 ? "border-none pr-0":"border-r-2 pr-5"}`}>
               <span>
                 <Phone />
               </span>
               <span>+62 864 6444 2222</span>
             </div>
-            <div className="flex gap-2 pl-5">
+            <div className={`flex gap-2 ${width<387 ? "pl-0":"pl-5"}`}>
               <span>
                 <Mail />
               </span>

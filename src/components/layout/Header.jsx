@@ -2,7 +2,9 @@ import TopHeader from "../TopHeader";
 import {useState} from 'react';
 import Container from "./Container";
 import {NavLink} from 'react-router';
+import useWindowSize from "../ui/WindowSize";
 export default function Header() {
+  const {width} = useWindowSize()
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="font-text">
@@ -28,7 +30,7 @@ export default function Header() {
         </nav>
         {/*Mobile menu button */}
         <button onClick={()=>setIsOpen(!isOpen)}
-          className ="md:hidden block mt-2 float-right text-2xl" 
+          className ={`md:hidden block mt-2 float-right text-2xl ${width<387 && "absolute top-20 right-2 text-white"}`} 
           >
             {isOpen ? 'x': '☰'}
         </button>

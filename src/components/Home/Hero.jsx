@@ -4,13 +4,19 @@ import Button from '../ui/Button'
 import useWindowSize from "../ui/WindowSize";
 export default function Hero() {
     const {width} = useWindowSize();
+    function getFontSize(width) {
+  if (width < 387) return "xl"
+  if (width < 640) return "2xl"
+  if (width < 1080) return "3xl"
+  return "5xl"
+}
   return (
-    <div className="h-[434px] flex gap-10">
-      <div className="bg-primary flex items-center uppercase md:w-1/2 lg:w-[826px] md:justify-center lg:justify-end pr-16 md:pl-10">
+    <div className={`h-[434px] flex gap-2 sm:gap-10 ${width<387 && "flex-col"}`}>
+      <div className={`bg-primary flex items-center uppercase w-1/2 lg:w-[826px] md:justify-center lg:justify-end pr-16 pl-4 md:pl-10 ${width<387 && "w-full py-8"}`}>
         <span>
           <Heading
             lineHeight="tight"
-            fontSize={ `${width<1080 ? "3xl":"5xl" }`}
+            fontSize={getFontSize(width)}
             fontWeight="semibold"
             color="white"
           >
@@ -20,7 +26,7 @@ export default function Hero() {
           </Heading>
         </span>
       </div>
-      <div className="w-[404px] flex flex-col justify-evenly py-4">
+      <div className="w-full sm:w-1/2 lg:w-[404px] flex flex-col gap-2 sm:gap-0 justify-evenly px-2 sm:px-0 pt-2 sm:pt-4">
         <Paragraph fontSize="lg">
           Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
           aliquam facilisi quis et cras. Leo nulla integer et aliquet massa

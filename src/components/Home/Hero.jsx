@@ -1,18 +1,24 @@
+import useWindowSize from "../../utils/WindowSize";
+import Button from "../ui/Button";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
-import Button from '../ui/Button'
-import useWindowSize from "../ui/WindowSize";
 export default function Hero() {
-    const {width} = useWindowSize();
-    function getFontSize(width) {
-  if (width < 387) return "xl"
-  if (width < 640) return "2xl"
-  if (width < 1080) return "3xl"
-  return "5xl"
-}
+  const { width } = useWindowSize();
+  function getFontSize(width) {
+    if (width < 387) return "xl";
+    if (width < 640) return "2xl";
+    if (width < 1080) return "3xl";
+    return "5xl";
+  }
   return (
-    <div className={`h-[434px] flex gap-2 sm:gap-10 ${width<387 && "flex-col"}`}>
-      <div className={`bg-primary flex items-center uppercase w-1/2 lg:w-[826px] md:justify-center lg:justify-end pr-16 pl-4 md:pl-10 ${width<387 && "w-full py-8"}`}>
+    <div
+      className={`h-[434px] flex gap-2 sm:gap-10 ${width < 387 && "flex-col"}`}
+    >
+      <div
+        className={`bg-primary flex items-center w-1/2 lg:w-[826px] md:justify-center lg:justify-end pr-16 pl-4 md:pl-10 ${
+          width < 387 && "w-full py-8"
+        }`}
+      >
         <span>
           <Heading
             lineHeight="tight"

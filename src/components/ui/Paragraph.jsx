@@ -25,7 +25,7 @@ export default function Paragraph({
   };
   return (
     <p
-      className={`text-[#808380] ${alignClasses[align]} ${lineHeightClasses[lineHeight]} ${fontSizeClasses[fontSize]} + ${className || ''}`}
+      className={`text-[#808380] font-text ${alignClasses[align]} ${lineHeightClasses[lineHeight]} ${fontSizeClasses[fontSize]} + ${className || ''}`}
     >
       {children}
     </p>

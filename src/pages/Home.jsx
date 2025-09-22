@@ -1,3 +1,4 @@
+import Experiance from "../components/Home/Experiance";
 import Hero from "../components/Home/Hero";
 import Solution from "../components/sections/Solution";
 import Button from "../components/ui/Button";
@@ -9,6 +10,7 @@ export default function Home() {
     <div>
       <Hero />
       <Solution />
+      <Experiance />
     </div>
   );
 }

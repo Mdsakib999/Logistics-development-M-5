@@ -5,7 +5,7 @@ export default function TopHeader() {
   const { width } = useWindowSize();
   return (
     <div className="bg-primary py-2 md:py-0 md:h-[62px] flex items-center">
-      <Container className={"w-full"}>
+      <Container className="w-full">
         <div className="flex justify-center text-small md:text-base font-text text-[#D9D9D9] flex-col gap-2 md:gap-0 md:flex-row md:justify-between">
           {/* header info  */}
           <div className="">

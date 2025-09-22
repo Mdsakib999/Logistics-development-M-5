@@ -3,6 +3,7 @@ export default function Paragraph({
   align = "left",
   lineHeight = "relaxed",
   fontSize = "normal",
+  className,
 }) {
   const fontSizeClasses = {
     normal: "text-[16px]",
@@ -24,7 +25,7 @@ export default function Paragraph({
   };
   return (
     <p
-      className={`text-[#808380] ${alignClasses[align]} ${lineHeightClasses[lineHeight]} ${fontSizeClasses[fontSize]}`}
+      className={`text-[#808380] ${alignClasses[align]} ${lineHeightClasses[lineHeight]} ${fontSizeClasses[fontSize]} + ${className || ''}`}
     >
       {children}
     </p>

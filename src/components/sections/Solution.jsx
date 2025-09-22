@@ -27,7 +27,7 @@ export default function Solution() {
             />
           </div>
           {/* content */}
-          <div className="w-full md:[w-500px] lg:w-[529px] flex flex-col justify-center gap-8 md:gap-4 lg:gap-16">
+          <div className="w-full md:[w-500px] lg:w-[529px] flex flex-col justify-center gap-2 sm:gap-8 md:gap-4 lg:gap-16">
             <Heading fontWeight="semibold" fontSize={`${width<768 ? '2xl':'default'}`} className="px-8">Ocean FREIGHT</Heading>
             <div className="bg-secondary px-8 py-4 lg:py-12 flex flex-col gap-2">
               <Heading fontSize={`${width<768 ? '2xl':'default'}`}>Road FREIGHT</Heading>

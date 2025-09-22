@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router";
-import useWindowSize from "../../utils/WindowSize";
 import TopHeader from "../TopHeader";
 import Container from "./Container";
 export default function Header() {
-  const { width } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="font-text">
@@ -29,17 +27,17 @@ export default function Header() {
           </ul>
         </nav>
         {/*Mobile menu button */}
+    <div className="flex relative justify-between items-center">
+              <h2 className="text-4xl block md:hidden">Logistic</h2>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden block mt-2 float-right text-2xl ${
-            width < 387 && "absolute top-20 right-2 text-white"
-          }`}
+          className={`md:hidden block md:mt-2 text-2xl`}
         >
           {isOpen ? "x" : "☰"}
         </button>
-        {/*Mobile Menu */}
+                {/*Mobile Menu */}
         {isOpen && (
-          <div className="absolute top-[110px] left-0 w-full bg-white shadow-lg md:hidden">
+          <div className="absolute top-12 left-0 w-full bg-white shadow-lg md:hidden">
             <ul className="flex flex-col p-4 space-y-3">
               <li>
                 <NavLink to="#" onClick={() => setIsOpen(false)}>
@@ -64,6 +62,7 @@ export default function Header() {
             </ul>
           </div>
         )}
+    </div>
       </Container>
     </div>
   );

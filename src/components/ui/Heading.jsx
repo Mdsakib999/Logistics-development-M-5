@@ -35,7 +35,7 @@ const fontWeightClasses = {
 
 export default function Heading({children, className, fontSize = "default",lineHeight="normal",color="black", align="left", fontWeight = "bold"}) {
   return (
-    <h1 className={`uppercase ${fontSizeClasses[fontSize]} ${fontWeightClasses[fontWeight]} ${lineHeightClasses[lineHeight]} ${colorClasses[color]} ${alignClasses[align]}  + ${(className || '')}`}>
+    <h1 className={`uppercase font-heading ${fontSizeClasses[fontSize]} ${fontWeightClasses[fontWeight]} ${lineHeightClasses[lineHeight]} ${colorClasses[color]} ${alignClasses[align]}  + ${(className || '')}`}>
       {children}
     </h1>
   )

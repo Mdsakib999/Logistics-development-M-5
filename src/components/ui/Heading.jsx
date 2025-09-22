@@ -26,10 +26,16 @@ const fontWeightClasses = {
   'extrabold': 'font-extrabold',
   'black': 'font-black'
 }
+  const alignClasses = {
+    left: "text-left",
+    center: "text-center",
+    right: "text-right",
+    justify: "text-justify",
+  };
 
-export default function Heading({children, fontSize = "default",lineHeight="normal",color="black", fontWeight = "bold"}) {
+export default function Heading({children, className, fontSize = "default",lineHeight="normal",color="black", align="left", fontWeight = "bold"}) {
   return (
-    <h1 className={`${fontSizeClasses[fontSize]} ${fontWeightClasses[fontWeight]} ${lineHeightClasses[lineHeight]} ${colorClasses[color]}`}>
+    <h1 className={`uppercase ${fontSizeClasses[fontSize]} ${fontWeightClasses[fontWeight]} ${lineHeightClasses[lineHeight]} ${colorClasses[color]} ${alignClasses[align]}  + ${(className || '')}`}>
       {children}
     </h1>
   )

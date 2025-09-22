@@ -1,10 +1,10 @@
+import { useState } from "react";
+import { NavLink } from "react-router";
+import useWindowSize from "../../utils/WindowSize";
 import TopHeader from "../TopHeader";
-import {useState} from 'react';
 import Container from "./Container";
-import {NavLink} from 'react-router';
-import useWindowSize from "../ui/WindowSize";
 export default function Header() {
-  const {width} = useWindowSize()
+  const { width } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="font-text">
@@ -29,21 +29,40 @@ export default function Header() {
           </ul>
         </nav>
         {/*Mobile menu button */}
-        <button onClick={()=>setIsOpen(!isOpen)}
-          className ={`md:hidden block mt-2 float-right text-2xl ${width<387 && "absolute top-20 right-2 text-white"}`} 
-          >
-            {isOpen ? 'x': '☰'}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`md:hidden block mt-2 float-right text-2xl ${
+            width < 387 && "absolute top-20 right-2 text-white"
+          }`}
+        >
+          {isOpen ? "x" : "☰"}
         </button>
         {/*Mobile Menu */}
         {isOpen && (
-                  <div className="absolute top-[110px] left-0 w-full bg-white shadow-lg md:hidden">
-          <ul className="flex flex-col p-4 space-y-3">
-            <li><NavLink to="#" onClick={() => setIsOpen(false)}>Home</NavLink></li>
-            <li><NavLink to="#" onClick={() => setIsOpen(false)}>About us</NavLink></li>
-            <li><NavLink to="#" onClick={() => setIsOpen(false)}>Services</NavLink></li>
-            <li><NavLink to="#" onClick={() => setIsOpen(false)}>Contact</NavLink></li>
-          </ul>
-        </div>
+          <div className="absolute top-[110px] left-0 w-full bg-white shadow-lg md:hidden">
+            <ul className="flex flex-col p-4 space-y-3">
+              <li>
+                <NavLink to="#" onClick={() => setIsOpen(false)}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="#" onClick={() => setIsOpen(false)}>
+                  About us
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="#" onClick={() => setIsOpen(false)}>
+                  Services
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="#" onClick={() => setIsOpen(false)}>
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </div>
         )}
       </Container>
     </div>

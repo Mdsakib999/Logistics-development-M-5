@@ -7,9 +7,9 @@ export default function Header() {
   return (
     <div className="font-text">
       <TopHeader />
-      <Container className="py-4">
+      <Container className="pb-6 sm:pb-0">
         {/* Desktop menu */}
-        <nav className="hidden md:flex h-[110px] items-center justify-between">
+        <nav className="hidden md:flex items-center justify-between">
           <h2 className="text-[40px]">Logistic</h2>
           <ul className="flex gap-5 mr-[60px]">
             <li>

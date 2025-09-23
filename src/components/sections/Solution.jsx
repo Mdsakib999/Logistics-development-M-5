@@ -7,7 +7,7 @@ export default function Solution() {
   return (
     <div className="w-full">
       <Container className={"w-full lg:w-[1102px]"}>
-        <Heading className="pb-18"
+        <Heading className="pb-4 sm:pb-12"
           fontWeight="bold"
           lineHeight="tight"
           align="center"
@@ -18,7 +18,7 @@ export default function Solution() {
           {/* image aside */}
           <div className="w-full px-4 md:w-[573px]">
             <img
-              className="rounded-l-xl w-full mt-0 md:mt-8 lg:mt-0 h-96 md:h-auto object-cover"
+              className="rounded-xl sm:rounded-l-xl w-full mt-0 md:mt-8 lg:mt-0 h-96 md:h-auto object-cover"
               src={truckBackside}
               alt="truck-backside"
             />

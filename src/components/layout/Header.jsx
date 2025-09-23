@@ -1,11 +1,32 @@
-import { useState } from "react";
+
 import { NavLink } from "react-router";
 import TopHeader from "../TopHeader";
 import Container from "./Container";
+import useWindowSize from "../../utils/WindowSize";
+import { useEffect, useRef, useState } from "react";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const {width} = useWindowSize();
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      // if click is outside navRef element → close nav
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    // add event listener
+    document.addEventListener("click", handleClickOutside);
+
+    // cleanup
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
   return (
-    <div className="font-text">
+    <div ref={navRef} className="font-text">
       <TopHeader />
       <Container className="pb-6 sm:pb-0">
         {/* Desktop menu */}
@@ -36,8 +57,10 @@ export default function Header() {
           {isOpen ? "x" : "☰"}
         </button>
                 {/*Mobile Menu */}
+    </div>
+      </Container>
         {isOpen && (
-          <div className="absolute top-12 left-0 w-full bg-white shadow-lg md:hidden">
+          <div className={`absolute border left-0 w-full bg-white shadow-lg md:hidden ${width<392 ? "top-48":"top-36"}`}>
             <ul className="flex flex-col p-4 space-y-3">
               <li>
                 <NavLink to="#" onClick={() => setIsOpen(false)}>
@@ -62,8 +85,6 @@ export default function Header() {
             </ul>
           </div>
         )}
-    </div>
-      </Container>
     </div>
   );
 }

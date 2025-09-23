@@ -1,14 +1,12 @@
 import worksImage from "../../assets/works.png";
-import useWindowSize from "../../utils/WindowSize";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
 export default function HowItWorks() {
-  const { width } = useWindowSize();
   return (
     <div>
-      <Container>
+      <Container className="py-12 lg:py-16">
         {/* content section */}
         <div className="flex flex-col gap-4 md:gap-0 md:flex-row">
           {/* image content */}
@@ -25,7 +23,6 @@ export default function HowItWorks() {
               How It Works
             </h6>
             <Heading
-              fontSize={`${width > 1080 ? "5xl" : width > 768 ? "4xl" : "3xl"}`}
               lineHeight="tight"
             >
               Simplify Your Shipping Experience

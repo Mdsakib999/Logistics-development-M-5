@@ -3,15 +3,12 @@ import Container from "../layout/Container";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
-import useWindowSize from '../../utils/WindowSize';
 export default function Solution() {
-    const {width} = useWindowSize();
   return (
     <div className="w-full">
       <Container className={"w-full lg:w-[1102px]"}>
         <Heading className="pb-18"
           fontWeight="bold"
-          fontSize={`${width<768 ? '3xl':'default'}`}
           lineHeight="tight"
           align="center"
         >
@@ -28,9 +25,9 @@ export default function Solution() {
           </div>
           {/* content */}
           <div className="w-full md:[w-500px] lg:w-[529px] flex flex-col justify-center gap-2 sm:gap-8 md:gap-4 lg:gap-16">
-            <Heading fontWeight="semibold" fontSize={`${width<768 ? '2xl':'default'}`} className="px-8">Ocean FREIGHT</Heading>
+            <Heading fontWeight="semibold" className="px-8">Ocean FREIGHT</Heading>
             <div className="bg-secondary px-8 py-4 lg:py-12 flex flex-col gap-2">
-              <Heading fontSize={`${width<768 ? '2xl':'default'}`}>Road FREIGHT</Heading>
+              <Heading>Road FREIGHT</Heading>
               <Paragraph className="">
                 Elementum augue ut sagittis vel nunc. Posuere id velit integer
                 proin aliquam facilisi quis et cras. Leo nulla integer et
@@ -38,7 +35,7 @@ export default function Solution() {
               </Paragraph>
               <Button>Get Started</Button>
             </div>
-            <Heading fontWeight="semibold" fontSize={`${width<768 ? '2xl':'default'}`} className="px-8">AIR FREIGHT</Heading>
+            <Heading fontWeight="semibold" className="px-8">AIR FREIGHT</Heading>
           </div>
         </div>
       </Container>

@@ -23,7 +23,7 @@ export default function Feedback() {
             <h1 className="text-5xl">
               <Countup>122</Countup>K
             </h1>
-            <p className="absolute bg-secondary left-28 top-32 sm:top-2 sm:-right-4 flex gap-2 rounded-full px-2 py-1">
+            <p className="absolute bg-secondary left-48 sm:left-auto top-32 sm:top-2 sm:-right-4 flex gap-2 rounded-full px-2 py-1">
               <span className="text-white">24%</span> <CircleArrowUp color="white" />
             </p>
             <Paragraph>Pulvinar commodo arcu</Paragraph>

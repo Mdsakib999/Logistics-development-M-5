@@ -7,10 +7,10 @@ import useWindowSize from '../../utils/WindowSize';
 export default function Experiance() {
     const {width} = useWindowSize();
   return (
-    <div className="w-full mt-10 sm:mt-0 bg-primary border">
-      <Container className="flex flex-col w-full md:flex-row py-10 sm:py-4">
+    <div className="w-full mt-10 bg-primary border">
+      <Container className="flex flex-col w-full md:flex-row py-10">
         {/* image section */}
-        <div className="lg:block flex flex-col justify-center w-full sm:w-[460px] mx-auto sm:pr-12">
+        <div className="lg:block flex flex-col justify-end md:justify-center w-full sm:w-[460px] mx-auto sm:pr-12">
           <img
             className="w-full rounded-lg"
             src={experianceImg}

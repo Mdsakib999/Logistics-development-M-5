@@ -1,18 +1,27 @@
-import React from 'react'
-import packageIcon from '../../assets/package.png'
-import Heading from './Heading'
-import Paragraph from '../ui/Paragraph';
-export default function WorkCard({step}) {
+import packageIcon from "../../assets/package.png";
+import useWindowSize from "../../utils/WindowSize";
+import Paragraph from "../ui/Paragraph";
+import Heading from "./Heading";
+export default function WorkCard({ step, heading }) {
+  const { width } = useWindowSize();
   return (
-    <div>
-        <p>Step {step}</p>
-        <div className="bg-secondary">
-            <img className="" src={packageIcon} alt="package icon" />
-        </div>
-        <Heading>Request a Quote</Heading>
-        <Paragraph>
-            At FastGo, we believe in providing our clients with personalized and efficient logistics solutions that meet their unique needs. 
-        </Paragraph>
-            </div>
-  )
+    <div className="w-2/3 mx-auto sm:w-1/3 flex flex-col gap-4 items-center">
+      <p className="border-2 text-sm px-4 py-2 rounded-full border-[#EDF0F2]">
+        Step {step}
+      </p>
+      <div className="bg-secondary rounded-lg p-12">
+        <img className="" src={packageIcon} alt="package icon" />
+      </div>
+      <Heading
+        fontSize={`${width > 1080 ? "3xl" : width > 768 ? "2xl" : "xl"}`}
+        align="center"
+      >
+        {heading}
+      </Heading>
+      <Paragraph align="center">
+        At FastGo, we believe in providing our clients with personalized and
+        efficient logistics solutions that meet their unique needs.
+      </Paragraph>
+    </div>
+  );
 }

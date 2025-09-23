@@ -1,4 +1,5 @@
 import Experiance from "../components/Home/Experiance";
+import Feedback from "../components/Home/Feedback";
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/sections/HowItWorks";
 import Solution from "../components/sections/Solution";
@@ -13,6 +14,7 @@ export default function Home() {
       <Solution />
       <Experiance />
       <HowItWorks />
+      <Feedback />
     </div>
   );
 }

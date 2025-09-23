@@ -4,12 +4,6 @@ import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 export default function Hero() {
   const { width } = useWindowSize();
-  function getFontSize(width) {
-    if (width < 387) return "xl";
-    if (width < 640) return "2xl";
-    if (width < 1080) return "3xl";
-    return "5xl";
-  }
   return (
     <div
       className={`h-[434px] w-full mx-auto max-w-[1140px] flex justify-center gap-2 mb-1 md:mb-18 sm:gap-10 ${width < 387 && "flex-col"}`}
@@ -22,7 +16,6 @@ export default function Hero() {
         <span>
           <Heading
             lineHeight="tight"
-            fontSize={getFontSize(width)}
             fontWeight="semibold"
             color="white"
           >

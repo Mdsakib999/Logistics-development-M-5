@@ -16,7 +16,7 @@ This is a multi-page responsive website featuring:
 - **Vite** - Build tool and development server
 - **Tailwind CSS** - Styling framework
 - **React Router** - Page navigation
-<!-- - **Lucide React** - Icons  -->
+- **Lucide React** - Icons 
 
 ## 🚀 Getting Started
 
@@ -71,9 +71,13 @@ src/
 
 <!-- - **Responsive Design** - Works on all devices -->
 - **Modern UI** - Clean and professional look
-<!-- - **Interactive Elements** - Hover effects and animations -->
+- **Interactive Elements** - Hover effects and animations
 - **Consistent Branding** - Custom color scheme (Black + Lime Green)
-- **Reusable Components** - Modular and maintainable code
+- **Reusable & Scalable Components** – Modular, maintainable, and easily extendable code structure that supports project growth without major refactoring.
+- **Pixel-Perfect UI** – Built from Figma with strict attention to detail.  
+- **Responsive Design** – Optimized layouts for desktop, tablet, and mobile devices.  
+- **Tailwind CSS Utility-First Styling** – Faster development with consistent design tokens.  
+- **Performance Optimized** – Code splitting and lightweight icon system.
 
 ## 📱 Pages
 
@@ -85,20 +89,20 @@ src/
 ## 🔧 Key Components
 
 ### Button Component
-<!-- ```jsx
-<Button variant="primary" size="lg">
+```jsx
+<Button type="primary" to="/">
   Get Started
 </Button>
-``` -->
+```
 
 <!-- ### Navigation  -->
-<!-- - Responsive navbar with mobile menu  -->
+- Responsive navbar with mobile menu 
 <!-- - Active page highlighting -->
-<!-- - Smooth navigation between pages -->
+- Smooth navigation between pages
 
 ## 💡 What I Learned
 
-<!-- - Building responsive layouts with Tailwind CSS -->
+- Building responsive layouts with Tailwind CSS
 - Creating reusable React components
 - Implementing React Router for navigation
 - Managing component state and props
@@ -107,8 +111,8 @@ src/
 
 ## 🎯 Project Goals Achieved
 
-<!-- - ✅ Pixel-perfect design matching Figma mockups  -->
-<!-- - ✅ Fully responsive across all devices -->
+- ✅ Pixel-perfect design matching Figma mockups 
+- ✅ Fully responsive across all devices
 - ✅ Clean, maintainable code structure
 - ✅ Reusable component architecture
 <!-- - ✅ Smooth user experience with animations -->
@@ -130,6 +134,5 @@ src/
 
 ---
 
-<!-- **Developed by**: [Your Name]  
-**Internship Project** - [Company Name]  
+<!-- **Developed by**: [Your Name]   
 **Date**: [Current Date] -->

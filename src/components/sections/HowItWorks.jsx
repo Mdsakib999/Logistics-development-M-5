@@ -3,6 +3,7 @@ import useWindowSize from "../../utils/WindowSize";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
+import WorkCard from "../ui/WorkCard";
 export default function HowItWorks() {
   const { width } = useWindowSize();
   return (
@@ -39,8 +40,10 @@ export default function HowItWorks() {
         </div>
         <hr className="border-1 border-[#5C6C7B] border-dashed my-4 md:my-10" />
         {/* card section */}
-        <div className="">
-            
+        <div className="flex my-12 flex-col sm:flex-row gap-12 sm:gap-16">
+          <WorkCard heading="Request a quote" step="1"></WorkCard>
+          <WorkCard heading="Provide details" step="2"></WorkCard>
+          <WorkCard heading="Schedule pick-up" step="3"></WorkCard>
         </div>
       </Container>
     </div>

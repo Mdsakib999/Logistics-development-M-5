@@ -6,7 +6,7 @@ import Paragraph from "../ui/Paragraph";
 export default function Solution() {
   return (
     <div className="w-full">
-      <Container className={"w-full lg:w-[1102px]"}>
+      <Container className={"w-full"}>
         <Heading className="pb-4 sm:pb-12"
           fontWeight="bold"
           lineHeight="tight"
@@ -25,9 +25,9 @@ export default function Solution() {
           </div>
           {/* content */}
           <div className="w-full md:[w-500px] lg:w-[529px] flex flex-col justify-center gap-2 sm:gap-8 md:gap-4 lg:gap-16">
-            <Heading fontWeight="semibold" className="px-8">Ocean FREIGHT</Heading>
+            <Heading fontWeight="lighter" className="px-8">Ocean FREIGHT</Heading>
             <div className="bg-secondary px-8 py-4 lg:py-12 flex flex-col gap-2">
-              <Heading>Road FREIGHT</Heading>
+              <Heading fontWeight="lighter">Road FREIGHT</Heading>
               <Paragraph className="">
                 Elementum augue ut sagittis vel nunc. Posuere id velit integer
                 proin aliquam facilisi quis et cras. Leo nulla integer et
@@ -35,7 +35,7 @@ export default function Solution() {
               </Paragraph>
               <Button>Get Started</Button>
             </div>
-            <Heading fontWeight="semibold" className="px-8">AIR FREIGHT</Heading>
+            <Heading fontWeight="lighter" className="px-8">AIR FREIGHT</Heading>
           </div>
         </div>
       </Container>

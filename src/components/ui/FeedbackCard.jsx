@@ -3,7 +3,7 @@ import Paragraph from '../ui/Paragraph';
 import { Star } from 'lucide-react';
 export default function FeedbackCard({ number }) {
   return (
-    <div className="bg-primary flex flex-col gap-6 w-4/5 mx-auto md:w-1/3 rounded-2xl p-6">
+    <div className="bg-primary flex flex-col mb-16 gap-6 w-4/5 mx-auto md:w-1/3 rounded-2xl p-6">
       {/* image section */}
       <div className="flex justify-between">
         <img className="rounded-lg" src={profilePic} alt="profilePic" />

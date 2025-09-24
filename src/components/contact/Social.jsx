@@ -10,7 +10,7 @@ export default function Social() {
           <h6 className="uppercase font-heading text-sm font-medium mb-2">
             Get Started
           </h6>
-          <Heading className="!mx-0" lineHeight="tight">
+          <Heading lineHeight="tight">
             Get in touch with us. We're here to assist you.
           </Heading>
         </div>

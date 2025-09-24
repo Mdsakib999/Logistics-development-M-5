@@ -22,9 +22,7 @@ export default function HowItWorks() {
             <h6 className="uppercase font-heading tex-sm font-medium">
               How It Works
             </h6>
-            <Heading className="!mx-0"
-              lineHeight="tight"
-            >
+            <Heading lineHeight="tight">
               Simplify Your Shipping Experience
             </Heading>
             <Paragraph>

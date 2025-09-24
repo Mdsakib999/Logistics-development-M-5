@@ -6,7 +6,7 @@ export default function Hero() {
   const { width } = useWindowSize();
   return (
     <div
-      className={`h-[434px] w-full mx-auto max-w-[1140px] flex justify-center gap-2 mt-0 sm:mt-4 mb-12 md:mb-18 sm:gap-10 ${width < 387 && "flex-col"}`}
+      className={`h-[434px] w-full mx-auto max-w-[1140px] flex justify-center gap-2 mt-0 sm:mt-4 mb-18 sm:gap-10 ${width < 387 && "flex-col"}`}
     >
       <div
         className={`bg-primary flex items-center w-1/2 lg:w-[826px] md:justify-center lg:justify-end pr-16 pl-4 md:pl-10 ${

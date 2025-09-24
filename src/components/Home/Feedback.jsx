@@ -6,7 +6,7 @@ import Paragraph from "../ui/Paragraph";
 import FeedbackCard from "../ui/FeedbackCard";
 export default function Feedback() {
   return (
-    <div className="py-24">
+    <div className="py-16 bg-[#f9faf9] sm:py-24">
       <Container>
         {/* content section */}
         <div className="relative mb-24">
@@ -14,7 +14,7 @@ export default function Feedback() {
             <h6 className="uppercase font-heading text-sm font-medium">
               Customer Feedback
             </h6>
-            <Heading>
+            <Heading className="!mx-0">
               THE proof of our <br /> moving Excellence
             </Heading>
           </div>

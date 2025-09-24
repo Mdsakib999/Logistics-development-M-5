@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router";
-import useWindowSize from "../../utils/WindowSize";
 import TopHeader from "../TopHeader";
 import Container from "./Container";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const { width } = useWindowSize();
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -74,48 +72,67 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        
       </Container>
-        {/*Mobile menu button */}
-        <div className="flex relative px-12 justify-between items-center">
-          <h2 className="text-4xl block md:hidden">Logistic</h2>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden cursor-pointer block md:mt-2 text-2xl`}
-          >
-            {isOpen ? "x" : "☰"}
-          </button>
-          {/*Mobile Menu */}
-          {isOpen && (
-            <div
-              className={`absolute bg-gray-300 top-16 left-0 w-full shadow-lg md:hidden
+      {/*Mobile menu button */}
+      <div className="flex mb-10  sm:mb-0 relative px-12 justify-between items-center">
+        <h2 className="text-4xl block md:hidden">Logistic</h2>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`md:hidden cursor-pointer block md:mt-2 text-2xl`}
+        >
+          {isOpen ? "x" : "☰"}
+        </button>
+        {/*Mobile Menu */}
+        {isOpen && (
+          <div
+            className={`absolute bg-gray-300 top-12 left-0 w-full shadow-lg md:hidden
           } `}
-            >
-              <ul className="flex flex-col p-4 space-y-3">
-                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
-                  <NavLink to="#" onClick={() => setIsOpen(false)}>
-                    Home
-                  </NavLink>
-                </li>
-                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
-                  <NavLink to="#" onClick={() => setIsOpen(false)}>
-                    About us
-                  </NavLink>
-                </li>
-                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
-                  <NavLink to="#" onClick={() => setIsOpen(false)}>
-                    Services
-                  </NavLink>
-                </li>
-                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
-                  <NavLink to="#" onClick={() => setIsOpen(false)}>
-                    Contact
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          )}
-        </div>
+          >
+            <ul className="flex flex-col p-4">
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink to="/"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active inline-block w-full py-2 px-4" : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active inline-block w-full py-2 px-4" : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
+                  About us
+                </NavLink>
+              </li>
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink to="/service"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active inline-block w-full py-2 px-4" : "nav-link w-full inline-block py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
+                  Services
+                </NavLink>
+              </li>
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink to="contact"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active inline-block w-full py-2 px-4" : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
+                  Contact
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

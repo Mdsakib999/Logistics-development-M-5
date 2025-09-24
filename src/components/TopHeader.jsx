@@ -8,7 +8,7 @@ export default function TopHeader() {
       <Container className="w-full">
         <div className="flex justify-center text-small md:text-base font-text text-[#D9D9D9] flex-col gap-2 md:gap-0 md:flex-row md:justify-between">
           {/* header info  */}
-          <div className="w-60 sm:w-max md:w-5/12">
+          <div className="flex flex-wrap md:w-5/12">
             <p className="text-center sm:text-start">Get A Discount Of Up To 50% For Orders This Month!</p>
           </div>
           {/* header contact  */}

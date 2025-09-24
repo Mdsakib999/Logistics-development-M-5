@@ -34,16 +34,16 @@ export default function Header() {
           <h2 className="text-[40px]">Logistic</h2>
           <ul className="flex gap-5 mr-[60px]">
             <li>
-              <NavLink>Home</NavLink>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink>About us</NavLink>
+              <NavLink to="/about">About us</NavLink>
             </li>
             <li>
-              <NavLink>Services</NavLink>
+              <NavLink to="/service">Services</NavLink>
             </li>
             <li>
-              <NavLink>Contact</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
             </li>
           </ul>
         </nav>

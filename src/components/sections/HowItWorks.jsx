@@ -5,7 +5,7 @@ import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
 export default function HowItWorks() {
   return (
-    <div>
+    <div className="py-12">
       <Container className="py-12 lg:py-16">
         {/* content section */}
         <div className="flex flex-col gap-4 md:gap-0 md:flex-row">

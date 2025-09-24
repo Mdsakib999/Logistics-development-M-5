@@ -7,10 +7,10 @@ export default function Social() {
       <Container className="flex justify-between">
         {/* social content */}
         <div className="w-2/3">
-          <h6 className="uppercase font-heading tex-sm font-medium mb-2">
+          <h6 className="uppercase font-heading text-sm font-medium mb-2">
             Get Started
           </h6>
-          <Heading lineHeight="tight">
+          <Heading className="!mx-0" lineHeight="tight">
             Get in touch with us. We're here to assist you.
           </Heading>
         </div>

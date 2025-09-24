@@ -1,4 +1,6 @@
 import Empower from "../components/about/Empower";
+import Experiance from "../components/Home/Experiance";
+import Faq from "../components/sections/Faq";
 import Heading from "../components/ui/Heading";
 import Paragraph from "../components/ui/Paragraph";
 export default function About() {
@@ -15,6 +17,8 @@ Elementum augue ut sagittis vel nunc. Posuere id velit integer proin aliquam fac
         </Paragraph>
       </div>
       <Empower />
+      <Experiance />
+      <Faq />
     </div>
   );
 }

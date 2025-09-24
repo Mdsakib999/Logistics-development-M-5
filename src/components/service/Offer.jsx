@@ -12,11 +12,11 @@ import OfferCard from "../ui/OfferCard";
 import Paragraph from "../ui/Paragraph";
 export default function Offer() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#f9faf9]">
       <Container>
         {/* content section */}
         <div className="flex flex-wrap justify-between w-full ">
-          <Heading>Our Offerings</Heading>
+          <Heading className="!mx-0">Our Offerings</Heading>
           <div className="w-1/2 sm:w-2/5 space-y-4 ">
             <Paragraph>
               Elementum augue ut sagittis vel nunc. Posuere id velit integer

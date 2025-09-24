@@ -1,12 +1,11 @@
-
+import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router";
+import useWindowSize from "../../utils/WindowSize";
 import TopHeader from "../TopHeader";
 import Container from "./Container";
-import useWindowSize from "../../utils/WindowSize";
-import { useEffect, useRef, useState } from "react";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const {width} = useWindowSize();
+  const { width } = useWindowSize();
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -34,57 +33,89 @@ export default function Header() {
           <h2 className="text-[40px]">Logistic</h2>
           <ul className="flex gap-5 mr-[60px]">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about">About us</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/about"
+              >
+                About us
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/service">Services</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/service"
+              >
+                Services
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>
-        {/*Mobile menu button */}
-    <div className="flex relative justify-between items-center">
-              <h2 className="text-4xl block md:hidden">Logistic</h2>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden block md:mt-2 text-2xl`}
-        >
-          {isOpen ? "x" : "☰"}
-        </button>
-                {/*Mobile Menu */}
-    </div>
+        
       </Container>
-        {isOpen && (
-          <div className={`absolute border left-0 w-full bg-white shadow-lg md:hidden ${width<392 ? "top-48":"top-36"}`}>
-            <ul className="flex flex-col p-4 space-y-3">
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
-                  About us
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
-                  Services
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-        )}
+        {/*Mobile menu button */}
+        <div className="flex relative px-12 justify-between items-center">
+          <h2 className="text-4xl block md:hidden">Logistic</h2>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`md:hidden cursor-pointer block md:mt-2 text-2xl`}
+          >
+            {isOpen ? "x" : "☰"}
+          </button>
+          {/*Mobile Menu */}
+          {isOpen && (
+            <div
+              className={`absolute bg-gray-300 top-16 left-0 w-full shadow-lg md:hidden
+          } `}
+            >
+              <ul className="flex flex-col p-4 space-y-3">
+                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
+                  <NavLink to="#" onClick={() => setIsOpen(false)}>
+                    Home
+                  </NavLink>
+                </li>
+                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
+                  <NavLink to="#" onClick={() => setIsOpen(false)}>
+                    About us
+                  </NavLink>
+                </li>
+                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
+                  <NavLink to="#" onClick={() => setIsOpen(false)}>
+                    Services
+                  </NavLink>
+                </li>
+                <li className="hover:bg-white py-2 px-4 w-full rounded-lg">
+                  <NavLink to="#" onClick={() => setIsOpen(false)}>
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+          )}
+        </div>
     </div>
   );
 }

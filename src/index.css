@@ -8,6 +8,18 @@
   --text-small: 14px;
   --font-normal: 700;
 }
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s;
+}
+
 .nav-link.active {
-  font-weight: bold;
+  color: #000000;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color:  #374151;
 }

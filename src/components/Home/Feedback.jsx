@@ -6,7 +6,7 @@ import Paragraph from "../ui/Paragraph";
 import FeedbackCard from "../ui/FeedbackCard";
 export default function Feedback() {
   return (
-    <div>
+    <div className="py-24">
       <Container>
         {/* content section */}
         <div className="relative mb-24">

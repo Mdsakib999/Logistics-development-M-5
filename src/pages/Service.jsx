@@ -1,7 +1,10 @@
 import React from 'react'
+import Banner from '../components/service/Banner'
 
 export default function Service() {
   return (
-    <div>Service</div>
+    <div>
+      <Banner />
+    </div>
   )
 }

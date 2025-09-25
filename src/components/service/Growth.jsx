@@ -40,7 +40,7 @@ export default function Growth() {
             </Paragraph>
             <Button>Get Started</Button>
           </div>
-          <div className="relative">
+          <div className="relative px-8">
             <div className="bg-gradient-to-br from-white to-gray-300 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
               <div className="grid grid-cols-2 gap-6">
                 {metrics.map((metric, index) => (

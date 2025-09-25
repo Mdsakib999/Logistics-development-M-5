@@ -1,3 +1,4 @@
+import Countup from "../../utils/Countup";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 export default function Success() {
@@ -14,10 +15,12 @@ export default function Success() {
           </Paragraph>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-slate-800/50 rounded-lg p-6 backdrop-blur-sm border border-slate-700">
-            <div className="text-3xl font-bold text-blue-400 mb-2">40%</div>
-            <div className="text-slate-300 mb-4">Cost Savings Achieved</div>
+        <div className="grid md:grid-cols-3 px-8 gap-8">
+          <div className="bg-white rounded-lg p-6 backdrop-blur-sm">
+            <div className="text-3xl font-bold text-blue-400 mb-2">
+              <Countup>40</Countup>%
+            </div>
+            <div className="text-black mb-4">Cost Savings Achieved</div>
             <p className="text-black opacity-50 text-sm">
               "The optimization strategies implemented reduced our logistics
               costs significantly while improving service quality."
@@ -27,9 +30,11 @@ export default function Success() {
             </div>
           </div>
 
-          <div className="bg-slate-800/50 rounded-lg p-6 backdrop-blur-sm border border-slate-700">
-            <div className="text-3xl font-bold text-green-400 mb-2">99.5%</div>
-            <div className="text-slate-300 mb-4">On-Time Delivery Rate</div>
+          <div className="bg-white rounded-lg p-6 backdrop-blur-sm ">
+            <div className="text-3xl font-bold text-green-400 mb-2">
+              <Countup>99.5</Countup>%
+            </div>
+            <div className="text-black mb-4">On-Time Delivery Rate</div>
             <p className="text-black opacity-50 text-sm">
               "Reliability has improved dramatically. Our customers are happier
               and our operations run smoothly."
@@ -39,9 +44,11 @@ export default function Success() {
             </div>
           </div>
 
-          <div className="bg-slate-800/50 rounded-lg p-6 backdrop-blur-sm border border-slate-700">
-            <div className="text-3xl font-bold text-purple-400 mb-2">60%</div>
-            <div className="text-slate-300 mb-4">Faster Processing Time</div>
+          <div className="bg-white rounded-lg p-6 backdrop-blur-sm">
+            <div className="text-3xl font-bold text-purple-400 mb-2">
+              <Countup>60</Countup>%
+            </div>
+            <div className="text-black mb-4">Faster Processing Time</div>
             <p className="text-black opacity-50 text-sm">
               "Automation and smart routing have transformed our fulfillment
               speed and accuracy."

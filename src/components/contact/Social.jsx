@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 export default function Social() {
   return (
-    <div className="py-12">
+    <div className="pb-12">
       <Container className="flex justify-between">
         {/* social content */}
         <div className="w-2/3">

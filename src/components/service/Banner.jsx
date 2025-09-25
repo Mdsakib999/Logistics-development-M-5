@@ -6,7 +6,7 @@ import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 export default function Banner() {
   return (
-    <div className="py-16">
+    <div className="pb-16">
       {/* content section */}
       <div className="w-4/5 md:w-3/5 lg:w-3/5 mx-auto mb-12">
         <Heading align="center" className="my-4 mx-auto" lineHeight="tight">

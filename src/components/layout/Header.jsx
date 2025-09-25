@@ -1,13 +1,11 @@
-
-import { NavLink } from "react-router";
-import TopHeader from "../TopHeader";
-import Container from "./Container";
-import useWindowSize from "../../utils/WindowSize";
 import { useEffect, useRef, useState } from "react";
+import { Link, NavLink } from "react-router";
+import TopHeader from "../../components/TopHeader";
+import Container from "../layout/Container";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const {width} = useWindowSize();
   const navRef = useRef(null);
+
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -26,65 +24,130 @@ export default function Header() {
     };
   }, []);
   return (
-    <div ref={navRef} className="font-text">
+    <div ref={navRef} className="font-text bg-gray-200 sticky top-0 z-10 md:mb-12">
       <TopHeader />
-      <Container className="pb-6 sm:pb-0">
+      <Container className="pb-6 sm:pb-2">
         {/* Desktop menu */}
         <nav className="hidden md:flex items-center justify-between">
-          <h2 className="text-[40px]">Logistic</h2>
+          <Link to="/">
+            <h2 className="text-[40px]">Logistic</h2>
+          </Link>
           <ul className="flex gap-5 mr-[60px]">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/about">About us</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/about"
+              >
+                About us
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/service">Services</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/service"
+              >
+                Services
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/contact"
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </nav>
-        {/*Mobile menu button */}
-    <div className="flex relative justify-between items-center">
-              <h2 className="text-4xl block md:hidden">Logistic</h2>
+      </Container>
+      {/*Mobile menu button */}
+      <div className="flex mb-10 pb-5 md:pb-0 sm:mb-0 relative px-12 justify-between items-center ">
+        <h2 className="text-4xl block md:hidden">Logistic</h2>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden block md:mt-2 text-2xl`}
+          className={`md:hidden cursor-pointer block md:mt-2 text-2xl`}
         >
           {isOpen ? "x" : "☰"}
         </button>
-                {/*Mobile Menu */}
-    </div>
-      </Container>
+        {/*Mobile Menu */}
         {isOpen && (
-          <div className={`absolute border left-0 w-full bg-white shadow-lg md:hidden ${width<392 ? "top-48":"top-36"}`}>
-            <ul className="flex flex-col p-4 space-y-3">
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
+          <div
+            className={`absolute bg-gray-300 top-12 left-0 w-full shadow-lg md:hidden
+          } `}
+          >
+            <ul className="flex flex-col p-4">
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active inline-block w-full py-2 px-4"
+                      : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
                   Home
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active inline-block w-full py-2 px-4"
+                      : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
                   About us
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink
+                  to="/service"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active inline-block w-full py-2 px-4"
+                      : "nav-link w-full inline-block py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
                   Services
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="#" onClick={() => setIsOpen(false)}>
+              <li className="hover:bg-white w-full rounded-lg">
+                <NavLink
+                  to="contact"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active inline-block w-full py-2 px-4"
+                      : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
                   Contact
                 </NavLink>
               </li>
             </ul>
           </div>
         )}
+      </div>
     </div>
   );
 }

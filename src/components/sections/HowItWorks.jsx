@@ -5,12 +5,12 @@ import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
 export default function HowItWorks() {
   return (
-    <div>
+    <div className="pt-8 md:py-12">
       <Container className="py-12 lg:py-16">
         {/* content section */}
         <div className="flex flex-col gap-4 md:gap-0 md:flex-row">
           {/* image content */}
-          <div className="flex justify-end md:justify-start items-center w-full mx-auto md:w-1/2">
+          <div className="flex justify-center mb-8 md:mb-4 md:justify-start items-center w-full mx-auto md:w-1/2">
             <img
               src={worksImage}
               className="rounded-lg"
@@ -22,9 +22,7 @@ export default function HowItWorks() {
             <h6 className="uppercase font-heading tex-sm font-medium">
               How It Works
             </h6>
-            <Heading
-              lineHeight="tight"
-            >
+            <Heading lineHeight="tight">
               Simplify Your Shipping Experience
             </Heading>
             <Paragraph>

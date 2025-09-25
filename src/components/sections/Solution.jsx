@@ -5,9 +5,9 @@ import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 export default function Solution() {
   return (
-    <div className="w-full pb-12">
-      <Container className={"w-full"}>
-        <Heading className="pb-4 sm:pb-12"
+    <div className="w-full pt-16 sm:pt-30 pb-16 sm:pb-24 bg-[#f9faf9]">
+      <Container className="w-full">
+        <Heading className="pb-4 sm:pb-16 mx-auto"
           fontWeight="bold"
           lineHeight="tight"
           align="center"

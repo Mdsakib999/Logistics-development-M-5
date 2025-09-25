@@ -1,10 +1,10 @@
 import { Phone } from "lucide-react";
 import deliveryImage from "../../assets/12-Delivery.png";
-import shippingImage from '../../assets/25-Shipping.png';
-import weightImage from '../../assets/33-Weight.png';
-import boxImage from '../../assets/35-Box.png';
-import worldImage from '../../assets/36-World wide shipping.png';
-import shippingImage2 from '../../assets/51-Shipping.png';
+import shippingImage from "../../assets/25-Shipping.png";
+import weightImage from "../../assets/33-Weight.png";
+import boxImage from "../../assets/35-Box.png";
+import worldImage from "../../assets/36-World wide shipping.png";
+import shippingImage2 from "../../assets/51-Shipping.png";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
@@ -12,7 +12,7 @@ import OfferCard from "../ui/OfferCard";
 import Paragraph from "../ui/Paragraph";
 export default function Offer() {
   return (
-    <div className="py-16">
+    <div className="py-16 bg-[#f9faf9]">
       <Container>
         {/* content section */}
         <div className="flex flex-wrap justify-between w-full ">

@@ -2,7 +2,7 @@ import Heading from "../ui/Heading";
 import Container from '../layout/Container';
 export default function Info() {
   return (
-    <div className="bg-gray-100 py-16 px-8">
+    <div className="bg-gray-100 mt-16 py-16 px-8">
       <Container className="flex gap-8 sm:gap-0 flex-col sm:flex-row justify-between">
         {/* Left Section */}
         <div className="w-full sm:w-1/5 md:w-2/5">

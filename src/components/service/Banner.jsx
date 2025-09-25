@@ -9,10 +9,10 @@ export default function Banner() {
     <div className="py-16">
       {/* content section */}
       <div className="w-4/5 md:w-3/5 lg:w-3/5 mx-auto mb-12">
-        <Heading className="my-4 !text-center" lineHeight="tight">
+        <Heading align="center" className="my-4 mx-auto" lineHeight="tight">
           Simplify Your Shipping Experience
         </Heading>
-        <Paragraph className="!text-center">
+        <Paragraph align="center">
           You can return any item within 30 days of purchase as long as it’s in
           its original condition with tags still attached. Simply contact our
           customer service team, and they will guide you through the process.

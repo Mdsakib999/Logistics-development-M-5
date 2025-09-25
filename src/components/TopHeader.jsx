@@ -1,15 +1,41 @@
 import { Mail, Phone } from "lucide-react";
+import { useEffect, useState } from "react";
 import Container from "../components/layout/Container";
 import useWindowSize from "../utils/WindowSize";
 export default function TopHeader() {
   const { width } = useWindowSize();
+  const [showTopBar, setShowTopBar] = useState(false);
+  useEffect(() => {
+    const bannerEl = document.getElementById("hero-section");
+    if (!bannerEl) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setShowTopBar(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.8 }
+    );
+
+    observer.observe(bannerEl);
+
+    return () => {
+      if (bannerEl) observer.unobserve(bannerEl);
+    };
+  }, []);
   return (
-    <div className="bg-primary py-2 md:py-0 md:h-[62px] flex items-center">
+    <div
+      className={`bg-primary py-2 md:py-0 md:h-[62px] hidden md:flex items-center border-b-4 transition-all duration-500 overflow-hidden 
+        ${showTopBar ? "max-h-20 opacity-100" : "max-h-0 opacity-0"} `}
+    >
       <Container className="w-full">
         <div className="flex justify-center text-small md:text-base font-text text-[#D9D9D9] flex-col gap-2 md:gap-0 md:flex-row md:justify-between">
           {/* header info  */}
           <div className="flex flex-wrap md:w-5/12">
-            <p className="text-center sm:text-start">Get A Discount Of Up To 50% For Orders This Month!</p>
+            <p className="text-center sm:text-start">
+              Get A Discount Of Up To 50% For Orders This Month!
+            </p>
           </div>
           {/* header contact  */}
           <div

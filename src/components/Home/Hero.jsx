@@ -5,7 +5,7 @@ import Paragraph from "../ui/Paragraph";
 export default function Hero() {
   const { width } = useWindowSize();
   return (
-    <div
+    <div id="hero-section"
       className={`h-[434px] w-full mx-auto max-w-[1140px] flex justify-center gap-2 mt-0 sm:mt-4 mb-18 sm:gap-10 ${width < 387 && "flex-col"}`}
     >
       <div

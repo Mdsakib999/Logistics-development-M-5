@@ -24,7 +24,7 @@ export default function Banner() {
       <div className="w-full h-max sm:h-[510px] grid gap-4 grid-cols-1 sm:grid-cols-2 grid-rows-1 md:grid-cols-5 sm:grid-rows-2 px-4">
         <div className="col-span-1 md:col-span-2 ">
           <img
-            className=" object-cover w-full h-full"
+            className=" object-cover rounded-xl w-full h-full"
             src={image1}
             alt="image1"
           />
@@ -41,7 +41,7 @@ export default function Banner() {
         </div>
         <div className="col-span-1 md:col-span-2 ">
           <img
-            className="w-full  h-full object-cover"
+            className="w-full rounded-xl  h-full object-cover"
             src={image2}
             alt="image2"
           />

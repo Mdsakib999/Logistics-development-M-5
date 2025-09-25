@@ -17,7 +17,7 @@ Elementum augue ut sagittis vel nunc. Posuere id velit integer proin aliquam fac
         </Paragraph>
       </div>
       <Empower />
-      <Experiance />
+      {/* <Experiance /> */}
       <Faq />
     </div>
   );

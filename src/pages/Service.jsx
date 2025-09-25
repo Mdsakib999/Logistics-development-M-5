@@ -1,17 +1,20 @@
-import Faq from "../components/sections/Faq";
-import HowItWorks from "../components/sections/HowItWorks";
-import Solution from "../components/sections/Solution";
 import Banner from "../components/service/Banner";
+import Capability from "../components/service/Capability";
+import Growth from "../components/service/Growth";
 import Offer from "../components/service/Offer";
+import Success from "../components/service/Success";
 
 export default function Service() {
   return (
     <div>
       <Banner />
-      <Solution />
+      {/* <Solution /> */}
       <Offer />
-      <HowItWorks />
-      <Faq />
+      <Growth />
+      <Capability />
+      <Success />
+      {/* <HowItWorks /> */}
+      {/* <Faq /> */}
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function Solution() {
         </Heading>
         <div className="flex flex-col gap-10 md:gap-0 md:flex-row border-gray-500">
           {/* image aside */}
-          <div className="w-full px-4 md:w-[573px]">
+          <div className="w-full px-4 md:px-8 md:w-[573px]">
             <img
               className="rounded-xl sm:rounded-l-xl w-full mt-0 md:mt-8 lg:mt-0 h-96 md:h-auto object-cover"
               src={truckBackside}

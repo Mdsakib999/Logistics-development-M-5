@@ -32,7 +32,7 @@ export default function Header() {
           <Link to="/">
             <h2 className="text-[40px]">Logistic</h2>
           </Link>
-          <ul className="flex gap-5 mr-[60px]">
+          <ul className="flex gap-5">
             <li>
               <NavLink
                 className={({ isActive }) =>
@@ -77,7 +77,7 @@ export default function Header() {
         </nav>
       </Container>
       {/*Mobile menu button */}
-      <div className="flex mb-10 pb-5 md:pb-0 sm:mb-0 relative px-12 justify-between items-center ">
+      <div className="flex pb-5 md:pb-0 sm:mb-0 relative px-12 justify-between items-center ">
         <h2 className="text-4xl block md:hidden">Logistic</h2>
         <button
           onClick={() => setIsOpen(!isOpen)}

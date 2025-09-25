@@ -1,4 +1,10 @@
 import { CircleArrowUp } from "lucide-react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Autoplay,Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Countup from "../../utils/Countup";
 import Container from "../layout/Container";
 import FeedbackCard from "../ui/FeedbackCard";
@@ -31,11 +37,43 @@ export default function Feedback() {
           </div>
         </div>
         {/* card section */}
-        <div className="flex flex-col md:flex-row gap-6">
-          <FeedbackCard number="01" />
-          <FeedbackCard number="02" />
-          <FeedbackCard number="03" />
-        </div>
+        <Swiper
+          modules={[Autoplay,Pagination]}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            // when window width is >= 1024px
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
+          pagination={{ clickable: true }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+        >
+          <SwiperSlide>
+            <FeedbackCard number="01" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeedbackCard number="02" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeedbackCard number="03" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeedbackCard number="04" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <FeedbackCard number="05" />
+          </SwiperSlide>
+        </Swiper>
       </Container>
     </div>
   );

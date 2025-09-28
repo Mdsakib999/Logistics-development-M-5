@@ -33,7 +33,7 @@ export default function Solution() {
                 proin aliquam facilisi quis et cras. Leo nulla integer et
                 aliquet massa nunc. Ornare id sit ac varius enim ut nisl.
               </Paragraph>
-              <Button>Get Started</Button>
+              <Button type="different" className="hover:bg-black">Get Started</Button>
             </div>
             <Heading fontWeight="lighter" className="px-8">AIR FREIGHT</Heading>
           </div>

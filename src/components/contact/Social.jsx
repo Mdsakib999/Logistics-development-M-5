@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 export default function Social() {
   return (
-    <div className="pb-12">
+    <div className="pt-12 sm:pt-0 pb-12">
       <Container className="flex justify-between">
         {/* social content */}
         <div className="w-2/3">
@@ -18,13 +18,13 @@ export default function Social() {
         <div className="">
           <div className="flex pr-8 sm:pr-16 flex-col gap-5">
             <div className="rounded-full duration-300 border-[#B7B7B7] hover:bg-secondary cursor-pointer p-2 border-1">
-              <Facebook size="14" fill="#000" strokeWidth={0} />
+              <Facebook color='#1877F2' size="14" fill="#1877F2" strokeWidth={0} />
             </div>
             <div className="rounded-full duration-300 border-[#B7B7B7] hover:bg-secondary cursor-pointer p-2 border-1">
-              <Instagram size="16" strokeWidth={3} />
+              <Instagram color="#E1306C" size="16" strokeWidth={3} />
             </div>
             <div className="rounded-full duration-300 border-[#B7B7B7] hover:bg-secondary cursor-pointer p-2 border-1">
-              <Twitter size="16" fill="#000" strokeWidth={0} />
+              <Twitter size="16" fill="#1DA1F2" strokeWidth={0} />
             </div>
           </div>
         </div>

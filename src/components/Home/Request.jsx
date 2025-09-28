@@ -38,7 +38,7 @@ export default function Request() {
           className="w-full p-4 bg-[#121212] text-white rounded-lg placeholder-gray-400"
         />
       </div>
-      <Button type="whitBtn">Get A Quote</Button>
+      <Button type="secondary">Get A Quote</Button>
     </div>   
     </div>
   );

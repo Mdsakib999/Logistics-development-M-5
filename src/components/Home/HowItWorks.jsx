@@ -1,4 +1,5 @@
 import worksImage from "../../assets/works.png";
+import Overlay from "../../utils/Overlay";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
@@ -11,11 +12,14 @@ export default function HowItWorks() {
         <div className="flex flex-col gap-4 md:gap-2 lg:gap-0 md:flex-row">
           {/* image content */}
           <div className="flex justify-center mb-8 md:mb-4 md:justify-start items-center w-full mx-auto md:w-1/2">
-            <img
-              src={worksImage}
-              className="rounded-lg"
-              alt="product-shifting image"
-            />
+            <div className="relative group">
+              <img
+                src={worksImage}
+                className="rounded-lg"
+                alt="product-shifting image"
+              />
+              <Overlay heading="Safe Delivery" paragraph="next to your door" />
+            </div>
           </div>
           {/* text content */}
           <div className="flex justify-center flex-col px-4 lg:px-1 pb-12 gap-4 w-full md:w-1/2">

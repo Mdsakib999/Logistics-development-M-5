@@ -1,4 +1,5 @@
 import empowerImg from "../../assets/empower.jpg";
+import Overlay from "../../utils/Overlay";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
@@ -24,16 +25,16 @@ export default function Empower() {
             </div>
           </div>
           {/* image section */}
-          <div className="w-full relative imageContainer sm:w-1/2">
+          <div className="w-full sm:w-1/2">
+          <div className="relative group h-full">
             <img
-              className="w-full lg:w-11/12 mr-2 h-full md:h-11/12 lg:h-full object-cover rounded-lg"
+              className="w-full lg:w-11/12 mr-2 h-full lg:h-full object-cover rounded-lg"
               src={empowerImg}
               alt="empower image"
             />
-            <div class="overlay">
-              <h3>Express Delivery</h3>
-              <p>Fast nationwide shipping</p>
-            </div>
+          <Overlay heading="Express Delivery" paragraph="Fast shipping service next to your door." />
+          </div>
+
           </div>
         </div>
       </Container>

@@ -1,5 +1,6 @@
 import experianceImg from "../../assets/experiance.png";
 import Countup from "../../utils/Countup";
+import Overlay from "../../utils/Overlay";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
@@ -9,11 +10,14 @@ export default function Experiance() {
       <Container className="flex flex-col w-full md:flex-row py-12 lg:py-16">
         {/* image section */}
         <div className="lg:block flex flex-col justify-end md:justify-center w-full sm:w-[460px] mx-auto sm:pr-12">
-          <img
+        <div className="relative group">
+                    <img
             className="w-full rounded-lg"
             src={experianceImg}
             alt="truck front side image"
           />
+          <Overlay heading="Simplify Your Experiance" paragraph="Elementum fames et massa molestie." />
+        </div>
         </div>
         {/* content section */}
         <div className="w-full sm:w-[560px] ml-auto pl-4 flex flex-col space-y-4">

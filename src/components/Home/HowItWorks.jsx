@@ -6,7 +6,7 @@ import WorkCard from "../ui/WorkCard";
 export default function HowItWorks() {
   return (
     <div className="pt-8 md:py-12">
-      <Container className="py-12 lg:py-16">
+      <Container className="py-4 md:py-12 lg:py-16">
         {/* content section */}
         <div className="flex flex-col gap-4 md:gap-2 lg:gap-0 md:flex-row">
           {/* image content */}

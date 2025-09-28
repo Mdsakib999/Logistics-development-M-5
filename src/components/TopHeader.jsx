@@ -30,7 +30,7 @@ export default function TopHeader() {
         ${showTopBar ? "max-h-20 opacity-100" : "max-h-0 opacity-0"} `}
     >
       <Container className="w-full">
-        <div className="flex justify-center text-small md:text-base font-text text-[#D9D9D9] flex-col gap-2 md:gap-0 md:flex-row md:justify-between">
+        <div className="flex justify-center items-center text-small md:text-base font-text text-[#D9D9D9] flex-col gap-2 md:gap-0 md:flex-row md:justify-between">
           {/* header info  */}
           <div className="flex flex-wrap md:w-5/12">
             <p className="text-center sm:text-start">
@@ -39,7 +39,7 @@ export default function TopHeader() {
           </div>
           {/* header contact  */}
           <div
-            className={`flex ${width < 387 ? "flex-col gap-2" : "flex-row"}`}
+            className={`flex h-max ${width < 387 ? "flex-col gap-2" : "flex-row"}`}
           >
             <div
               className={`flex border-[#E5F67C] gap-2 ${

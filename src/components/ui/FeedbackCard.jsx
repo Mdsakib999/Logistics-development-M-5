@@ -12,14 +12,14 @@ export default function FeedbackCard({ number }) {
       {/* review section */}
       <div className="space-y-2">
         <div className="flex gap-1">
-          <Star fill="#e5f67c" strokeWidth={0} />
-          <Star fill="#e5f67c" strokeWidth={0} />
-          <Star fill="#e5f67c" strokeWidth={0} />
-          <Star fill="#e5f67c" strokeWidth={0} />
-          <Star fill="#e5f67c" strokeWidth={0} />
+          <Star fill="yellow" strokeWidth={0} />
+          <Star fill="yellow" strokeWidth={0} />
+          <Star fill="yellow" strokeWidth={0} />
+          <Star fill="yellow" strokeWidth={0} />
+          <Star fill="yellow" strokeWidth={0} />
         </div>
 
-        <Paragraph>
+        <Paragraph className="text-white opacity-80">
           Lorem morbi et amet suscipit. At sed proin quis risus urna a. Magna in
           odio in urna amet ultrices fermentum.
         </Paragraph>

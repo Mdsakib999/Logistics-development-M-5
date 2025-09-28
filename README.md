@@ -50,26 +50,39 @@ npm run build
 
 ```
 src/
-├── components/
-│   ├── layout/
-│   │   └── Navbar.jsx          # Navigation bar
-│   └── ui/
-│       ├── Button.jsx          # Reusable button
-│       ├── StatsCard.jsx       # Statistics cards
-│       ├── ServiceCard.jsx     # Service display cards
-│       └── TestimonialCard.jsx # Customer testimonials
-├── pages/
-│   ├── Home.jsx               # Homepage
-│   ├── Services.jsx           # Services page
-│   ├── About.jsx              # About page
-│   └── Contact.jsx            # Contact page
-├── App.jsx                    # Main app component
-└── index.css                  # Global styles
+├── assets/ # Static assets (images, icons, etc.)
+├── components/ # Reusable components
+│ ├── about/ # About page components
+│ ├── contact/ # Contact page components
+│ ├── Home/ # Homepage components
+│ ├── layout/ # Layout components
+│ │ └── TopHeader.jsx # Top header component
+│ ├── service/ # Service-related components
+│ └── ui/ # UI reusable components
+│ ├── Button.jsx # Reusable button
+│ ├── FeedbackCard.jsx # Customer feedback card
+│ ├── Heading.jsx # Reusable heading
+│ ├── OfferCard.jsx # Offer display card
+│ ├── Paragraph.jsx # Paragraph component
+│ └── WorkCard.jsx # Work showcase card
+├── pages/ # Route pages
+│ ├── About.jsx # About page
+│ ├── Contact.jsx # Contact page
+│ ├── ErrorPage.jsx # 404 error page
+│ ├── Home.jsx # Homepage
+│ └── Service.jsx # Service page
+├── router/ # React router setup
+├── utils/ # Utility functions/hooks
+│ ├── Countup.jsx # Counter animation utility
+│ └── WindowSize.jsx # Window size custom hook
+├── App.jsx # Root App component
+├── index.css # Global styles
+└── main.jsx # Entry point
 ```
 
 ## 🎨 Design Features
 
-<!-- - **Responsive Design** - Works on all devices -->
+- **Responsive Design** - Works on all devices
 - **Modern UI** - Clean and professional look
 - **Interactive Elements** - Hover effects and animations
 - **Consistent Branding** - Custom color scheme (Black + Lime Green)
@@ -97,7 +110,7 @@ src/
 
 <!-- ### Navigation  -->
 - Responsive navbar with mobile menu 
-<!-- - Active page highlighting -->
+- Active page highlighting
 - Smooth navigation between pages
 
 ## 💡 What I Learned
@@ -115,7 +128,7 @@ src/
 - ✅ Fully responsive across all devices
 - ✅ Clean, maintainable code structure
 - ✅ Reusable component architecture
-<!-- - ✅ Smooth user experience with animations -->
+- ✅ Smooth user experience with animations
 - ✅ Professional-grade code quality
 
 <!-- ## 🚀 Future Improvements

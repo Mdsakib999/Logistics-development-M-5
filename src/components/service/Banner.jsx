@@ -6,7 +6,7 @@ import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 export default function Banner() {
   return (
-    <div className="py-16">
+    <div className="pb-16">
       {/* content section */}
       <div className="w-4/5 md:w-3/5 lg:w-3/5 mx-auto mb-12">
         <Heading align="center" className="my-4 mx-auto" lineHeight="tight">
@@ -24,7 +24,7 @@ export default function Banner() {
       <div className="w-full h-max sm:h-[510px] grid gap-4 grid-cols-1 sm:grid-cols-2 grid-rows-1 md:grid-cols-5 sm:grid-rows-2 px-4">
         <div className="col-span-1 md:col-span-2 ">
           <img
-            className=" object-cover w-full h-full"
+            className=" object-cover rounded-xl w-full h-full"
             src={image1}
             alt="image1"
           />
@@ -41,7 +41,7 @@ export default function Banner() {
         </div>
         <div className="col-span-1 md:col-span-2 ">
           <img
-            className="w-full  h-full object-cover"
+            className="w-full rounded-xl  h-full object-cover"
             src={image2}
             alt="image2"
           />

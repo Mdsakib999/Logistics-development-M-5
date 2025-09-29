@@ -38,7 +38,7 @@ export default function Growth() {
               platform. From AI-driven optimization to real-time visibility, we
               deliver solutions that scale with your business.
             </Paragraph>
-            <Button>Get Started</Button>
+            <Button to="/contact">Get Started</Button>
           </div>
           <div className="relative px-8">
             <div className="bg-gradient-to-br from-white to-gray-300 rounded-2xl p-8 backdrop-blur-sm border border-white/10">

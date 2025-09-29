@@ -1,8 +1,12 @@
 import worksImage from "../../assets/works.png";
+import Overlay from "../../utils/Overlay";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
+import packageIcon from "../../assets/package.png";
+import detailsIcon from '../../assets/details.png';
+import scheduleIcon from '../../assets/schedule.png';
 export default function HowItWorks() {
   return (
     <div className="pt-8 md:py-12">
@@ -11,11 +15,14 @@ export default function HowItWorks() {
         <div className="flex flex-col gap-4 md:gap-2 lg:gap-0 md:flex-row">
           {/* image content */}
           <div className="flex justify-center mb-8 md:mb-4 md:justify-start items-center w-full mx-auto md:w-1/2">
-            <img
-              src={worksImage}
-              className="rounded-lg"
-              alt="product-shifting image"
-            />
+            <div className="relative group">
+              <img
+                src={worksImage}
+                className="rounded-lg"
+                alt="product-shifting image"
+              />
+              <Overlay heading="Safe Delivery" paragraph="next to your door" />
+            </div>
           </div>
           {/* text content */}
           <div className="flex justify-center flex-col px-4 lg:px-1 pb-12 gap-4 w-full md:w-1/2">
@@ -36,9 +43,9 @@ export default function HowItWorks() {
         <hr className="border-1 border-[#5C6C7B] border-dashed my-4 md:my-10" />
         {/* card section */}
         <div className="flex my-12 flex-col sm:flex-row gap-12 sm:gap-16">
-          <WorkCard heading="Request a quote" step="1"></WorkCard>
-          <WorkCard heading="Provide details" step="2"></WorkCard>
-          <WorkCard heading="Schedule pick-up" step="3"></WorkCard>
+          <WorkCard src={packageIcon} heading="Request a quote" step="1"></WorkCard>
+          <WorkCard src={detailsIcon} heading="Provide details" step="2"></WorkCard>
+          <WorkCard src={scheduleIcon} heading="Schedule pick-up" step="3"></WorkCard>
         </div>
       </Container>
     </div>

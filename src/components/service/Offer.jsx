@@ -17,12 +17,12 @@ export default function Offer() {
         {/* content section */}
         <div className="flex flex-col sm:flex-row justify-between w-full">
           <Heading className="pt-0 sm:pt-8">Our Offerings</Heading>
-          <div className="w-1/2 sm:w-2/5 space-y-4 ">
+          <div className="w-full sm:w-2/5 space-y-4 ">
             <Paragraph>
               Elementum augue ut sagittis vel nunc. Posuere id velit integer
               proin aliquam facilisi quis et cras.
             </Paragraph>
-            <Button>
+            <Button to="/contact">
               <Phone /> <span className="ml-2">Contact Us</span>
             </Button>
           </div>

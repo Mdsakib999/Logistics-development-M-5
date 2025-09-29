@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 import {ArrowRight} from 'lucide-react';
 export default function Form() {
   return (
-    <div className="py-12 sm:py-16">
+    <div className="py-6 sm:py-12 md:py-16">
             <Container className="pr-8 sm:pr-16">
       {/* Top Row - Three Inputs */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

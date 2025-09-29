@@ -1,4 +1,5 @@
 import truckBackside from "../../assets/Solution.png";
+import Overlay from "../../utils/Overlay";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
@@ -16,13 +17,19 @@ export default function Solution() {
         </Heading>
         <div className="flex flex-col gap-10 md:gap-0 md:flex-row border-gray-500">
           {/* image aside */}
-          <div className="w-full px-4 md:px-8 md:w-[573px]">
-            <img
-              className="rounded-xl sm:rounded-l-xl w-full mt-0 md:mt-8 lg:mt-0 h-96 md:h-auto object-cover"
-              src={truckBackside}
-              alt="truck-backside"
-            />
-          </div>
+<div className="w-full px-4 md:px-8 md:w-[573px]">
+  <div className="relative group mt-0 md:mt-8 lg:mt-0">
+    <img
+      className="rounded-xl sm:rounded-l-xl w-full h-96 md:h-auto object-cover"
+      src={truckBackside}
+      alt="truck-backside"
+    />
+
+    {/* Overlay only on image */}
+    <Overlay heading="Truck Service" paragraph="Fast & Reliable Transport" />
+  </div>
+</div>
+
           {/* content */}
           <div className="w-full md:[w-500px] lg:w-[529px] flex flex-col justify-center gap-2 sm:gap-8 md:gap-4 lg:gap-16">
             <Heading fontWeight="lighter" className="px-8">Ocean FREIGHT</Heading>
@@ -33,7 +40,7 @@ export default function Solution() {
                 proin aliquam facilisi quis et cras. Leo nulla integer et
                 aliquet massa nunc. Ornare id sit ac varius enim ut nisl.
               </Paragraph>
-              <Button type="different" className="hover:bg-black">Get Started</Button>
+              <Button to="/contact" type="different" className="hover:bg-black">Get Started</Button>
             </div>
             <Heading fontWeight="lighter" className="px-8">AIR FREIGHT</Heading>
           </div>

@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router";
 import App from "../App";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
 import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
-import Service from '../pages/Service';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
+import Service from "../pages/Service";
+import TrackingPage from "../pages/TrackingPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,22 +13,26 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path:"/",
+        path: "/",
         Component: Home,
       },
       {
-        path:"/service",
+        path: "/service",
         Component: Service,
       },
       {
-        path:"/about",
+        path: "/about",
         Component: About,
       },
       {
-        path:"/contact",
+        path: "/contact",
         Component: Contact,
       },
-    ]
+      {
+        path: "/track",
+        Component: TrackingPage,
+      },
+    ],
   },
 ]);
 

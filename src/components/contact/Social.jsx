@@ -17,13 +17,13 @@ export default function Social() {
         {/* social icons  */}
         <div className="">
           <div className="flex pr-8 sm:pr-16 flex-col gap-5">
-            <div className="rounded-full duration-300 border-[#B7B7B7] hover:bg-secondary cursor-pointer p-2 border-1">
-              <Facebook color='#1877F2' size="14" fill="#1877F2" strokeWidth={0} />
+            <div className="rounded-full hover:scale-120 duration-300 border-[#B7B7B7]  cursor-pointer p-4 border-1">
+              <Facebook color='#1877F2' size="16" fill="#1877F2" strokeWidth={0} />
             </div>
-            <div className="rounded-full duration-300 border-[#B7B7B7] hover:bg-secondary cursor-pointer p-2 border-1">
+            <div className="rounded-full hover:scale-120 duration-300 border-[#B7B7B7] cursor-pointer p-4 border-1">
               <Instagram color="#E1306C" size="16" strokeWidth={3} />
             </div>
-            <div className="rounded-full duration-300 border-[#B7B7B7] hover:bg-secondary cursor-pointer p-2 border-1">
+            <div className="rounded-full hover:scale-120 duration-300 border-[#B7B7B7]  cursor-pointer p-4 border-1">
               <Twitter size="16" fill="#1DA1F2" strokeWidth={0} />
             </div>
           </div>

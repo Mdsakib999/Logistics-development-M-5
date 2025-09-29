@@ -11,6 +11,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import Button from "../components/ui/Button";
+import Heading from "../components/ui/Heading";
+import Paragraph from "../components/ui/Paragraph";
 
 export const TrackingPage = () => {
   const [trackingNumber, setTrackingNumber] = useState("");
@@ -105,13 +107,13 @@ export const TrackingPage = () => {
       <section className="bg-gradient-to-r from-secondary to-green-100 text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <Heading align="center" className="mx-auto">
               TRACK YOUR SHIPMENT
-            </h1>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+            </Heading>
+            <Paragraph align="center">
               Enter your tracking number to see real-time updates on your
               delivery
-            </p>
+            </Paragraph>
           </div>
 
           {/* Tracking Form */}
@@ -275,13 +277,13 @@ export const TrackingPage = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-primary mb-4">
+            <Heading align="center" className="mx-auto">
               WHY USE OUR TRACKING?
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            </Heading>
+            <Paragraph align="center">
               Stay informed every step of the way with our advanced tracking
               system
-            </p>
+            </Paragraph>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -306,15 +308,15 @@ export const TrackingPage = () => {
       {/* Help Section */}
       <section className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid  md:grid-cols-2 px-2 sm:px-0 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6">
-                NEED <span className="text-accent">HELP</span> TRACKING?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8">
+              <Heading color="white" align="center" className="mx-auto mb-1">
+                Need Help Tracking
+              </Heading>
+              <Paragraph className="text-gray-200 mb-6" align="center">
                 Our support team is available 24/7 to assist you with any
                 tracking questions or concerns.
-              </p>
+              </Paragraph>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -356,7 +358,7 @@ export const TrackingPage = () => {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm hover:scale-103 duration-300 transition-all rounded-2xl p-8">
+            <div className="bg-white/10 backdrop-blur-sm hover:scale-103 duration-300 transition-all rounded-2xl p-8  mx-2 sm:mx-0">
               <h3 className="text-2xl font-bold mb-6">Common Questions</h3>
               <div className="space-y-4">
                 <div className="border-b border-white/20 pb-4">
@@ -394,14 +396,14 @@ export const TrackingPage = () => {
       {/* CTA Section */}
       <section className="py-20 bg-accent">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-black mb-6">
+          <Heading align="center" className="mx-auto">
             SHIP WITH CONFIDENCE
-          </h2>
-          <p className="text-xl text-black/80 mb-8">
+          </Heading>
+          <Paragraph align="center">
             Experience hassle-free shipping with real-time tracking and
             dedicated support
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          </Paragraph>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-4">
             <Button to="/contact" variant="secondary" size="lg">
               Get a Quote
             </Button>

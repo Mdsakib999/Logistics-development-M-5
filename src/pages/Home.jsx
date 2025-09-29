@@ -10,7 +10,7 @@ import Paragraph from "../components/ui/Paragraph";
 
 export default function Home() {
   return (
-    <div>
+    <div className="md:pt-7">
       <Hero />
       <Solution />
       <Experiance />

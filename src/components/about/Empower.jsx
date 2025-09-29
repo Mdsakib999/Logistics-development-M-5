@@ -21,7 +21,7 @@ export default function Empower() {
                 With years of experience and a team of experts, we are dedicated
                 to empowering your business with seamless shipping experiences.
               </Paragraph>
-              <Button>Learn More</Button>
+              <Button to="/service">Learn More</Button>
             </div>
           </div>
           {/* image section */}

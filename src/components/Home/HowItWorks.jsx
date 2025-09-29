@@ -4,6 +4,9 @@ import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
+import packageIcon from "../../assets/package.png";
+import detailsIcon from '../../assets/details.png';
+import scheduleIcon from '../../assets/schedule.png';
 export default function HowItWorks() {
   return (
     <div className="pt-8 md:py-12">
@@ -40,9 +43,9 @@ export default function HowItWorks() {
         <hr className="border-1 border-[#5C6C7B] border-dashed my-4 md:my-10" />
         {/* card section */}
         <div className="flex my-12 flex-col sm:flex-row gap-12 sm:gap-16">
-          <WorkCard heading="Request a quote" step="1"></WorkCard>
-          <WorkCard heading="Provide details" step="2"></WorkCard>
-          <WorkCard heading="Schedule pick-up" step="3"></WorkCard>
+          <WorkCard src={packageIcon} heading="Request a quote" step="1"></WorkCard>
+          <WorkCard src={detailsIcon} heading="Provide details" step="2"></WorkCard>
+          <WorkCard src={scheduleIcon} heading="Schedule pick-up" step="3"></WorkCard>
         </div>
       </Container>
     </div>

@@ -5,7 +5,7 @@ import Info from '../components/contact/Info'
 
 export default function Contact() {
   return (
-    <div>
+    <div className="md:mt-16">
       <Social />
       <Form />
       <Info />

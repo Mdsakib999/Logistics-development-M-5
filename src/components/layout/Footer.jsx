@@ -17,7 +17,7 @@ export default function Footer() {
             Faucibus quis fringilla scelerisque dui. Amet parturient dui
             venenatis amet sagittis viverra vel tincidunt. Orci tincidunt.
           </p>
-          <Button type="secondary">
+          <Button to="/contact" type="secondary">
             <MessageCircleMore />
             <span>Start Live Chat</span>
           </Button>
@@ -28,36 +28,36 @@ export default function Footer() {
           <h3 className="text-xl font-medium mb-6">Company</h3>
           <ul className="space-y-4">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Our Partners
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Careers
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Our Network
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -67,36 +67,36 @@ export default function Footer() {
           <h3 className="text-xl font-medium mb-6">Resources</h3>
           <ul className="space-y-4">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/service"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Packing Supplies
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Faqs
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/service"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Pricing and Quotes
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Tips and Guides
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -106,36 +106,36 @@ export default function Footer() {
           <h3 className="text-xl font-medium mb-6">Help</h3>
           <ul className="space-y-4">
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Customer Support
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Delivery Details
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                to="/about"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

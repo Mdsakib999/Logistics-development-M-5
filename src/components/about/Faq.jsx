@@ -27,7 +27,7 @@ export default function Faq() {
               process. Please note that certain items, such as swimwear and
               final sale items, are non-returnable.
             </Paragraph>
-            <Button className="mt-16">
+            <Button to="/contact" className="mt-16">
               <Phone /> <span className="ml-2">Contact Us</span>
             </Button>
           </div>

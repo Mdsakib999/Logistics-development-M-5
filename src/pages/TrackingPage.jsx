@@ -102,13 +102,13 @@ export const TrackingPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary-light text-white py-16">
+      <section className="bg-gradient-to-r from-secondary to-green-100 text-black py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               TRACK YOUR SHIPMENT
             </h1>
-            <p className="text-xl text-gray-200 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-2xl mx-auto">
               Enter your tracking number to see real-time updates on your
               delivery
             </p>
@@ -126,7 +126,7 @@ export const TrackingPage = () => {
                   value={trackingNumber}
                   onChange={(e) => setTrackingNumber(e.target.value)}
                   placeholder="Enter tracking number (e.g., LG2024001234)"
-                  className="w-full px-6 py-4 rounded-lg text-gray-900 text-lg focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-full px-6 py-4 outline-1 outline-gray-500 rounded-lg text-gray-900 text-lg focus:outline-none focus:ring-2 focus:ring-accent"
                 />
               </div>
               <Button
@@ -139,7 +139,7 @@ export const TrackingPage = () => {
               </Button>
             </form>
 
-            <p className="text-gray-300 text-sm mt-4 text-center">
+            <p className="text-gray-600 text-sm mt-4 text-center">
               Find your tracking number in the confirmation email or shipping
               receipt
             </p>
@@ -322,7 +322,12 @@ export const TrackingPage = () => {
                     <Phone className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">Call Us</h3>
+                    <div className="flex gap-2">
+                      <span>
+                        <Phone />
+                      </span>
+                      <h3 className="font-semibold text-lg mb-1">Call Us</h3>
+                    </div>
                     <p className="text-gray-300">+1 (555) 123-4567</p>
                     <p className="text-gray-400 text-sm">Available 24/7</p>
                   </div>
@@ -333,9 +338,15 @@ export const TrackingPage = () => {
                     <Mail className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-1">
-                      Email Support
-                    </h3>
+                    <div className="flex gap-2">
+                      <span>
+                        <Mail />
+                      </span>
+                      <h3 className="font-semibold text-lg mb-1">
+                        Email Support
+                      </h3>
+                    </div>
+
                     <p className="text-gray-300">tracking@logistics.com</p>
                     <p className="text-gray-400 text-sm">
                       Response within 2 hours

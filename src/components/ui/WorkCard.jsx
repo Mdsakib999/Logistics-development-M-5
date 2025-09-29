@@ -7,7 +7,7 @@ export default function WorkCard({ step, heading,src }) {
         Step {step}
       </p>
       <div className="bg-secondary rounded-lg p-12">
-        <img className="" src={src} alt="package icon" />
+        <img src={src} alt="package icon" />
       </div>
       <Heading
         align="center"

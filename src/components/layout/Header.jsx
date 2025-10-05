@@ -68,16 +68,6 @@ export default function Header() {
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
-                to="/track"
-              >
-                Track
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
                 to="/contact"
               >
                 Contact

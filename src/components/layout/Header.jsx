@@ -143,19 +143,6 @@ export default function Header() {
               </li>
               <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
-                  to="/track"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "nav-link active inline-block w-full py-2 px-4"
-                      : "nav-link w-full inline-block py-2 px-4"
-                  }
-                  onClick={() => setIsOpen(false)}
-                >
-                  Track
-                </NavLink>
-              </li>
-              <li className="hover:bg-white w-full rounded-lg">
-                <NavLink
                   to="contact"
                   className={({ isActive }) =>
                     isActive

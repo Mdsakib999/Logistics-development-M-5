@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import {Link} from 'react-router';
 export default function TopBanner() {
   const swiperRef = useRef(null);
 
@@ -59,33 +60,29 @@ export default function TopBanner() {
   const slides = [
     {
       bg: "https://i.ibb.co.com/FkBqwp32/slide-1.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: "TimeKeeper's Archive Museum",
-      title: 'Apply For Visa Immigration',
-      cta: 'Learn More'
+      subtitle: "Delivering Packages Safely, On Time, Every Time",
+      title: 'Your Trusted Logistics Partner',
+      cta: 'Get Started'
     },
     {
       bg: "https://i.ibb.co.com/s958dG9y/slide-2.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: 'Explore Ancient Civilizations',
-      title: 'Discover Historical Treasures',
+      subtitle: 'Smart Transport Solutions',
+      title: 'Connecting Cities With Seamless Delivery Service',
       cta: 'Explore Now'
     },
     {
       bg: "https://i.ibb.co.com/8nhGwbNr/slide-3.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: 'Cultural Heritage Experience',
-      title: 'Book Your Museum Tour',
-      cta: 'Book Now'
+      subtitle: 'Reliable Fleet, Nationwide Reach',
+      title: 'We Move Your Goods with Speed and Care',
+      cta: 'Learn More'
     },
     {
       bg: "https://i.ibb.co.com/FkBqwp32/slide-1.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: 'Journey Through Time',
-      title: 'Experience Living History',
+      subtitle: 'Fast • Secure • Affordable',
+      title: 'Experience Hassle-Free Cargo & Courier Delivery',
       cta: 'Start Journey'
     }
   ];
-
-  const handleCTAClick = (cta) => {
-    alert(`${cta} clicked! Add your navigation logic here.`);
-  };
 
   return (
     <>
@@ -288,12 +285,13 @@ export default function TopBanner() {
                   </h2>
 
                   {/* CTA Button */}
-                  <button
-                    onClick={() => handleCTAClick(slide.cta)}
+                <Link to="/service">
+                                  <button
                     className="cta-button px-12 py-4 bg-transparent border-2 border-secondary text-white text-lg font-medium tracking-widest transition-all duration-300 hover:border-none hover:scale-105"
                   >
                     {slide.cta}
                   </button>
+                </Link>
                 </div>
 
                 {/* Floating Particles */}

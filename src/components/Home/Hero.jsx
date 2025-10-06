@@ -8,7 +8,7 @@ export default function Hero() {
       className={`h-full bg-gray-600 sm:bg-white py-12 sm:h-[434px] w-full mx-auto flex flex-col sm:flex-row justify-between mb-36 sm:gap-10`}
     >
       <div
-        className={`sm:bg-primary flex items-center w-full sm:w-1/2 lg:w-[826px] md:justify-center lg:justify-end sm:pr-10 pl-12 md:pl-10 py-8`}
+        className={`sm:bg-primary flex items-center w-full sm:w-1/2 lg:w-[826px] md:justify-center lg:justify-end sm:pr-10 pl-4 sm:pl-12 md:pl-10 py-8`}
       >
         <span>
           <Heading lineHeight="tight" fontWeight="semibold" color="white">
@@ -18,8 +18,8 @@ export default function Hero() {
           </Heading>
         </span>
       </div>
-      <div className="w-full sm:w-2/5 flex flex-col gap-2 pl-12 sm:gap-0 justify-evenly sm:px-0 sm:pt-4">
-        <Paragraph  className="w-2/3 text-white sm:text-primary pb-4 sm:pb-0" fontSize="lg">
+      <div className="w-full sm:w-3/5 flex flex-col gap-2 pl-4 sm:pl-12 sm:gap-0 justify-evenly sm:px-0 sm:pt-4">
+        <Paragraph  className="w-4/5 sm:w-2/3 text-white sm:text-primary pb-4 sm:pb-0" fontSize="lg">
           Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
           aliquam facilisi quis et cras. Leo nulla integer et aliquet massa
           nunc. Ornare id sit ac varius enim ut nisl.

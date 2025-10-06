@@ -40,7 +40,7 @@ export default function TopAbout() {
           Your Trusted Logistics Partner
         </Heading>
         <Paragraph
-          className={`text-white w-2/3 mx-auto relative z-50`}
+          className={`text-white w-full sm:w-2/3 mx-auto relative z-50`}
           align="center"
         >
           Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
@@ -71,7 +71,7 @@ export default function TopAbout() {
         <div
           className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000`}
         >
-          <div className="flex flex-col items-center animate-bounce">
+          <div className="hidden md:flex flex-col items-center animate-bounce">
             <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
               <div className="w-1 h-2 bg-white rounded-full animate-pulse"></div>
             </div>

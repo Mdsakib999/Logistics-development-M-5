@@ -270,7 +270,7 @@ export default function TopBanner() {
                 {/* Content */}
                 <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 sm:px-6 lg:px-8 text-center">
                   {/* Subtitle */}
-                  <h1 className="subtitle text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wider mb-4"
+                  <h1 className="subtitle text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-wider mb-4"
                       style={{ textShadow: '2px 4px 12px rgba(0,0,0,0.7)' }}>
                     {slide.subtitle}
                   </h1>
@@ -279,7 +279,7 @@ export default function TopBanner() {
                   <div className="decorative-line h-px bg-gradient-to-r from-transparent via-white to-transparent" />
 
                   {/* Main Title */}
-                  <h2 className="main-title text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium tracking-tight leading-tight mt-8 mb-12"
+                  <h2 className="main-title text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-tight leading-tight mt-8 mb-12"
                       style={{ textShadow: '2px 4px 16px rgba(0,0,0,0.8)' }}>
                     {slide.title}
                   </h2>
@@ -311,7 +311,7 @@ export default function TopBanner() {
                 </div>
 
                 {/* Scroll Indicator */}
-                <div className="scroll-indicator absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+                <div className="scroll-indicator absolute bottom-12 left-1/2 transform -translate-x-1/2 hidden md:flex flex-col items-center">
                   <div className="mouse w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
                     <div className="mouse-wheel w-1 h-2 bg-white rounded-full" />
                   </div>

@@ -72,7 +72,7 @@ export const CompanyStory = () => {
     <Heading align="center" className="mx-auto">
       Our Journey
     </Heading>
-          <Paragraph align="center"  className="w-2/3 mx-auto">
+          <Paragraph align="center"  className="w-full sm:w-2/3 mx-auto">
             From a small startup to a global logistics leader, discover how
             we've grown while maintaining our commitment to excellence and
             customer satisfaction.
@@ -189,7 +189,7 @@ export const CompanyStory = () => {
           <Heading align="center" className="mx-auto" color="white">
             Our Vision for Tomorrow
           </Heading>
-          <Paragraph align="center" className="text-white w-2/3 mx-auto">
+          <Paragraph align="center" className="text-white w-full sm:w-2/3 mx-auto">
             To be the most trusted and innovative logistics partner globally,
             transforming how goods move around the world through sustainable
             practices, cutting-edge technology, and unwavering commitment to

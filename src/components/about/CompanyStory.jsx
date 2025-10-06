@@ -1,36 +1,68 @@
-import { Award, Globe, TrendingUp, Users } from "lucide-react";
+import { Award, Globe,Rocket,Trophy, TrendingUp, Users } from "lucide-react";
 import Heading from '../../components/ui/Heading';
 import Paragraph from '../../components/ui/Paragraph';
 import aboutImage from "../../assets/about.jpg";
 import Countup from "../../utils/Countup";
+import Overlay from "../../utils/Overlay";
 // ===== SECTION 1: COMPANY STORY & JOURNEY =====
 export const CompanyStory = () => {
   const milestones = [
     {
-      title: "Company Founded",
-      description:
-        "Started with a vision to revolutionize logistics and delivery services.",
-      achievement: "First 100 deliveries",
+      title: "First Launch",
+      description: "Successfully launched our platform with 500+ early adopters in the first week.",
+      achievement: "March 2024",
+      icon: Rocket,
+      color: "emerald"
     },
     {
-      title: "Regional Expansion",
-      description:
-        "Expanded operations to 5 major cities with a fleet of 50 vehicles.",
-      achievement: "5,000+ deliveries",
+      title: "10K Users",
+      description: "Reached our first major milestone with 10,000 active users across 25 countries.",
+      achievement: "June 2024",
+      icon: Users,
+      color: "blue"
     },
     {
-      title: "Technology Integration",
-      description:
-        "Launched our advanced tracking platform and mobile application.",
-      achievement: "Real-time tracking",
+      title: "Series A Funding",
+      description: "Secured $5M in Series A funding to accelerate growth and expand our team.",
+      achievement: "August 2024",
+      icon: Award,
+      color: "violet"
     },
     {
-      title: "International Presence",
-      description:
-        "Expanded services to 25+ countries with strategic global partnerships.",
-      achievement: "1M+ deliveries",
-    },
+      title: "Industry Award",
+      description: "Recognized as the Best Innovation in Tech by the Digital Excellence Awards.",
+      achievement: "October 2024",
+      icon: Trophy,
+      color: "amber"
+    }
   ];
+
+  const colorMap = {
+    emerald: {
+      bg: 'bg-emerald-50',
+      text: 'text-emerald-600',
+      border: 'border-emerald-200',
+      icon: 'bg-emerald-500'
+    },
+    blue: {
+      bg: 'bg-blue-50',
+      text: 'text-blue-600',
+      border: 'border-blue-200',
+      icon: 'bg-blue-500'
+    },
+    violet: {
+      bg: 'bg-violet-50',
+      text: 'text-violet-600',
+      border: 'border-violet-200',
+      icon: 'bg-violet-500'
+    },
+    amber: {
+      bg: 'bg-amber-50',
+      text: 'text-amber-600',
+      border: 'border-amber-200',
+      icon: 'bg-amber-500'
+    }
+  };
 
   return (
     <section className="py-20 bg-gray-50">
@@ -54,7 +86,7 @@ export const CompanyStory = () => {
               Building the Future of Logistics
             </Heading>
             <Paragraph>
-              Founded in 2018, our company emerged from a simple observation:
+              Our company emerged from a simple observation:
               businesses needed a logistics partner that combined reliability,
               technology, and genuine care for their success.
             </Paragraph>
@@ -65,28 +97,28 @@ export const CompanyStory = () => {
               reflected in the trust our clients place in us every day.
             </Paragraph>
             <div className="grid mt-4 grid-cols-2 gap-6">
-              <div className="bg-white p-4 rounded-lg shadow-sm">
+              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Users className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>500</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Team Members</p>
               </div>
-              <div className="bg-white p-4 rounded-lg shadow-sm">
+              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Globe className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>25</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Countries Served</p>
               </div>
-              <div className="bg-white p-4 rounded-lg shadow-sm">
+              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <TrendingUp className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>1</Countup>M+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Deliveries Made</p>
               </div>
-              <div className="bg-white p-4 rounded-lg shadow-sm">
+              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Award className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>99.8</Countup>%</span>
@@ -95,60 +127,74 @@ export const CompanyStory = () => {
               </div>
             </div>
           </div>
-          <div className="h-full">
+          <div className="h-full relative group">
             <img
               className="w-full h-full rounded-xl"
               src={aboutImage}
               alt="about us image"
             />
+                {/* Overlay only on image */}
+                <Overlay heading="Logistics Partnar" paragraph="Fast & Reliable Transport" />
           </div>
         </div>
 
         {/* Timeline - Milestones */}
         <div>
-          <h3 className="text-3xl font-bold text-center text-primary mb-12">
+          <Heading align="center" className="mx-auto">
             Key Milestones in Our Growth
-          </h3>
+          </Heading>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {milestones.map((milestone, index) => (
+    <div className="bg-transparent p-8">
+      <div className="max-w-7xl mx-auto">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {milestones.map((milestone, index) => {
+            const Icon = milestone.icon;
+            const colors = colorMap[milestone.color];
+            
+            return (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+                className="group relative"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
-                    <Award className="h-6 w-6 text-accent" />
-                  </div>
-                </div>
+                <div className="bg-gray-800 rounded-xl p-6 h-full border border-gray-700 hover:border-gray-600 transition-all duration-300">
+                  
+                  <div className="flex items-start justify-between mb-6">
+                    <div className={`${colors.icon} p-3 rounded-lg`}>
+                      <Icon className="h-6 w-6 text-white" />
+                    </div>
 
-                <h4 className="text-xl font-bold text-primary mb-3">
-                  {milestone.title}
-                </h4>
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  {milestone.description}
-                </p>
-                <div className="pt-3 border-t border-gray-200">
-                  <span className="text-sm font-semibold text-accent">
-                    {milestone.achievement}
-                  </span>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-white mb-3">
+                    {milestone.title}
+                  </h3>
+                  
+                  <p className="text-gray-400 text-sm leading-relaxed">
+                    {milestone.description}
+                  </p>
+
+                  <div className={`absolute bottom-0 left-0 right-0 h-2 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-xl`} />
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
         </div>
 
         {/* Vision Statement */}
-        <div className="mt-20 bg-gradient-to-r from-black to-gray-900 text-white rounded-3xl p-12 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold mb-6">
+        <div className="mt-10 bg-gradient-to-r from-black to-gray-900 text-white rounded-3xl p-12 text-center">
+          <Heading align="center" className="mx-auto" color="white">
             Our Vision for Tomorrow
-          </h3>
-          <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          </Heading>
+          <Paragraph align="center" className="text-white w-2/3 mx-auto">
             To be the most trusted and innovative logistics partner globally,
             transforming how goods move around the world through sustainable
             practices, cutting-edge technology, and unwavering commitment to
             excellence.
-          </p>
+          </Paragraph>
         </div>
       </div>
     </section>

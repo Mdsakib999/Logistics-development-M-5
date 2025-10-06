@@ -28,7 +28,7 @@ export default function Empower() {
           <div className="w-full sm:w-1/2">
           <div className="relative group h-full">
             <img
-              className="w-full lg:w-11/12 mr-2 h-full lg:h-full object-cover rounded-lg"
+              className="w-full mr-2 h-full lg:h-full object-cover rounded-lg"
               src={empowerImg}
               alt="empower image"
             />

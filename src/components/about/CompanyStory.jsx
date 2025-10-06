@@ -97,28 +97,28 @@ export const CompanyStory = () => {
               reflected in the trust our clients place in us every day.
             </Paragraph>
             <div className="grid mt-4 grid-cols-2 gap-6">
-              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Users className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>500</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Team Members</p>
               </div>
-              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Globe className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>25</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Countries Served</p>
               </div>
-              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <TrendingUp className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>1</Countup>M+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Deliveries Made</p>
               </div>
-              <div className="bg-green-300 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Award className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>99.8</Countup>%</span>

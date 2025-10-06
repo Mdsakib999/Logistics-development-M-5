@@ -1,15 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Heading from "../../components/ui/Heading";
 import Paragraph from "../../components/ui/Paragraph";
 import {Link} from 'react-router';
 export default function TopAbout() {
-  const [isLoaded, setIsLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoaded(true), 100);
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
@@ -37,8 +32,7 @@ export default function TopAbout() {
       >
         {/* Main Heading - Animates from top */}
         <Heading
-          className={`text-white mx-auto relative z-50 transition-all duration-1000 ease-out mb-4 ${
-            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
+          className={`text-white mx-auto relative z-50 
           }`}
           align="center"
           lineHeight="tight"
@@ -46,9 +40,7 @@ export default function TopAbout() {
           Your Trusted Logistics Partner
         </Heading>
         <Paragraph
-          className={`text-white w-2/3 mx-auto relative z-50 transition-all duration-1000 ease-out mb-4 ${
-            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
-          }`}
+          className={`text-white w-2/3 mx-auto relative z-50`}
           align="center"
         >
           Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
@@ -62,9 +54,7 @@ export default function TopAbout() {
         {/* CTA Button - Animates last */}
 <Link to="/service">
         <button
-          className={`group relative px-12 py-4 rounded-lg bg-transparent border-2 border-white text-white font-medium text-lg tracking-wider overflow-hidden transition-all duration-1000 delay-700 ease-out hover:scale-105 ${
-            isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`group relative px-12 py-4 rounded-lg bg-transparent border-2 border-white text-white font-medium text-lg tracking-wider overflow-hidden transition-all duration-1000 delay-700 ease-out hover:scale-105`}
           style={{
             textShadow: "1px 2px 8px rgba(0,0,0,0.6)",
           }}
@@ -79,9 +69,7 @@ export default function TopAbout() {
 
         {/* Scroll Indicator */}
         <div
-          className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000 ${
-            isLoaded ? "opacity-70" : "opacity-0"
-          }`}
+          className={`absolute bottom-12 left-1/2 transform -translate-x-1/2 transition-all duration-1000 delay-1000`}
         >
           <div className="flex flex-col items-center animate-bounce">
             <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">

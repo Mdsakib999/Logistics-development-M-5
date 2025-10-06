@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Autoplay,Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Countup from "../../utils/Countup";
 import Container from "../layout/Container";
@@ -38,7 +38,7 @@ export default function Feedback() {
         </div>
         {/* card section */}
         <Swiper
-          modules={[Autoplay,Pagination]}
+          modules={[Autoplay, Pagination]}
           breakpoints={{
             // when window width is >= 640px
             640: {
@@ -59,19 +59,19 @@ export default function Feedback() {
           loop={true}
         >
           <SwiperSlide>
-            <FeedbackCard number="01" />
+            <FeedbackCard />
           </SwiperSlide>
           <SwiperSlide>
-            <FeedbackCard number="02" />
+            <FeedbackCard />
           </SwiperSlide>
           <SwiperSlide>
-            <FeedbackCard number="03" />
+            <FeedbackCard />
           </SwiperSlide>
           <SwiperSlide>
-            <FeedbackCard number="04" />
+            <FeedbackCard />
           </SwiperSlide>
           <SwiperSlide>
-            <FeedbackCard number="05" />
+            <FeedbackCard />
           </SwiperSlide>
         </Swiper>
       </Container>

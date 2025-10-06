@@ -6,7 +6,7 @@ export default function TopHeader() {
   const { width } = useWindowSize();
   const [showTopBar, setShowTopBar] = useState(false);
   useEffect(() => {
-    const bannerEl = document.getElementById("hero-section");
+    const bannerEl = document.getElementById("topBanner-section");
     if (!bannerEl) return;
 
     const observer = new IntersectionObserver(

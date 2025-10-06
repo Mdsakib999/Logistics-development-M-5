@@ -26,7 +26,7 @@ export default function TopHeader() {
   }, []);
   return (
     <div
-      className={`bg-green-800 py-2 md:py-0 md:h-[62px] hidden md:flex items-center transition-all duration-500 overflow-hidden 
+      className={`bg-primary py-2 md:py-0 md:h-[62px] hidden md:flex items-center border-b-4 transition-all duration-500 overflow-hidden 
         ${showTopBar ? "max-h-20 opacity-100" : "max-h-0 opacity-0"} `}
     >
       <Container className="w-full">

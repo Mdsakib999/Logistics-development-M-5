@@ -24,7 +24,7 @@ export default function Header() {
     };
   }, []);
   return (
-    <div ref={navRef} className="font-text bg-secondary sticky top-0 z-50">
+    <div ref={navRef} className="font-text bg-gray-200 sticky top-0 z-50">
       <TopHeader />
       <Container className="pb-6 sm:pb-2">
         {/* Desktop menu */}

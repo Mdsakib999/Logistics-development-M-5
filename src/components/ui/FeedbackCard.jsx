@@ -21,7 +21,7 @@ export default function FeedbackCard({
         }
 
         .card-glow:hover {
-          transform: translateY(-8px);
+          transform: scale(1.05);
           box-shadow: 0 25px 50px -12px rgba(34, 197, 94, 0.25);
         }
 
@@ -91,7 +91,7 @@ export default function FeedbackCard({
         }
       `}</style>
 
-      <div className="feedback-card card-glow relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 mb-16 mx-4 overflow-hidden">
+      <div className="feedback-card mt-2 card-glow relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-3xl p-8 mb-16 mx-4 overflow-hidden">
         {/* Decorative Background Gradient */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/10 to-emerald-500/10 rounded-full blur-3xl -z-10"></div>
         

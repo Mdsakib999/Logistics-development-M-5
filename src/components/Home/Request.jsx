@@ -12,7 +12,7 @@ export default function Request() {
         height: "100vh",
       }}
     >
-     <div id="request-quote" className="w-auto sm:w-96 font-text bg-[#020800] text-white p-8 rounded-xl relative mx-2 sm:mx-auto md:mx-0 top-28 md:top-40 md:left-40">
+     <div id="request-quote" className="w-auto sm:w-96 font-text bg-[#020800] text-white p-8 rounded-xl relative mx-2 sm:mx-auto md:mx-0 top-28 md:top-40 md:left-40 hover:sm:scale-105 transition-all duration-300">
       <h1 className="text-2xl text-secondary mb-8">Request A Quote</h1>
       
       <div className="mb-8">

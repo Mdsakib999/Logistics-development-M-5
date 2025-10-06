@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import Heading from "../../components/ui/Heading";
 import Paragraph from "../../components/ui/Paragraph";
-import AboutUs from '../../assets/about-us.jpg'
-export default function MuseumBanner() {
+import {Link} from 'react-router';
+export default function TopAbout() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -46,7 +46,7 @@ export default function MuseumBanner() {
           Your Trusted Logistics Partner
         </Heading>
         <Paragraph
-          className={`text-white relative z-50 transition-all duration-1000 ease-out mb-4 ${
+          className={`text-white w-2/3 mx-auto relative z-50 transition-all duration-1000 ease-out mb-4 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-20"
           }`}
           align="center"
@@ -60,6 +60,7 @@ export default function MuseumBanner() {
         </Paragraph>
 
         {/* CTA Button - Animates last */}
+<Link to="/service">
         <button
           className={`group relative px-12 py-4 rounded-lg bg-transparent border-2 border-white text-white font-medium text-lg tracking-wider overflow-hidden transition-all duration-1000 delay-700 ease-out hover:scale-105 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -74,6 +75,7 @@ export default function MuseumBanner() {
             Learn More
           </span>
         </button>
+</Link>
 
         {/* Scroll Indicator */}
         <div

@@ -222,7 +222,7 @@ export default function TopBanner() {
         .swiper-button-next,
         .swiper-button-prev {
           color: white;
-          background: rgba(255, 255, 255, 0.1);
+          background: #7cf686;
           width: 50px;
           height: 50px;
           border-radius: 50%;
@@ -290,7 +290,7 @@ export default function TopBanner() {
                   {/* CTA Button */}
                   <button
                     onClick={() => handleCTAClick(slide.cta)}
-                    className="cta-button px-12 py-4 bg-transparent border-2 border-white text-white text-lg font-medium tracking-widest transition-all duration-300 hover:scale-105"
+                    className="cta-button px-12 py-4 bg-transparent border-2 border-secondary text-white text-lg font-medium tracking-widest transition-all duration-300 hover:border-none hover:scale-105"
                   >
                     {slide.cta}
                   </button>

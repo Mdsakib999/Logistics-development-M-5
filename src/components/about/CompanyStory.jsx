@@ -2,6 +2,7 @@ import { Award, Globe, TrendingUp, Users } from "lucide-react";
 import Heading from '../../components/ui/Heading';
 import Paragraph from '../../components/ui/Paragraph';
 import aboutImage from "../../assets/about.jpg";
+import Countup from "../../utils/Countup";
 // ===== SECTION 1: COMPANY STORY & JOURNEY =====
 export const CompanyStory = () => {
   const milestones = [
@@ -67,28 +68,28 @@ export const CompanyStory = () => {
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Users className="h-5 w-5 text-accent mr-2" />
-                  <span className="text-2xl font-bold text-primary">500+</span>
+                  <span className="text-2xl font-bold text-primary"><Countup>500</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Team Members</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Globe className="h-5 w-5 text-accent mr-2" />
-                  <span className="text-2xl font-bold text-primary">25+</span>
+                  <span className="text-2xl font-bold text-primary"><Countup>25</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Countries Served</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <TrendingUp className="h-5 w-5 text-accent mr-2" />
-                  <span className="text-2xl font-bold text-primary">1M+</span>
+                  <span className="text-2xl font-bold text-primary"><Countup>1</Countup>M+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Deliveries Made</p>
               </div>
               <div className="bg-white p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Award className="h-5 w-5 text-accent mr-2" />
-                  <span className="text-2xl font-bold text-primary">99.8%</span>
+                  <span className="text-2xl font-bold text-primary"><Countup>99.8</Countup>%</span>
                 </div>
                 <p className="text-gray-600 text-sm">Success Rate</p>
               </div>

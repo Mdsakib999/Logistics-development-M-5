@@ -4,17 +4,19 @@ import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
 import Request from "../components/Home/Request";
 import Solution from "../components/Home/Solution";
+import TopBanner from "../components/Home/TopBanner";
 import Button from "../components/ui/Button";
 import Heading from "../components/ui/Heading";
 import Paragraph from "../components/ui/Paragraph";
 
 export default function Home() {
   return (
-    <div className="md:pt-7">
-      <Hero />
+    <div className="">
+      <TopBanner />
       <Solution />
       <Experiance />
       <HowItWorks />
+      <Hero />
       <Feedback />
       <Request />
     </div>

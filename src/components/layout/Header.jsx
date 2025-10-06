@@ -24,7 +24,7 @@ export default function Header() {
     };
   }, []);
   return (
-    <div ref={navRef} className="font-text bg-gray-200 sticky top-0 z-10">
+    <div ref={navRef} className="font-text bg-secondary sticky top-0 z-50">
       <TopHeader />
       <Container className="pb-6 sm:pb-2">
         {/* Desktop menu */}
@@ -61,16 +61,6 @@ export default function Header() {
                 to="/service"
               >
                 Services
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? "nav-link active" : "nav-link"
-                }
-                to="/track"
-              >
-                Track
               </NavLink>
             </li>
             <li>
@@ -139,19 +129,6 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                 >
                   Services
-                </NavLink>
-              </li>
-              <li className="hover:bg-white w-full rounded-lg">
-                <NavLink
-                  to="/track"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "nav-link active inline-block w-full py-2 px-4"
-                      : "nav-link w-full inline-block py-2 px-4"
-                  }
-                  onClick={() => setIsOpen(false)}
-                >
-                  Track
                 </NavLink>
               </li>
               <li className="hover:bg-white w-full rounded-lg">

@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from '../layout/Container';
 import Button from '../ui/Button';
+import { Facebook, Instagram, Twitter } from "lucide-react";
 import {ArrowRight} from 'lucide-react';
 export default function Form() {
   return (
@@ -44,6 +45,21 @@ export default function Form() {
       <Button className="">
         <span className="mr-2 font-semibold">Leave us a Message</span> <span><ArrowRight strokeWidth={2} /></span>
       </Button>
+
+              {/* social icons  */}
+        <div className="mt-12">
+          <div className="flex pr-8 sm:pr-16 gap-5">
+            <div className="rounded-full w-max hover:scale-120 duration-300 border-[#B7B7B7]  cursor-pointer p-4 border-1">
+              <Facebook color='#1877F2' size="16" fill="#1877F2" strokeWidth={0} />
+            </div>
+            <div className="rounded-full w-max hover:scale-120 duration-300 border-[#B7B7B7] cursor-pointer p-4 border-1">
+              <Instagram color="#E1306C" size="16" strokeWidth={3} />
+            </div>
+            <div className="rounded-full w-max hover:scale-120 duration-300 border-[#B7B7B7]  cursor-pointer p-4 border-1">
+              <Twitter size="16" fill="#1DA1F2" strokeWidth={0} />
+            </div>
+          </div>
+        </div>
     </Container>
     </div>
   )

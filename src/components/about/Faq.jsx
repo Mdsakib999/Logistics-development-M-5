@@ -39,7 +39,7 @@ export default function Faq() {
             <div key={index} className="border-b border-gray-300">
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full py-6 px-6 text-left bg-secondary transition-colors duration-200 flex items-center justify-between"
+                className="w-full py-6 px-6 text-left bg-green-200 cursor-pointer hover:bg-secondary transition-colors duration-200 flex items-center justify-between"
               >
                 <span className="text-gray-900 font-medium text-sm pr-4">
                   {item.question}

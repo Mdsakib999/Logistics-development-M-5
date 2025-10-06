@@ -40,25 +40,33 @@ export default function Growth() {
             </Paragraph>
             <Button to="/contact">Get Started</Button>
           </div>
-          <div className="relative px-8">
-            <div className="bg-gradient-to-br from-white to-gray-300 rounded-2xl p-8 backdrop-blur-sm border border-white/10">
-              <div className="grid grid-cols-2 gap-6">
-                {metrics.map((metric, index) => (
-                  <div key={index} className="text-center">
-                    <div className="flex justify-center mb-3">
-                      {metric.icon}
-                    </div>
-                    <div className="text-2xl font-bold text-black mb-1">
-                      {metric.number}
-                    </div>
-                    <div className="text-black opacity-50 text-sm">
-                      {metric.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+<div className="relative">
+  <div className="rounded-2xl py-8 px-4 bg-cover bg-center overflow-hidden"
+    style={{
+      backgroundImage:
+        "url('https://i.ibb.co.com/SwBdYqBV/pexels-pixabay-210182.jpg?q=80&w=2000&auto=format&fit=crop')",
+    }}>
+    {/* Dark overlay */}
+    <div className="absolute inset-0 bg-black/60 rounded-xl" />
+    
+    {/* Content */}
+    <div className="relative z-10 grid grid-cols-2 gap-6">
+      {metrics.map((metric, index) => (
+        <div key={index} className="text-center">
+          <div className="flex justify-center mb-3">
+            {metric.icon}
           </div>
+          <div className="text-2xl font-bold text-white mb-1">
+            {metric.number}
+          </div>
+          <div className="text-gray-200 font-semibold text-sm">
+            {metric.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </section>

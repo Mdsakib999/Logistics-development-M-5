@@ -97,28 +97,28 @@ export const CompanyStory = () => {
               reflected in the trust our clients place in us every day.
             </Paragraph>
             <div className="grid mt-4 grid-cols-2 gap-6">
-              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Users className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>500</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Team Members</p>
               </div>
-              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Globe className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>25</Countup>+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Countries Served</p>
               </div>
-              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <TrendingUp className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>1</Countup>M+</span>
                 </div>
                 <p className="text-gray-600 text-sm">Deliveries Made</p>
               </div>
-              <div className="bg-green-200 hover:bg-secondary p-4 rounded-lg shadow-sm">
+              <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Award className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary"><Countup>99.8</Countup>%</span>
@@ -157,7 +157,7 @@ export const CompanyStory = () => {
                 key={index}
                 className="group relative"
               >
-                <div className="bg-gray-800 rounded-xl p-6 h-full border border-gray-700 hover:border-gray-600 transition-all duration-300">
+                <div className="bg-gray-800 rounded-xl p-6 h-full border border-gray-700 hover:border-gray-600 hover:scale-105 transition-all duration-300">
                   
                   <div className="flex items-start justify-between mb-6">
                     <div className={`${colors.icon} p-3 rounded-lg`}>
@@ -173,8 +173,6 @@ export const CompanyStory = () => {
                   <p className="text-gray-400 text-sm leading-relaxed">
                     {milestone.description}
                   </p>
-
-                  <div className={`absolute bottom-0 left-0 right-0 h-2 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-xl`} />
                 </div>
               </div>
             );

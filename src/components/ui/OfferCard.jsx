@@ -1,6 +1,6 @@
 export default function OfferCard({imageSrc}) {
   return (
-    <div className="max-w-sm mx-auto bg-white hover:bg-secondary transition-all rounded-xl p-8 shadow-lg">
+    <div className="max-w-sm mx-auto bg-white hover:bg-emerald-200 transition-all rounded-xl p-8 shadow-lg">
       {/* Icon */}
       <div className="mb-6">
         <div className="relative">

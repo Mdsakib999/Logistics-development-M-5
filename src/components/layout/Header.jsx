@@ -152,6 +152,20 @@ export default function Header() {
               </li>
               <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
+                  to="/pricing"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "nav-link active inline-block w-full py-2 px-4"
+                      : "nav-link w-full inline-block py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
+                  Pricing
+                </NavLink>
+              </li>
+              
+              <li className="" className="hover:bg-white w-full rounded-lg">
+                <NavLink
                   to="contact"
                   className={({ isActive }) =>
                     isActive
@@ -161,6 +175,19 @@ export default function Header() {
                   onClick={() => setIsOpen(false)}
                 >
                   Contact
+                </NavLink>
+              </li>
+              <li className="" className="hover:bg-white w-full rounded-lg">
+                <NavLink
+                  to="blogs"
+                  className={({ isActive }) =>
+                    isActive
+                      ? "active inline-block w-full py-2 px-4"
+                      : "nav-link inline-block w-full py-2 px-4"
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
+                  Blogs
                 </NavLink>
               </li>
             </ul>

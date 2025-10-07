@@ -1,12 +1,17 @@
+import {
+  Calendar,
+  FileText,
+  Home,
+  MessageSquare,
+  Package,
+  Truck,
+} from "lucide-react";
 import worksImage from "../../assets/works.png";
 import Overlay from "../../utils/Overlay";
 import Container from "../layout/Container";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
-import packageIcon from "../../assets/package.png";
-import detailsIcon from '../../assets/details.png';
-import scheduleIcon from '../../assets/schedule.png';
 export default function HowItWorks() {
   return (
     <div className="pt-8 md:py-12">
@@ -42,10 +47,37 @@ export default function HowItWorks() {
         </div>
         <hr className="border-1 border-[#5C6C7B] border-dashed my-4 md:my-10" />
         {/* card section */}
-        <div className="flex my-12 flex-col sm:flex-row gap-12 sm:gap-16">
-          <WorkCard src={packageIcon} heading="Request a quote" step="1"></WorkCard>
-          <WorkCard src={detailsIcon} heading="Provide details" step="2"></WorkCard>
-          <WorkCard src={scheduleIcon} heading="Schedule pick-up" step="3"></WorkCard>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-12">
+          <WorkCard
+            src={<Package size={40} color="white" />}
+            heading="Request a quote"
+            step="1"
+          />
+          <WorkCard
+            src={<FileText size={40} color="white" />}
+            heading="Provide details"
+            step="2"
+          />
+          <WorkCard
+            src={<Calendar size={40} color="white" />}
+            heading="Schedule pick-up"
+            step="3"
+          />
+          <WorkCard
+            src={<Truck size={40} color="white" />}
+            heading="Track your shipment"
+            step="4"
+          />
+          <WorkCard
+            src={<Home size={40} color="white" />}
+            heading="Receive delivery"
+            step="5"
+          />
+          <WorkCard
+            src={<MessageSquare size={40} color="white" />}
+            heading="Share your feedback"
+            step="6"
+          />
         </div>
       </Container>
     </div>

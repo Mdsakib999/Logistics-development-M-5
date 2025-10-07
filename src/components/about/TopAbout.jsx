@@ -32,7 +32,7 @@ export default function TopAbout() {
       >
         {/* Main Heading - Animates from top */}
         <h1
-          className={`text-white text-3xl md:text-7xl sm:text-5xl  mx-auto font-slider relative z-50 
+          className={`text-white text-center text-3xl md:text-7xl sm:text-5xl  mx-auto font-slider relative z-50 
           }`}
         >
           Your Trusted Logistics Partner

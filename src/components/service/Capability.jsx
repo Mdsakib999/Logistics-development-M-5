@@ -1,43 +1,43 @@
-import { CheckCircle, Code, Palette, Zap } from "lucide-react";
+import { CheckCircle, Cpu,Truck, Package } from "lucide-react";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 
 export default function Capability() {
   const capabilities = [
     {
-      category: "Development",
-      icon: Code,
+      category: "Transport Solutions",
+      icon: Truck,
       color: "blue",
       items: [
-        "Full-stack web development",
-        "Mobile app development",
-        "API integration & design",
-        "Database architecture",
-        "Cloud deployment",
+        "Domestic and international freight services",
+        "Door-to-door cargo delivery",
+        "Fleet management and tracking",
+        "Express parcel and courier services",
+        "Bulk goods transportation",
       ],
     },
     {
-      category: "Design",
-      icon: Palette,
+      category: "Logistics Management",
+      icon: Package,
       color: "purple",
       items: [
-        "UI/UX design systems",
-        "Brand identity creation",
-        "Responsive web design",
-        "Prototyping & wireframing",
-        "Design consultation",
+        "Warehouse and inventory management",
+        "Supply chain optimization",
+        "Route and delivery planning",
+        "Real-time shipment monitoring",
+        "Custom logistics consultation",
       ],
     },
     {
-      category: "Performance",
-      icon: Zap,
+      category: "Technology & Support",
+      icon: Cpu,
       color: "emerald",
       items: [
-        "Speed optimization",
-        "SEO implementation",
-        "Analytics integration",
-        "Security best practices",
-        "Scalability planning",
+        "GPS-based vehicle tracking system",
+        "Digital documentation & invoicing",
+        "Customer portal for shipment updates",
+        "Data-driven performance analytics",
+        "24/7 customer support and assistance",
       ],
     },
   ];

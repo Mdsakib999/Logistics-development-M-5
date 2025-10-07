@@ -13,7 +13,7 @@ export default function Footer() {
               Logistic
             </h2>
           </Link>
-          <p className="text-gray-300 w-auto sm:w-96 text-base leading-relaxed mb-8">
+          <p className="text-gray-300 hover:border-b-1 hover:border-b-white w-auto sm:w-96 text-base leading-relaxed mb-8">
             Faucibus quis fringilla scelerisque dui. Amet parturient dui
             venenatis amet sagittis viverra vel tincidunt. Orci tincidunt.
           </p>
@@ -30,7 +30,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/about"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 About Us
               </Link>
@@ -38,7 +38,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/about"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Our Partners
               </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Careers
               </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
             <li>
               <Link
                 to="contact"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Our Network
               </Link>
@@ -69,7 +69,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/service"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Packing Supplies
               </Link>
@@ -77,7 +77,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/about"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Faqs
               </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/service"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Pricing and Quotes
               </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Tips and Guides
               </Link>
@@ -108,7 +108,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Customer Support
               </Link>
@@ -116,7 +116,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Delivery Details
               </Link>
@@ -124,7 +124,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Terms & Conditions
               </Link>
@@ -132,7 +132,7 @@ export default function Footer() {
             <li>
               <Link
                 to="/about"
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Privacy Policy
               </Link>

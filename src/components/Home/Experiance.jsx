@@ -20,7 +20,7 @@ export default function Experiance() {
         </div>
         </div>
         {/* content section */}
-        <div className="w-full sm:w-[560px] ml-auto pl-4 flex flex-col space-y-4">
+        <div className="w-full sm:w-[560px] ml-auto sm:pl-4 flex flex-col space-y-4">
           <Heading color="white" className="mt-4 " lineHeight="tight">Simplify Your Shipping Experience </Heading>
           <Paragraph className="text-white opacity-80">
             Elementum fames et massa molestie. Dolor habitasse id sit cras

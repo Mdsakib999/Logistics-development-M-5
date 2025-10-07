@@ -14,6 +14,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import Heading from "../components/ui/Heading";
 import Paragraph from "../components/ui/Paragraph";
+import Countup from '../utils/Countup';
 
 export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState("monthly");
@@ -122,7 +123,7 @@ export default function Pricing() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6">
               <Star className="w-4 h-4" style={{ color: primaryColor }} />
               <span className="text-sm font-medium">
-                Trusted by 5,000+ businesses
+                Trusted by <Countup>5000</Countup>+ businesses
               </span>
             </div>
             <Heading className="mx-auto" color="white" align="center">
@@ -168,7 +169,7 @@ export default function Pricing() {
               >
                 Yearly
                 <span className="ml-2 text-xs px-2 py-0.5 bg-green-500 text-white rounded-full">
-                  Save 17%
+                  Save <Countup>17</Countup>%
                 </span>
               </button>
             </div>
@@ -219,7 +220,7 @@ export default function Pricing() {
                   <div className="mb-8">
                     <div className="flex items-baseline gap-2">
                       <span className="text-5xl font-bold text-slate-900">
-                        ${displayPrice}
+                        $<Countup>{displayPrice}</Countup>
                       </span>
                       <span className="text-slate-600">
                         /{billingCycle === "monthly" ? "mo" : "mo"}
@@ -227,7 +228,7 @@ export default function Pricing() {
                     </div>
                     {billingCycle === "yearly" && (
                       <p className="text-sm text-slate-500 mt-2">
-                        ${price} billed annually
+                        $<Countup>{price}</Countup> billed annually
                       </p>
                     )}
                   </div>
@@ -301,7 +302,7 @@ export default function Pricing() {
                     {addon.description}
                   </p>
                   <div className="text-2xl font-bold text-slate-900">
-                    ${addon.price}
+                    $<Countup>{addon.price}</Countup>
                     <span className="text-sm font-normal text-slate-500">
                       /shipment
                     </span>

@@ -35,17 +35,12 @@ export default function TopAbout() {
           className={`text-white text-center text-3xl md:text-7xl sm:text-5xl  mx-auto font-slider relative z-50 
           }`}
         >
-          Your Trusted Logistics Partner
+          About Us
         </h1>
         <p
           className={`text-white text-center py-4 text-lg sm:text-xl md:text-2xl font-text w-full sm:w-2/3 mx-auto relative z-50`}
         >
-          Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
-          aliquam facilisi quis et cras. Leo nulla integer et aliquet massa
-          nunc. Ornare id sit ac varius enim ut nisl.Elementum augue ut sagittis
-          vel nunc. Posuere id velit integer proin aliquam facilisi quis et
-          cras. Leo nulla integer et aliquet massa nunc. Ornare id sit ac varius
-          enim ut nisl.
+We’re a dedicated team driven by a passion for ensuring goods are moved swiftly, securely, and efficiently across the globe. With years of hands-on experience in the logistics industry, our focus lies in delivering consistently reliable services, leveraging cutting-edge technologies, and crafting tailored solutions for each client. We don’t just transport shipments—we build lasting trust, one delivery at a time.
         </p>
 
         {/* CTA Button - Animates last */}
@@ -59,7 +54,7 @@ export default function TopAbout() {
           {/* Button hover effect */}
           <span className="absolute inset-0 bg-secondary transform -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0"></span>
           <span className="relative z-10 transition-colors duration-500">
-            Get Started
+           Join Us
           </span>
         </button>
 </Link>

@@ -1,43 +1,43 @@
-import { CheckCircle, Cpu,Truck, Package } from "lucide-react";
+import { CheckCircle, Package, Ship, Truck } from "lucide-react";
 import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 
 export default function Capability() {
   const capabilities = [
     {
-      category: "Transport Solutions",
-      icon: Truck,
+      category: "Sea Freight",
+      icon: Ship,
       color: "blue",
       items: [
-        "Domestic and international freight services",
-        "Door-to-door cargo delivery",
-        "Fleet management and tracking",
-        "Express parcel and courier services",
-        "Bulk goods transportation",
+        "Full container load (FCL)",
+        "Less than container load (LCL)",
+        "Break bulk cargo handling",
+        "Roll-on/Roll-off (RoRo) services",
+        "Port-to-port delivery",
       ],
     },
     {
-      category: "Logistics Management",
-      icon: Package,
+      category: "Road Transport",
+      icon: Truck,
       color: "purple",
       items: [
-        "Warehouse and inventory management",
-        "Supply chain optimization",
-        "Route and delivery planning",
-        "Real-time shipment monitoring",
-        "Custom logistics consultation",
+        "Full truckload (FTL) shipping",
+        "Less than truckload (LTL) freight",
+        "Temperature-controlled transport",
+        "Oversized cargo handling",
+        "Last-mile delivery",
       ],
     },
     {
-      category: "Technology & Support",
-      icon: Cpu,
+      category: "Logistics Solutions",
+      icon: Package,
       color: "emerald",
       items: [
-        "GPS-based vehicle tracking system",
-        "Digital documentation & invoicing",
-        "Customer portal for shipment updates",
-        "Data-driven performance analytics",
-        "24/7 customer support and assistance",
+        "Real-time cargo tracking",
+        "Warehousing & distribution",
+        "Customs clearance assistance",
+        "Supply chain optimization",
+        "Door-to-door delivery",
       ],
     },
   ];

@@ -34,7 +34,7 @@ export default function Header() {
           </Link>
           <ul className="flex gap-8">
 
-           <li className="bbotom">
+           <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -44,7 +44,7 @@ export default function Header() {
                 Home
               </NavLink>
             </li>
-                       <li className="bbotom">
+                       <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -54,7 +54,7 @@ export default function Header() {
                 About Us
               </NavLink>
             </li>
-           <li className="bbotom">
+           <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -64,7 +64,17 @@ export default function Header() {
                 Services
               </NavLink>
             </li>
-           <li className="bbotom">
+           <li className="">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/pricing"
+              >
+                Pricing
+              </NavLink>
+            </li>
+           <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -93,7 +103,7 @@ export default function Header() {
           } `}
           >
             <ul className="flex flex-col p-4">
-             <li className="bbotom" className="hover:bg-white w-full rounded-lg">
+             <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -106,7 +116,7 @@ export default function Header() {
                   Home
                 </NavLink>
               </li>
-             <li className="bbotom" className="hover:bg-white w-full rounded-lg">
+             <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -119,7 +129,7 @@ export default function Header() {
                   About us
                 </NavLink>
               </li>
-             <li className="bbotom" className="hover:bg-white w-full rounded-lg">
+             <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/service"
                   className={({ isActive }) =>
@@ -132,7 +142,7 @@ export default function Header() {
                   Services
                 </NavLink>
               </li>
-             <li className="bbotom" className="hover:bg-white w-full rounded-lg">
+             <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="contact"
                   className={({ isActive }) =>

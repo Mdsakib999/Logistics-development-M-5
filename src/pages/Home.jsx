@@ -1,7 +1,9 @@
+import Blogs from "../components/Home/Blogs";
 import Experiance from "../components/Home/Experiance";
 import Feedback from "../components/Home/Feedback";
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
+import OurExperiance from "../components/Home/OurExperiance";
 import Request from "../components/Home/Request";
 import Solution from "../components/Home/Solution";
 import TopBanner from "../components/Home/TopBanner";
@@ -16,7 +18,9 @@ export default function Home() {
       <Solution />
       <Experiance />
       <HowItWorks />
+      <OurExperiance />
       <Hero />
+      <Blogs />
       <Feedback />
       <Request />
     </div>

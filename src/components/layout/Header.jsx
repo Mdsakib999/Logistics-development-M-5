@@ -6,7 +6,6 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const navRef = useRef(null);
 
-
   useEffect(() => {
     function handleClickOutside(event) {
       // if click is outside navRef element → close nav
@@ -29,12 +28,11 @@ export default function Header() {
       <Container className="pb-6 sm:pb-2">
         {/* Desktop menu */}
         <nav className="hidden md:flex items-center justify-between">
-         <Link to="/">
+          <Link to="/">
             <h2 className="text-[40px]">Logistic</h2>
           </Link>
           <ul className="flex gap-8">
-
-           <li className="">
+            <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -44,7 +42,7 @@ export default function Header() {
                 Home
               </NavLink>
             </li>
-                       <li className="">
+            <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -54,7 +52,7 @@ export default function Header() {
                 About Us
               </NavLink>
             </li>
-           <li className="">
+            <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -64,7 +62,7 @@ export default function Header() {
                 Services
               </NavLink>
             </li>
-           <li className="">
+            <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -74,7 +72,7 @@ export default function Header() {
                 Pricing
               </NavLink>
             </li>
-           <li className="">
+            <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -82,6 +80,16 @@ export default function Header() {
                 to="/contact"
               >
                 Contact
+              </NavLink>
+            </li>
+            <li className="">
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+                to="/blogs"
+              >
+                Blogs
               </NavLink>
             </li>
           </ul>
@@ -103,7 +111,7 @@ export default function Header() {
           } `}
           >
             <ul className="flex flex-col p-4">
-             <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -116,7 +124,7 @@ export default function Header() {
                   Home
                 </NavLink>
               </li>
-             <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -129,7 +137,7 @@ export default function Header() {
                   About us
                 </NavLink>
               </li>
-             <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/service"
                   className={({ isActive }) =>
@@ -142,7 +150,7 @@ export default function Header() {
                   Services
                 </NavLink>
               </li>
-             <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="contact"
                   className={({ isActive }) =>

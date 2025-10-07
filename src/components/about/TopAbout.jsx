@@ -31,17 +31,14 @@ export default function TopAbout() {
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Main Heading - Animates from top */}
-        <Heading
-          className={`text-white mx-auto relative z-50 
+        <h1
+          className={`text-white text-3xl md:text-7xl sm:text-5xl  mx-auto font-slider relative z-50 
           }`}
-          align="center"
-          lineHeight="tight"
         >
           Your Trusted Logistics Partner
-        </Heading>
-        <Paragraph
-          className={`text-white w-full sm:w-2/3 mx-auto relative z-50`}
-          align="center"
+        </h1>
+        <p
+          className={`text-white text-center py-4 text-lg sm:text-xl md:text-2xl font-text w-full sm:w-2/3 mx-auto relative z-50`}
         >
           Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
           aliquam facilisi quis et cras. Leo nulla integer et aliquet massa
@@ -49,20 +46,20 @@ export default function TopAbout() {
           vel nunc. Posuere id velit integer proin aliquam facilisi quis et
           cras. Leo nulla integer et aliquet massa nunc. Ornare id sit ac varius
           enim ut nisl.
-        </Paragraph>
+        </p>
 
         {/* CTA Button - Animates last */}
 <Link to="/service">
         <button
-          className={`group relative px-12 py-4 rounded-lg bg-transparent border-2 border-white text-white font-medium text-lg tracking-wider overflow-hidden transition-all duration-1000 delay-700 ease-out hover:scale-105`}
+          className={`group relative px-12 mt-2 py-4 rounded-lg bg-transparent border-2 border-white text-white font-medium text-lg tracking-wider overflow-hidden transition-all duration-1000 delay-700 ease-out hover:scale-105`}
           style={{
             textShadow: "1px 2px 8px rgba(0,0,0,0.6)",
           }}
         >
           {/* Button hover effect */}
           <span className="absolute inset-0 bg-secondary transform -translate-x-full transition-transform duration-500 ease-out group-hover:translate-x-0"></span>
-          <span className="relative z-10 group-hover:text-black transition-colors duration-500">
-            Learn More
+          <span className="relative z-10 transition-colors duration-500">
+            Get Started
           </span>
         </button>
 </Link>

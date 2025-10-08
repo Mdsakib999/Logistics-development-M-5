@@ -110,8 +110,8 @@ export default function Header() {
             className={`absolute bg-gray-300 top-12 left-0 w-full shadow-lg md:hidden
           } `}
           >
-            <ul className="flex flex-col p-4">
-              <li className="" className="hover:bg-white w-full rounded-lg">
+            <ul className="flex flex-col gap-4 p-4">
+              <li className="" className=" w-full rounded-lg">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -124,7 +124,7 @@ export default function Header() {
                   Home
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className=" w-full rounded-lg">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -137,7 +137,7 @@ export default function Header() {
                   About us
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className=" w-full rounded-lg">
                 <NavLink
                   to="/service"
                   className={({ isActive }) =>
@@ -150,7 +150,7 @@ export default function Header() {
                   Services
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className=" w-full rounded-lg">
                 <NavLink
                   to="/pricing"
                   className={({ isActive }) =>
@@ -164,9 +164,9 @@ export default function Header() {
                 </NavLink>
               </li>
               
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className=" w-full rounded-lg">
                 <NavLink
-                  to="contact"
+                  to="/contact"
                   className={({ isActive }) =>
                     isActive
                       ? "nav-link active inline-block w-full py-2 px-4"
@@ -177,12 +177,12 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="" className=" w-full rounded-lg">
                 <NavLink
-                  to="blogs"
+                  to="/blogs"
                   className={({ isActive }) =>
                     isActive
-                      ? "active inline-block w-full py-2 px-4"
+                      ? "nav-link active inline-block w-full py-2 px-4"
                       : "nav-link inline-block w-full py-2 px-4"
                   }
                   onClick={() => setIsOpen(false)}

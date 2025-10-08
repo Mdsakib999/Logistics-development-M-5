@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap");
 @import "tailwindcss";
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;700&display=swap");
 
-        .font-slider {
-          font-family: 'Playfair Display', serif;
-        }
+.font-slider {
+  font-family: "Playfair Display", serif;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -74,42 +74,70 @@ html {
   background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
   z-index: 1; /* Place the overlay below the content */
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .nav-link {
-  position: relative;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: oklch(76.5% 0.177 163.223);
+    transition: 0.5s;
+    margin: auto;
+    display: block;
+  }
+  .nav-link:hover::after {
+    width: 80%;
+  }
+
+  .nav-link.active::after {
+    width: 80%;
+
+    height: 2.2px;
+  }
 }
 
-.nav-link::after {
-  content: "";
-  position: absolute;
-  top: 36px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background-color: oklch(76.5% 0.177 163.223);
-  transition: 0.5s;
-  margin: auto;
-  display: block;
-}
-.nav-link:hover::after {
-  width: 80%;
+@media (max-width: 767px) {
+  .nav-link {
+    position: relative;
+    display: inline;
+  }
+
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: oklch(76.5% 0.177 163.223);
+    transition: 0.5s;
+    margin: auto;
+  }
+  .nav-link:hover::after {
+    width: 80%;
+  }
+
+  .nav-link.active::after {
+    width: 80%;
+    height: 2.2px;
+  }
 }
 
-.nav-link.active::after {
-  width: 80%;
-
-  height: 2.2px;
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
 }
-}
-
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: white;
-          background: rgba(255, 255, 255, 0.1);
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          backdrop-filter: blur(10px);
-          transition: all 0.3s ease;
-        }

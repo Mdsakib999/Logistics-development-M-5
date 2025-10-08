@@ -216,7 +216,9 @@ export default function TopBanner() {
           opacity: 1;
         }
 
-        .swiper-button-next,
+
+  @media (max-width:640px) {
+          .swiper-button-next,
         .swiper-button-prev {
           color: white;
           background: rgba(255, 255, 255, 0.1);
@@ -225,7 +227,23 @@ export default function TopBanner() {
           border-radius: 50%;
           backdrop-filter: blur(10px);
           transition: all 0.3s ease;
+          opacity:0;
         }
+  }
+          @media (min-width:641px) {
+          .swiper-button-next,
+        .swiper-button-prev {
+          color: white;
+          background: rgba(255, 255, 255, 0.1);
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          backdrop-filter: blur(10px);
+          transition: all 0.3s ease;
+          opacity:1;
+        }
+  }
+
 
         .swiper-button-next:hover,
         .swiper-button-prev:hover {

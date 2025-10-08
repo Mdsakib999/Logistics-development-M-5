@@ -14,7 +14,7 @@ import Paragraph from "../ui/Paragraph";
 import WorkCard from "../ui/WorkCard";
 export default function HowItWorks() {
   return (
-    <div className="pt-8 md:py-12">
+    <div className="pt-8 md:py-12 bg-gray-100">
       <Container className="py-4 md:py-12 lg:py-16">
         {/* content section */}
         <div className="flex flex-col gap-4 md:gap-2 lg:gap-0 md:flex-row">
@@ -47,7 +47,7 @@ export default function HowItWorks() {
         </div>
         <hr className="border-1 border-[#5C6C7B] border-dashed my-4 md:my-10" />
         {/* card section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-8 my-12">
           <WorkCard
             src={<Package size={40} color="white" />}
             heading="Request a quote"

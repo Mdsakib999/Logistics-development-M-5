@@ -21,8 +21,8 @@ export default function Home() {
       <HowItWorks />
       <OurExperiance />
       <Hero />
-      <Price />
-      <Blogs />
+      {/* <Price /> */}
+      {/* <Blogs /> */}
       <Feedback />
       <Request />
     </div>

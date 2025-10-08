@@ -196,7 +196,7 @@ export const CompanyStory = () => {
                     </div>
                     <div>
                       <div className="text-3xl font-bold text-secondary">
-                        1250+
+                        <Countup>1250</Countup>+
                       </div>
                       <div className="text-gray-600 font-medium">
                         Trained People

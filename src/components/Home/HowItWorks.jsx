@@ -60,22 +60,22 @@ export default function HowItWorks() {
           />
           <WorkCard
             src={<Calendar size={40} color="white" />}
-            heading="Schedule pick-up"
+            heading="Timely pick-up"
             step="3"
           />
           <WorkCard
             src={<Truck size={40} color="white" />}
-            heading="Track your shipment"
+            heading="Track shipment"
             step="4"
           />
           <WorkCard
             src={<Home size={40} color="white" />}
-            heading="Receive delivery"
+            heading="Receive Package"
             step="5"
           />
           <WorkCard
             src={<MessageSquare size={40} color="white" />}
-            heading="Share your feedback"
+            heading="Share feedback"
             step="6"
           />
         </div>

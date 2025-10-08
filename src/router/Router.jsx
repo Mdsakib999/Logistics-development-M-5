@@ -29,10 +29,10 @@ const router = createBrowserRouter([
         path: "/contact",
         Component: Contact,
       },
-      {
-        path: "/pricing",
-        Component: Pricing,
-      },
+      // {
+      //   path: "/pricing",
+      //   Component: Pricing,
+      // },
       {
         path: "/blogs",
         Component: Blogs,

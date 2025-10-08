@@ -62,7 +62,7 @@ export default function Header() {
                 Services
               </NavLink>
             </li>
-            <li className="">
+            {/* <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -71,7 +71,7 @@ export default function Header() {
               >
                 Pricing
               </NavLink>
-            </li>
+            </li> */}
             <li className="">
               <NavLink
                 className={({ isActive }) =>
@@ -150,7 +150,7 @@ export default function Header() {
                   Services
                 </NavLink>
               </li>
-              <li className="" className=" w-full rounded-lg">
+              {/* <li className="" className=" w-full rounded-lg">
                 <NavLink
                   to="/pricing"
                   className={({ isActive }) =>
@@ -162,7 +162,7 @@ export default function Header() {
                 >
                   Pricing
                 </NavLink>
-              </li>
+              </li> */}
               
               <li className="" className=" w-full rounded-lg">
                 <NavLink

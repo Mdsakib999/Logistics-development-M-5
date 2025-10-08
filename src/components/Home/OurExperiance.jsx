@@ -3,6 +3,7 @@ import {
   Clock,
   Globe,
   Package,
+  PackageCheck,
   Shield,
   TrendingUp,
   Truck,
@@ -19,7 +20,7 @@ const OurExperiance = () => {
 
   const stats = [
     {
-      icon: Package,
+      icon: PackageCheck,
       value: "50000",
       label: "Deliveries",
       color: "from-emerald-400 to-teal-400",
@@ -114,7 +115,7 @@ const OurExperiance = () => {
                     className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${stat.color} bg-opacity-10 mb-4`}
                   >
                     <Icon
-                      className={`w-6 h-6 bg-gradient-to-br ${stat.color} bg-clip-text text-transparent`}
+                      className={`w-6 h-6 bg-gradient-to-br ${stat.color} bg-clip-text`}
                       strokeWidth={2}
                     />
                   </div>

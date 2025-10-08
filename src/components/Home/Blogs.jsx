@@ -194,7 +194,7 @@ export default function Blogs() {
 
         {/* CTA Section */}
         <div className="relative">
-          <div className="relative bg-slate-900 rounded-3xl overflow-hidden">
+          <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl overflow-hidden">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 opacity-10">
               <div

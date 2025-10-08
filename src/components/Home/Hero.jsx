@@ -8,7 +8,7 @@ export default function Hero() {
       className={`h-full bg-gray-600 sm:bg-white py-12 sm:h-[434px] w-full mx-auto flex flex-col sm:flex-row justify-between sm:mb-16 md:mb-32 sm:gap-10`}
     >
       <div
-        className={`sm:bg-primary flex items-center w-full sm:w-1/2 lg:w-[826px] md:justify-center lg:justify-end sm:pr-10 px-4 sm:pl-12 md:pl-10 py-8`}
+        className={`sm:bg-gradient-to-br sm:from-slate-900 sm:via-slate-800 to-slate-900 flex items-center w-full sm:w-1/2 lg:w-[826px] md:justify-center lg:justify-end sm:pr-10 px-4 sm:pl-12 md:pl-10 py-8`}
       >
         <span>
           <Heading lineHeight="tight" fontWeight="semibold" color="white">

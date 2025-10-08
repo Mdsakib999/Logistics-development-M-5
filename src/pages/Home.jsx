@@ -4,6 +4,7 @@ import Feedback from "../components/Home/Feedback";
 import Hero from "../components/Home/Hero";
 import HowItWorks from "../components/Home/HowItWorks";
 import OurExperiance from "../components/Home/OurExperiance";
+import Price from "../components/Home/Price";
 import Request from "../components/Home/Request";
 import Solution from "../components/Home/Solution";
 import TopBanner from "../components/Home/TopBanner";
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorks />
       <OurExperiance />
       <Hero />
+      <Price />
       <Blogs />
       <Feedback />
       <Request />

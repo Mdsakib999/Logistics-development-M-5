@@ -6,7 +6,7 @@ import Heading from "../ui/Heading";
 import Paragraph from "../ui/Paragraph";
 export default function Experiance() {
   return (
-    <div className="w-full  bg-primary border">
+    <div className="w-full  bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 border">
       <Container className="flex flex-col w-full md:flex-row py-12 lg:py-16">
         {/* image section */}
         <div className="lg:block flex flex-col justify-end md:justify-center w-full sm:w-[460px] mx-auto sm:pr-12">

@@ -15,7 +15,7 @@ export default function Request() {
     >
       <div
         id="request-quote"
-        className="w-auto sm:w-96 font-text bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-xl relative mx-2 sm:mx-auto md:mx-0 top-28 md:top-40 md:left-40 hover:sm:scale-105 transition-all duration-300"
+        className="w-auto sm:w-96 font-text bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white p-8 rounded-xl relative mx-2 sm:mx-auto md:mx-0 top-16 sm:top-24 md:top-32 md:left-40 hover:sm:scale-105 transition-all duration-300"
       >
         <h1 className="text-2xl text-secondary mb-8">Request A Quote</h1>
 

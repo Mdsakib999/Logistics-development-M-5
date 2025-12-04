@@ -111,7 +111,7 @@ export default function Header() {
           } `}
           >
             <ul className="flex flex-col p-4">
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -124,7 +124,7 @@ export default function Header() {
                   Home
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -137,7 +137,7 @@ export default function Header() {
                   About us
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/service"
                   className={({ isActive }) =>
@@ -150,7 +150,7 @@ export default function Header() {
                   Services
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="/pricing"
                   className={({ isActive }) =>
@@ -164,7 +164,7 @@ export default function Header() {
                 </NavLink>
               </li>
               
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="contact"
                   className={({ isActive }) =>
@@ -177,7 +177,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-              <li className="" className="hover:bg-white w-full rounded-lg">
+              <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
                   to="blogs"
                   className={({ isActive }) =>

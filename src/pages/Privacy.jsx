@@ -10,7 +10,7 @@ const Privacy = () => {
           Impressum
         </h1>
         <p className="mb-5 text-base sm:text-lg">
-          <strong>LANG GmbH</strong>
+          <strong>LANG Reisen GmbH & Co. KG</strong>
           <br />
           Gruenhainer Strasse 30,  <br /> 08340 Schwarzenberg
           <br />
@@ -23,16 +23,16 @@ const Privacy = () => {
           Vertretungsberechtigter
         </h2> */}
         <p className="mb- text-base sm:text-lg">
-         <strong>Vertreten durch:</strong>  Thomas Bernhard
+         <strong>Vertreten durch:</strong>   LANG Reisen GmbH & Co. KG
         </p>
 
         {/* <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
           Registereintrag
         </h2> */}
         <p className="mb-2 text-base sm:text-lg">
-          <strong>Handelsregister:</strong>  HRB 12345
+          <strong>Handelsregister:</strong>  HRB 35800
           <br />
-          <strong>Registergericht:</strong> Amtsgerichts Kaiserslautern
+          <strong>Registergericht:</strong> Bezirksgericht Chemnitz
           <br />
           {/* <strong>Handelsregisternummer: </strong> HRB 11828 */}
         </p>
@@ -49,7 +49,7 @@ const Privacy = () => {
           </a>
         </p>
 
-		<p className="mb-2 text-base sm:text-lg">Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE192254731</p>
+		<p className="mb-2 text-base sm:text-lg">Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE224557083</p>
 
         {/* <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mt-4 mb-2">
           Umsatzsteuer-Identifikationsnummer
@@ -81,7 +81,7 @@ const Privacy = () => {
           Website ist:
         </p>
         <p className="mb-4 text-base  sm:text-lg">
-          LANG GmbH
+          LANG Reisen GmbH & Co. KG
           <br />
           {/* Boschstraße 4, 67304 Eisenberg, Deutschland */}
 		  Gruenhainer Strasse 30,  <br /> 08340 Schwarzenberg

@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="md:col-span-3">
           <Link>
             <h2 className="text-4xl font-light text-secondary mb-6">
-              LANG GmbH
+              LANG Reisen GmbH & Co. KG
             </h2>
           </Link>
           <p className="text-gray-300 border-b-1 border-b-white w-auto sm:w-96 text-base leading-relaxed mb-8">
@@ -122,7 +122,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mt-16 pt-8 border-t border-gray-700">
-        <p className="text-gray-400 mb-4 md:mb-0">Copyright © 2025 LANG GmbH. Alle Rechte vorbehalten.</p>
+        <p className="text-gray-400 mb-4 md:mb-0">Copyright © 2025 LANG Reisen GmbH & Co. KG. Alle Rechte vorbehalten.</p>
         {/* <p className="text-gray-400">Design By TokoTema</p> */}
       </div>
     </footer>

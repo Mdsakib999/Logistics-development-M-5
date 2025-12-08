@@ -21,25 +21,25 @@ const OurExperiance = () => {
     {
       icon: Package,
       value: "50000",
-      label: "Deliveries",
+      label: "Lieferungen",
       color: "from-emerald-400 to-teal-400",
     },
     {
       icon: Truck,
       value: "500",
-      label: "Fleet Vehicles",
+      label: "Fuhrfahrzeuge",
       color: "from-blue-400 to-cyan-400",
     },
     {
       icon: Globe,
       value: "25",
-      label: "Countries",
+      label: "Länder",
       color: "from-purple-400 to-pink-400",
     },
     {
       icon: Users,
       value: "1000",
-      label: "Happy Clients",
+      label: "Zufriedene Kunden",
       color: "from-orange-400 to-red-400",
     },
   ];
@@ -47,30 +47,30 @@ const OurExperiance = () => {
   const features = [
     {
       icon: Clock,
-      title: "On-Time Delivery",
+      title: "Pünktliche Lieferung",
       description:
-        "99.8% punctuality rate with real-time tracking across all routes",
+        "99,8 % Pünktlichkeitsrate mit Echtzeit-Tracking auf allen Strecken",
       gradient: "from-emerald-500 to-teal-500",
     },
     {
       icon: Shield,
-      title: "Secure Transport",
+      title: "Sicherer Transport",
       description:
-        "End-to-end insurance coverage and advanced security protocols",
+        "Umfassender Versicherungsschutz und fortschrittliche Sicherheitsprotokolle",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
       icon: TrendingUp,
       title: "Cost Efficient",
       description:
-        "Optimized routes and fuel management for competitive pricing",
+        "Optimierte Routen und Kraftstoffmanagement für wettbewerbsfähige Preise",
       gradient: "from-purple-500 to-pink-500",
     },
     {
       icon: Award,
       title: "Award Winning",
       description:
-        "Industry recognized excellence in logistics and customer service",
+        "Branchenweit anerkannte Spitzenleistungen in Logistik und Kundenservice",
       gradient: "from-orange-500 to-red-500",
     },
   ];
@@ -82,18 +82,17 @@ const OurExperiance = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[oklch(76.5%_0.177_163.223)] bg-opacity-10 border border-[oklch(76.5%_0.177_163.223)] border-opacity-30 mb-6">
             <span className="text-white text-sm font-semibold tracking-wider">
-              OUR EXPERIENCE
+              Unsere Erfahrung
             </span>
           </div>
           <Heading align="center" className="mb-6 mx-auto">
-            Trusted By Thousands
+            Vertraut von Tausenden
             <span className="block mt-2 bg-gradient-to-r from-[oklch(76.5%_0.177_163.223)] via-emerald-400 to-teal-400 bg-clip-text text-transparent">
-              Across The Globe
+              Weltweit
             </span>
           </Heading>
           <Paragraph className="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            With decades of expertise in logistics, we deliver excellence in
-            every shipment
+            Mit jahrzehntelanger Logistikexpertise liefern wir Exzellenz bei jeder Sendung.
           </Paragraph>
         </div>
 
@@ -174,7 +173,7 @@ const OurExperiance = () => {
                       isHovered ? "translate-x-2" : ""
                     }`}
                   >
-                    <span className="text-sm">Learn More</span>
+                    <span className="text-sm">Mehr erfahren</span>
                     <svg
                       className="w-4 h-4"
                       fill="none"
@@ -199,7 +198,7 @@ const OurExperiance = () => {
         <div className="mt-16 text-center">
             <Link to="/service">
                 <button className="group relative px-8 py-4 bg-gradient-to-r from-[oklch(76.5%_0.177_163.223)] to-emerald-500 rounded-lg font-bold text-white text-lg shadow-lg hover:shadow-2xl hover:shadow-[oklch(76.5%_0.177_163.223)]/50 transition-all duration-300 transform hover:scale-105 overflow-hidden">
-            <span className="relative z-10">Start Your Shipment Today</span>
+            <span className="relative z-10">Starten Sie Ihre Sendung</span>
             <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </button>      
             </Link>

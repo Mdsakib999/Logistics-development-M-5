@@ -1,50 +1,28 @@
   const faqData = [
     {
-      question: "What payment methods do you accept for online purchases?",
+      question: "Welche Zahlungsmethoden akzeptieren Sie für Online-Käufe?",
       answer:
-        "We accept all major credit cards, PayPal, and Apple Pay for your convenience. Yes, once your order ships, you'll receive a tracking number via email. Yes, we have a rewards program where you can earn points for every purchase.",
+        "Wir akzeptieren alle gängigen Kreditkarten, PayPal und Apple Pay. Sobald Ihre Bestellung versandt wurde, erhalten Sie eine Sendungsverfolgungsnummer per E-Mail. Außerdem bieten wir ein Bonusprogramm an, bei dem Sie für jeden Einkauf Punkte sammeln können.",
     },
     {
-      question: "How long does shipping usually take?",
+      question: "Wie lange dauert der Versand in der Regel?",
       answer:
-        "Standard shipping typically takes 5-7 business days, while expedited shipping takes 2-3 business days.",
+        "Der Standardversand dauert üblicherweise 5–7 Werktage, der Expressversand 2–3 Werktage.",
     },
+    
+    
     {
-      question: "Can I return an item if I'm not satisfied?",
+      question: "Kann ich meine Bestellung nach der Aufgabe verfolgen?",
       answer:
-        "Yes, we offer a 30-day return policy for all items in original condition with tags attached.",
+        "Ja, Sie erhalten eine Sendungsnummer per E-Mail, sobald Ihre Bestellung versandt wurde, und können den Lieferstatus online verfolgen.",
     },
+    
     {
-      question: "Do you offer gift cards?",
+      question: "Wie kann ich den Status meiner Bestellung nach der Aufgabe verfolgen?",
       answer:
-        "Yes, we offer digital gift cards in various denominations that can be used for online purchases.",
+        "Sie können den Status Ihrer Bestellung überprüfen, indem Sie sich in Ihr Konto einloggen oder die Sendungsnummer aus Ihrer Bestätigungs-E-Mail verwenden.",
     },
-    {
-      question: "Is there a loyalty program for frequent shoppers?",
-      answer:
-        "Yes, we have a rewards program where you earn points for every purchase that can be redeemed for discounts.",
-    },
-    {
-      question: "Can I track my order after it's been placed?",
-      answer:
-        "Yes, you'll receive a tracking number via email once your order ships, and you can monitor its progress online.",
-    },
-    {
-      question: "What should I do if I receive a damaged item?",
-      answer:
-        "Please contact our customer service team immediately with photos of the damaged item, and we'll arrange a replacement or refund.",
-    },
-    {
-      question: "How can I monitor the status of my order after I place it?",
-      answer:
-        "You can check your order status by logging into your account or using the tracking number provided in your confirmation email.",
-    },
-    {
-      question:
-        "Is it possible to keep an eye on my order once it's confirmed?",
-      answer:
-        "Absolutely! You'll receive email updates at each stage of processing and shipping, plus access to real-time tracking.",
-    },
+    
   ];
 
   export default faqData;

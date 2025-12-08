@@ -21,31 +21,28 @@ export default function Experiance() {
         </div>
         {/* content section */}
         <div className="w-full sm:w-[560px] ml-auto sm:pl-4 flex flex-col space-y-4">
-          <Heading color="white" className="mt-4 " lineHeight="tight">Simplify Your Shipping Experience </Heading>
+          <Heading color="white" className="mt-4 " lineHeight="tight">Vereinfachen Sie Ihr Versand­erlebnis </Heading>
           <Paragraph className="text-white opacity-80">
-            Elementum fames et massa molestie. Dolor habitasse id sit cras
-            ultricies sit. Morbi sollicitudin quam enim est turpis aliquet. Diam
-            in id quis diam. Lacus vestibulum habitant sollicitudin egestas.
-            Porttitor enim duis dui in mi.
+            Der Straßengüterverkehr zählt zu den flexibelsten und am weitesten verbreiteten Logistikmethoden und ermöglicht Unternehmen den effizienten Transport von Gütern zwischen Städten, Häfen, Lagern und Endkunden. Er zeichnet sich durch Schnelligkeit, Tür-zu-Tür-Service und Anpassungsfähigkeit an unterschiedliche Sendungsgrößen aus und ist daher für Lieferketten weltweit unverzichtbar.
           </Paragraph>
           <ul className="flex mt-4">
             <li className="border-r-1 border-blue-500 pr-5">
               <span className= "text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 <Countup>32</Countup> +
               </span>
-              <p className="text-[#DEE2DD] text-base mt-1">Years of Experiance</p>
+              <p className="text-[#DEE2DD] text-base mt-1">Jahre Erfahrung</p>
             </li>
             <li className="border-r-1 border-blue-500 px-4 lg:px-8">
               <span className="text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 <Countup>12</Countup> K
               </span>
-              <p className="text-[#DEE2DD] text-base mt-1">Satisfied Clients</p>
+              <p className="text-[#DEE2DD] text-base mt-1">Zufriedene Kunden</p>
             </li>
             <li className="px-4 sm:px-8">
               <span className="text-3xl sm:text-4xl lg:text-5xl text-secondary">
                 <Countup>20</Countup> +
               </span>
-              <p className="text-[#DEE2DD] text-base mt-1">Countries Served</p>
+              <p className="text-[#DEE2DD] text-base mt-1">Bediente Länder</p>
             </li>
           </ul>
         </div>

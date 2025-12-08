@@ -1,10 +1,4 @@
 import { Phone } from "lucide-react";
-import deliveryImage from "../../assets/12-Delivery.png";
-import shippingImage from "../../assets/25-Shipping.png";
-import weightImage from "../../assets/33-Weight.png";
-import boxImage from "../../assets/35-Box.png";
-import worldImage from "../../assets/36-World wide shipping.png";
-import shippingImage2 from "../../assets/51-Shipping.png";
 import Container from "../layout/Container";
 import Button from "../ui/Button";
 import Heading from "../ui/Heading";
@@ -16,26 +10,21 @@ export default function Offer() {
       <Container>
         {/* content section */}
         <div className="flex flex-col sm:flex-row justify-between w-full">
-          <Heading className="pt-0 sm:pt-8">Our Offerings</Heading>
+          <Heading className="pt-0 sm:pt-8">Unsere Dienstleistungen</Heading>
           <div className="w-full sm:w-2/5 space-y-4 ">
             <Paragraph>
-              Elementum augue ut sagittis vel nunc. Posuere id velit integer
-              proin aliquam facilisi quis et cras.
+              Effizienter und zuverlässiger Versand mit FastGo
+
             </Paragraph>
             <Button to="/contact">
-              <Phone /> <span className="ml-2">Contact Us</span>
+              <Phone /> <span className="ml-2">Kontaktieren uns</span>
             </Button>
           </div>
         </div>
 
         {/* Card section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-12">
-          <OfferCard imageSrc={deliveryImage} />
-          <OfferCard imageSrc={shippingImage} />
-          <OfferCard imageSrc={weightImage} />
-          <OfferCard imageSrc={boxImage} />
-          <OfferCard imageSrc={worldImage} />
-          <OfferCard imageSrc={shippingImage2} />
+        <div className=" py-12">
+          <OfferCard  />
         </div>
       </Container>
     </div>

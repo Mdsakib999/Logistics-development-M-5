@@ -13,15 +13,12 @@ export default function Empower() {
           <div className="flex flex-col w-full sm:w-1/2 pb-8 pl-2">
             <div className="space-y-4">
               <Heading lineHeight="tight">
-                Empowering Your Business with Tailored Logistics Solutions
+                Stärken Sie Ihr Unternehmen mit maßgeschneiderten Logistiklösungen
               </Heading>
               <Paragraph className="lg:mb-16">
-                At FastGo, we believe in providing our clients with personalized
-                and efficient logistics solutions that meet their unique needs.
-                With years of experience and a team of experts, we are dedicated
-                to empowering your business with seamless shipping experiences.
+                Wir bei FastGo sind überzeugt, dass wir unseren Kunden individuelle und effiziente Logistiklösungen bieten müssen, die ihren spezifischen Bedürfnissen gerecht werden. Dank unserer langjährigen Erfahrung und unseres Expertenteams unterstützen wir Sie dabei, reibungslose Versandprozesse für Ihr Unternehmen zu realisieren.
               </Paragraph>
-              <Button to="/service">Learn More</Button>
+              <Button to="/service">Mehr Erfahren</Button>
             </div>
           </div>
           {/* image section */}
@@ -32,7 +29,7 @@ export default function Empower() {
               src={empowerImg}
               alt="empower image"
             />
-          <Overlay heading="Express Delivery" paragraph="Fast shipping service next to your door." />
+          <Overlay heading="Expresslieferung" paragraph="Schneller Lieferservice direkt zu Ihnen nach Hause." />
           </div>
 
           </div>

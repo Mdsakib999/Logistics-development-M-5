@@ -6,22 +6,22 @@ export default function Growth() {
   const metrics = [
     {
       number: "99.8%",
-      label: "Delivery Success Rate",
+      label: "Liefererfolgsrate",
       icon: <CheckCircle className="w-8 h-8 text-green-500" />,
     },
     {
       number: "24/7",
-      label: "Customer Support",
+      label: "Kundensupport",
       icon: <Clock className="w-8 h-8 text-blue-500" />,
     },
     {
       number: "50+",
-      label: "Countries Served",
+      label: "Bediente Länder",
       icon: <Award className="w-8 h-8 text-purple-500" />,
     },
     {
       number: "15min",
-      label: "Average Response Time",
+      label: "Durchschnittliche Antwortzeit",
       icon: <Zap className="w-8 h-8 text-orange-500" />,
     },
   ];
@@ -31,14 +31,12 @@ export default function Growth() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col gap-4">
             <Heading className="mt-4 " lineHeight="tight">
-              Logistics That Powers Growth
+              Logistik als Motor des Wachstums
             </Heading>
             <Paragraph>
-              Transform your supply chain with our intelligent logistics
-              platform. From AI-driven optimization to real-time visibility, we
-              deliver solutions that scale with your business.
+              Transformieren Sie Ihre Lieferkette mit unserer intelligenten Logistikplattform. Von KI-gestützter Optimierung bis hin zu Echtzeit-Transparenz bieten wir Lösungen, die mit Ihrem Unternehmen mitwachsen.
             </Paragraph>
-            <Button to="/contact">Get Started</Button>
+            <Button to="/contact">Los geht's</Button>
           </div>
 <div className="relative">
   <div className="rounded-2xl py-8 px-4 bg-cover bg-center overflow-hidden"

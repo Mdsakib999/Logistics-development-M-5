@@ -13,7 +13,7 @@ export default function Solution() {
           lineHeight="tight"
           align="center"
         >
-          WE Provide Worlds Best <br /> Logistic Solutions
+          Wir bieten die besten  <br /> Logistiklösungen der Welt.
         </Heading>
         <div className="flex flex-col gap-10 md:gap-0 md:flex-row border-gray-500">
           {/* image aside */}
@@ -32,17 +32,15 @@ export default function Solution() {
 
           {/* content */}
           <div className="w-full md:[w-500px] lg:w-[529px] flex flex-col justify-center gap-2 sm:gap-8 md:gap-4 lg:gap-16">
-            <Heading fontWeight="lighter" className="px-8">Ocean FREIGHT</Heading>
+            <Heading fontWeight="lighter" className="px-8">Seefracht</Heading>
             <div className="bg-secondary px-8 py-4 lg:py-12 flex flex-col gap-2">
-              <Heading fontWeight="lighter">Road FREIGHT</Heading>
+              <Heading fontWeight="lighter">Straßentransport</Heading>
               <Paragraph className="">
-                Elementum augue ut sagittis vel nunc. Posuere id velit integer
-                proin aliquam facilisi quis et cras. Leo nulla integer et
-                aliquet massa nunc. Ornare id sit ac varius enim ut nisl.
+                Verabschieden Sie sich von komplizierter Logistik und begrüßen Sie einen reibungslosen, stressfreien Versand. Von der Abholung bis zur Lieferung machen wir jeden Schritt einfach und zuverlässig, damit Sie sich auf das Wachstum Ihres Unternehmens konzentrieren können.
               </Paragraph>
-              <Button to="/contact" type="different" className="hover:bg-black">Get Started</Button>
+              <Button to="/contact" type="different" className="hover:bg-black">Loslegen</Button>
             </div>
-            <Heading fontWeight="lighter" className="px-8">AIR FREIGHT</Heading>
+            <Heading fontWeight="lighter" className="px-8">Luftfracht</Heading>
           </div>
         </div>
       </Container>

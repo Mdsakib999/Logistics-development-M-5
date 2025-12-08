@@ -19,16 +19,12 @@ export default function Faq() {
         {/* Left Column */}
         <div className="flex flex-col">
           <div className="space-y-4 mt-12">
-            <Heading lineHeight="tight">Frequently asked Questions</Heading>
+            <Heading lineHeight="tight">Häufig gestellte Fragen</Heading>
             <Paragraph className="mb-16">
-              You can return any item within 30 days of purchase as long as it’s
-              in its original condition with tags still attached. Simply contact
-              our customer service team, and they will guide you through the
-              process. Please note that certain items, such as swimwear and
-              final sale items, are non-returnable.
+              Sie können jeden Artikel innerhalb von 30 Tagen nach dem Kauf zurückgeben, sofern er sich im Originalzustand befindet und die Etiketten noch angebracht sind. Kontaktieren Sie einfach unseren Kundenservice, der Sie durch den Rückgabeprozess begleitet. Bitte beachten Sie, dass bestimmte Artikel, wie z. B. Bademode und reduzierte Artikel, vom Umtausch ausgeschlossen sind.
             </Paragraph>
             <Button to="/contact" className="mt-16">
-              <Phone /> <span className="ml-2">Contact Us</span>
+              <Phone /> <span className="ml-2">Kontaktieren Sie uns</span>
             </Button>
           </div>
         </div>

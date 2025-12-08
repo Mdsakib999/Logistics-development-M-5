@@ -8,10 +8,10 @@ export default function Social() {
         {/* social content */}
         <div className="w-2/3">
           <h6 className="uppercase font-heading text-sm font-medium mb-2">
-            Get Started
+            Los geht's
           </h6>
           <Heading lineHeight="tight">
-            Get in touch with us. We're here to assist you.
+            Nehmen Sie Kontakt mit uns auf. Wir helfen Ihnen gerne weiter.
           </Heading>
         </div>
       </Container>

@@ -10,21 +10,21 @@ export default function Form() {
       {/* Top Row - Three Inputs */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
         <div>
-          <label className="block text-gray-800 text-lg mb-2">Your Name</label>
+          <label className="block text-gray-800 text-lg mb-2">Ihr Name</label>
           <input 
             type="text"
             className="w-full border-b-2 border-gray-300 bg-transparent py-3 px-0 focus:outline-none focus:border-gray-600 text-gray-800"
           />
         </div>
         <div>
-          <label className="block text-gray-800 text-lg mb-2">Email Address</label>
+          <label className="block text-gray-800 text-lg mb-2">E-Mail-Adresse</label>
           <input 
             type="email"
             className="w-full border-b-2 border-gray-300 bg-transparent py-3 px-0 focus:outline-none focus:border-gray-600 text-gray-800"
           />
         </div>
         <div>
-          <label className="block text-gray-800 text-lg mb-2">Phone Number (optional)</label>
+          <label className="block text-gray-800 text-lg mb-2">Telefonnummer</label>
           <input 
             type="tel"
             className="w-full border-b-2 border-gray-300 bg-transparent py-3 px-0 focus:outline-none focus:border-gray-600 text-gray-800"
@@ -34,7 +34,7 @@ export default function Form() {
 
       {/* Message Field */}
       <div className="mb-8">
-        <label className="block text-gray-800 text-lg mb-2">Message</label>
+        <label className="block text-gray-800 text-lg mb-2">Nachricht</label>
         <textarea 
           rows="3"
           className="w-full border-b-2 border-gray-300 bg-transparent py-3 px-0 resize-none focus:outline-none focus:border-gray-600 text-gray-800"
@@ -43,7 +43,7 @@ export default function Form() {
 
       {/* Submit Button */}
       <Button className="">
-        <span className="mr-2 font-semibold">Leave us a Message</span> <span><ArrowRight strokeWidth={2} /></span>
+        <span className="mr-2 font-semibold">Hinterlassen Sie uns eine Nachricht</span> <span><ArrowRight strokeWidth={2} /></span>
       </Button>
 
               {/* social icons  */}

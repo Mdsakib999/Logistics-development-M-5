@@ -60,27 +60,27 @@ export default function TopBanner() {
   const slides = [
     {
       bg: "https://i.ibb.co.com/FkBqwp32/slide-1.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: "Delivering Packages Safely, On Time, Every Time",
-      title: 'Your Trusted Logistics Partner',
-      cta: 'Get Started'
+      subtitle: "Pakete sicher, pünktlich und zuverlässig liefern",
+      title: 'Ihr zuverlässiger Logistikpartner',
+      cta: 'Loslegen'
     },
     {
       bg: "https://i.ibb.co.com/s958dG9y/slide-2.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: 'Smart Transport Solutions',
-      title: 'Connecting Cities With Seamless Delivery Service',
-      cta: 'Explore Now'
+      subtitle: 'Intelligente Transportlösungen',
+      title: 'Städte verbinden mit nahtlosem Lieferservice',
+      cta: 'Neues Entdecken'
     },
     {
       bg: "https://i.ibb.co.com/8nhGwbNr/slide-3.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: 'Reliable Fleet, Nationwide Reach',
-      title: 'We Move Your Goods with Speed and Care',
-      cta: 'Learn More'
+      subtitle: 'Zuverlässige Flotte, landesweite Reichweite',
+      title: 'Wir transportieren Ihre Waren schnell und sorgfältig',
+      cta: 'Mehr Erfahren'
     },
     {
       bg: "https://i.ibb.co.com/FkBqwp32/slide-1.jpg?q=80&w=2000&auto=format&fit=crop",
-      subtitle: 'Fast • Secure • Affordable',
-      title: 'Experience Hassle-Free Cargo & Courier Delivery',
-      cta: 'Start Journey'
+      subtitle: 'erstklassig, sicher, erschwinglich',
+      title: 'Erleben Sie eine mühelose Fracht- und Kurierzustellung.',
+      cta: 'Reise Beginnen'
     }
   ];
 
@@ -315,7 +315,7 @@ export default function TopBanner() {
                   <div className="mouse w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
                     <div className="mouse-wheel w-1 h-2 bg-white rounded-full" />
                   </div>
-                  <span className="text-white text-xs tracking-widest mt-2">SCROLL</span>
+                  <span className="text-white text-xs tracking-widest mt-2">Scrollen</span>
                 </div>
               </div>
             ))}

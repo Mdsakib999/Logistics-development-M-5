@@ -34,14 +34,14 @@ export default function TopHeader() {
           {/* header info  */}
           <div className="flex flex-wrap md:w-5/12">
             <p className="text-center sm:text-start">
-              Get A Discount Of Up To 50% For Orders This Month!
+              Sichern Sie sich einen Rabatt bei Ihrer Bestellung!
             </p>
           </div>
           {/* header contact  */}
           <div
             className={`flex h-max ${width < 387 ? "flex-col gap-2" : "flex-row"}`}
           >
-            <div
+            {/* <div
               className={`flex border-[#E5F67C] gap-2 ${
                 width < 387 ? "border-none pr-0" : "border-r-2 pr-5"
               }`}
@@ -50,12 +50,12 @@ export default function TopHeader() {
                 <Phone />
               </span>
               <span>+62 864 6444 2222</span>
-            </div>
+            </div> */}
             <div className={`flex gap-2 ${width < 387 ? "pl-0" : "pl-5"}`}>
               <span>
                 <Mail />
               </span>
-              <span>hi@logistic.com</span>
+              <span>lang-gmbh-szb@t-online.de</span>
             </div>
           </div>
         </div>

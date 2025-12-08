@@ -81,12 +81,11 @@ export const CompanyStory = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <Heading align="center" className="mx-auto">
-            Our Journey
+            Unsere Reise
           </Heading>
           <Paragraph align="center" className="w-full sm:w-2/3 mx-auto">
-            From a small startup to a global logistics leader, discover how
-            we've grown while maintaining our commitment to excellence and
-            customer satisfaction.
+
+Vom kleinen Start-up zum globalen Logistikunternehmen – entdecken Sie, wie wir gewachsen sind und dabei unser Engagement für Exzellenz und Kundenzufriedenheit beibehalten haben.
           </Paragraph>
         </div>
 
@@ -94,28 +93,26 @@ export const CompanyStory = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="">
             <Heading fontWeight="semibold">
-              Building the Future of Logistics
+              Die Zukunft der Logistik gestalten
             </Heading>
             <Paragraph>
-              Our company emerged from a simple observation: businesses needed a
-              logistics partner that combined reliability, technology, and
-              genuine care for their success.
+              
+Unser Unternehmen entstand aus einer einfachen Erkenntnis: Unternehmen brauchten einen Logistikpartner, der Zuverlässigkeit, Technologie und echtes Interesse an ihrem Erfolg vereint.
+
+
             </Paragraph>
             <Paragraph>
-              What started as a small team with two trucks has grown into a
-              comprehensive logistics network serving thousands of businesses
-              worldwide. Our growth isn't just measured in numbers—it's
-              reflected in the trust our clients place in us every day.
+             Was mit einem kleinen Team und zwei Lkw begann, ist zu einem umfassenden Logistiknetzwerk gewachsen, das Tausende von Unternehmen weltweit betreut. Unser Wachstum misst sich nicht nur in Zahlen – es spiegelt sich im Vertrauen wider, das unsere Kunden uns täglich entgegenbringen.
             </Paragraph>
             <div className="grid mt-4 grid-cols-2 gap-6">
               <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
                   <Users className="h-5 w-5 text-accent mr-2" />
                   <span className="text-2xl font-bold text-primary">
-                    <Countup>500</Countup>+
+                    <Countup>300</Countup>+
                   </span>
                 </div>
-                <p className="text-gray-600 text-sm">Team Members</p>
+                <p className="text-gray-600 text-sm">Teammitglieder</p>
               </div>
               <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
@@ -124,7 +121,7 @@ export const CompanyStory = () => {
                     <Countup>25</Countup>+
                   </span>
                 </div>
-                <p className="text-gray-600 text-sm">Countries Served</p>
+                <p className="text-gray-600 text-sm">Bediente Länder</p>
               </div>
               <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
@@ -133,7 +130,7 @@ export const CompanyStory = () => {
                     <Countup>1</Countup>M+
                   </span>
                 </div>
-                <p className="text-gray-600 text-sm">Deliveries Made</p>
+                <p className="text-gray-600 text-sm">Lieferungen Durchgeführt</p>
               </div>
               <div className="bg-white hover:scale-105 hover:bg-emerald-200 transition-all duration-300 p-4 rounded-lg shadow-sm">
                 <div className="flex items-center mb-2">
@@ -142,7 +139,7 @@ export const CompanyStory = () => {
                     <Countup>99.8</Countup>%
                   </span>
                 </div>
-                <p className="text-gray-600 text-sm">Success Rate</p>
+                <p className="text-gray-600 text-sm">Erfolgsquote</p>
               </div>
             </div>
           </div>
@@ -166,7 +163,7 @@ export const CompanyStory = () => {
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent"></div>
                       <div className="absolute top-4 left-4 bg-secondary px-3 py-1 rounded-full text-white text-sm font-bold">
-                        Sea Freight
+                        Seefracht
                       </div>
                     </div>
                   </div>
@@ -184,7 +181,7 @@ export const CompanyStory = () => {
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/50 to-transparent"></div>
                       <div className="absolute top-4 left-4 bg-blue-400 px-3 py-1 rounded-full text-white text-xs font-semibold">
-                        Road Transport
+                        Straßenverkehr
                       </div>
                     </div>
                   </div>
@@ -196,10 +193,10 @@ export const CompanyStory = () => {
                     </div>
                     <div>
                       <div className="text-3xl font-bold text-secondary">
-                        1250+
+                        350+
                       </div>
                       <div className="text-gray-600 font-medium">
-                        Trained People
+                        Geschultes Personal
                       </div>
                     </div>
                   </div>
@@ -209,57 +206,18 @@ export const CompanyStory = () => {
           </div>
         </div>
 
-        {/* Timeline - Milestones */}
-        <div>
-          <Heading align="center" className="mx-auto">
-            Key Milestones in Our Growth
-          </Heading>
-
-          <div className="bg-transparent p-8">
-            <div className="max-w-7xl mx-auto">
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {milestones.map((milestone, index) => {
-                  const Icon = milestone.icon;
-                  const colors = colorMap[milestone.color];
-
-                  return (
-                    <div key={index} className="group relative">
-                      <div className="bg-gray-800 rounded-xl p-6 h-full border border-gray-700 hover:border-gray-600 hover:scale-105 transition-all duration-300">
-                        <div className="flex items-start justify-between mb-6">
-                          <div className={`${colors.icon} p-3 rounded-lg`}>
-                            <Icon className="h-6 w-6 text-white" />
-                          </div>
-                        </div>
-
-                        <h3 className="text-xl font-bold text-white mb-3">
-                          {milestone.title}
-                        </h3>
-
-                        <p className="text-gray-400 text-sm leading-relaxed">
-                          {milestone.description}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Vision Statement */}
         <div className="mt-10 bg-gradient-to-r from-black to-gray-900 text-white rounded-3xl p-12 text-center">
           <Heading align="center" className="mx-auto" color="white">
-            Our Vision for Tomorrow
+            Unsere Vision für morgen
           </Heading>
           <Paragraph
             align="center"
             className="text-white w-full sm:w-2/3 mx-auto"
           >
-            To be the most trusted and innovative logistics partner globally,
-            transforming how goods move around the world through sustainable
-            practices, cutting-edge technology, and unwavering commitment to
-            excellence.
+            Unser Ziel ist es, der weltweit vertrauenswürdigste und innovativste Logistikpartner zu sein und die Art und Weise, wie Waren weltweit transportiert werden, durch nachhaltige Praktiken, Spitzentechnologie und ein unerschütterliches Engagement für Exzellenz zu verändern.
           </Paragraph>
         </div>
       </div>

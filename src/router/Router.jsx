@@ -7,6 +7,7 @@ import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home";
 import Pricing from "../pages/Pricing";
 import Service from "../pages/Service";
+import Privacy from "../pages/Privacy";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -29,13 +30,17 @@ const router = createBrowserRouter([
         path: "/contact",
         Component: Contact,
       },
+      // {
+      //   path: "/pricing",
+      //   Component: Pricing,
+      // },
+      // {
+      //   path: "/blogs",
+      //   Component: Blogs,
+      // },
       {
-        path: "/pricing",
-        Component: Pricing,
-      },
-      {
-        path: "/blogs",
-        Component: Blogs,
+        path: "/privacy",
+        Component: Privacy,
       },
     ],
   },

@@ -12,19 +12,17 @@ export default function Hero() {
       >
         <span>
           <Heading lineHeight="tight" fontWeight="semibold" color="white">
-            <span className="text-secondary">Moving Made Easy:</span> Your
-            <br /> Trusted Logistics <br />
-            Partner
+            <span className="text-secondary">Einfacher Transport:</span> Ihr
+            <br /> vertrauenswürdiger <br />
+            Logistikpartner
           </Heading>
         </span>
       </div>
       <div className="w-full sm:w-3/5 flex flex-col gap-2 pl-4 sm:pl-12 sm:gap-0 justify-evenly sm:px-0 sm:pt-4">
         <Paragraph  className="w-4/5 sm:w-2/3 text-white sm:text-primary pb-4 sm:pb-0" fontSize="lg">
-          Elementum augue ut sagittis vel nunc. Posuere id velit integer proin
-          aliquam facilisi quis et cras. Leo nulla integer et aliquet massa
-          nunc. Ornare id sit ac varius enim ut nisl.
+           Wir vereinfachen den Transport Ihrer Waren. Ob Straßen-, Luft- oder Seefracht – unsere zuverlässigen Services sorgen dafür, dass Ihre Sendungen sicher und pünktlich ankommen. Konzentrieren Sie sich auf Ihr Geschäft, während wir alle Ihre Logistikanforderungen effizient übernehmen.
         </Paragraph>
-          <Button to="/contact">Get Started</Button>
+          <Button to="/contact">Loslegen</Button>
       </div>
     </div>
   );

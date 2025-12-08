@@ -10,37 +10,37 @@ export default function Footer() {
         <div className="md:col-span-3">
           <Link>
             <h2 className="text-4xl font-light text-secondary mb-6">
-              Logistic
+              LANG GmbH
             </h2>
           </Link>
-          <p className="text-gray-300 hover:border-b-1 hover:border-b-white w-auto sm:w-96 text-base leading-relaxed mb-8">
-            Faucibus quis fringilla scelerisque dui. Amet parturient dui
-            venenatis amet sagittis viverra vel tincidunt. Orci tincidunt.
+          <p className="text-gray-300 border-b-1 border-b-white w-auto sm:w-96 text-base leading-relaxed mb-8">
+            Wir liefern Exzellenz in Logistik- und Transportlösungen weltweit – zuverlässig und innovativ.
           </p>
           <Button to="/contact" type="secondary">
             <MessageCircleMore />
-            <span>Start Live Chat</span>
+            <span>Start  Chat</span>
           </Button>
         </div>
 
         {/* Company Links */}
         <div>
-          <h3 className="text-xl font-medium mb-6">Company</h3>
+          <h3 className="text-xl font-medium mb-6">Nützliche Links</h3>
           <ul className="space-y-4">
             <li>
               <Link
                 to="/about"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                About Us
+                Über uns
+
               </Link>
             </li>
             <li>
               <Link
-                to="/about"
+                to="/service"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Our Partners
+                Dienstleistungen
               </Link>
             </li>
             <li>
@@ -48,30 +48,23 @@ export default function Footer() {
                 to="/contact"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Careers
+                Kontakt
               </Link>
             </li>
-            <li>
-              <Link
-                to="contact"
-                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
-              >
-                Our Network
-              </Link>
-            </li>
+            
           </ul>
         </div>
 
         {/* Resources Links */}
         <div>
-          <h3 className="text-xl font-medium mb-6">Resources</h3>
+          <h3 className="text-xl font-medium mb-6">Ressourcen</h3>
           <ul className="space-y-4">
             <li>
               <Link
-                to="/service"
+                to="/"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Packing Supplies
+                Verpackungsmaterialien
               </Link>
             </li>
             <li>
@@ -79,25 +72,18 @@ export default function Footer() {
                 to="/about"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Faqs
+               Häufig gestellte Fragen
               </Link>
             </li>
-            <li>
+            
+            {/* <li>
               <Link
-                to="/service"
+                to="/"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Pricing and Quotes
+                Tipps und Anleitungen
               </Link>
-            </li>
-            <li>
-              <Link
-                to="/contact"
-                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
-              >
-                Tips and Guides
-              </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -107,34 +93,27 @@ export default function Footer() {
           <ul className="space-y-4">
             <li>
               <Link
-                to="/contact"
+                to="/"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Customer Support
+                Kundensupport
               </Link>
             </li>
-            <li>
-              <Link
-                to="/contact"
-                className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
-              >
-                Delivery Details
-              </Link>
-            </li>
-            <li>
+            
+            {/* <li>
               <Link
                 to="/contact"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
                 Terms & Conditions
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
-                to="/about"
+                to="/privacy"
                 className="text-gray-300 hover:border-b-1 hover:border-b-white hover:text-white transition-colors"
               >
-                Privacy Policy
+                Datenschutzrichtlinie
               </Link>
             </li>
           </ul>
@@ -143,8 +122,8 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mt-16 pt-8 border-t border-gray-700">
-        <p className="text-gray-400 mb-4 md:mb-0">Copyright © 2023 Logistic</p>
-        <p className="text-gray-400">Design By TokoTema</p>
+        <p className="text-gray-400 mb-4 md:mb-0">Copyright © 2025 LANG GmbH. Alle Rechte vorbehalten.</p>
+        {/* <p className="text-gray-400">Design By TokoTema</p> */}
       </div>
     </footer>
   );

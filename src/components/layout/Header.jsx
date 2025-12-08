@@ -29,7 +29,7 @@ export default function Header() {
         {/* Desktop menu */}
         <nav className="hidden md:flex items-center justify-between">
           <Link to="/">
-            <h2 className="text-[40px]">Logistic</h2>
+            <h2 className="text-[40px]">LANG GmbH</h2>
           </Link>
           <ul className="flex gap-8">
             <li className="">
@@ -39,7 +39,7 @@ export default function Header() {
                 }
                 to="/"
               >
-                Home
+                Hemi
               </NavLink>
             </li>
             <li className="">
@@ -49,7 +49,7 @@ export default function Header() {
                 }
                 to="/about"
               >
-                About Us
+                Über uns
               </NavLink>
             </li>
             <li className="">
@@ -59,10 +59,10 @@ export default function Header() {
                 }
                 to="/service"
               >
-                Services
+                Dienstleistungen
               </NavLink>
             </li>
-            <li className="">
+            {/* <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -71,7 +71,7 @@ export default function Header() {
               >
                 Pricing
               </NavLink>
-            </li>
+            </li> */}
             <li className="">
               <NavLink
                 className={({ isActive }) =>
@@ -79,10 +79,10 @@ export default function Header() {
                 }
                 to="/contact"
               >
-                Contact
+                Kontakt
               </NavLink>
             </li>
-            <li className="">
+            {/* <li className="">
               <NavLink
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
@@ -91,13 +91,13 @@ export default function Header() {
               >
                 Blogs
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </Container>
       {/*Mobile menu button */}
       <div className="flex pb-5 md:pb-0 sm:mb-0 relative px-12 justify-between items-center ">
-        <h2 className="text-4xl block md:hidden">Logistic</h2>
+        <h2 className="text-4xl block md:hidden">LANG</h2>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`md:hidden cursor-pointer block md:mt-2 text-2xl`}
@@ -134,7 +134,7 @@ export default function Header() {
                   }
                   onClick={() => setIsOpen(false)}
                 >
-                  About us
+                  Über uns
                 </NavLink>
               </li>
               <li className="hover:bg-white w-full rounded-lg">
@@ -150,19 +150,7 @@ export default function Header() {
                   Services
                 </NavLink>
               </li>
-              <li className="hover:bg-white w-full rounded-lg">
-                <NavLink
-                  to="/pricing"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "nav-link active inline-block w-full py-2 px-4"
-                      : "nav-link w-full inline-block py-2 px-4"
-                  }
-                  onClick={() => setIsOpen(false)}
-                >
-                  Pricing
-                </NavLink>
-              </li>
+              
               
               <li className="hover:bg-white w-full rounded-lg">
                 <NavLink
@@ -177,19 +165,7 @@ export default function Header() {
                   Contact
                 </NavLink>
               </li>
-              <li className="hover:bg-white w-full rounded-lg">
-                <NavLink
-                  to="blogs"
-                  className={({ isActive }) =>
-                    isActive
-                      ? "active inline-block w-full py-2 px-4"
-                      : "nav-link inline-block w-full py-2 px-4"
-                  }
-                  onClick={() => setIsOpen(false)}
-                >
-                  Blogs
-                </NavLink>
-              </li>
+              
             </ul>
           </div>
         )}

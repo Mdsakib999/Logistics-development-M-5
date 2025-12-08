@@ -11,14 +11,10 @@ export default function Banner() {
       {/* content section */}
       <div className="w-4/5 md:w-3/5 lg:w-3/5 mx-auto mb-12">
         <Heading align="center" className="my-4 mx-auto" lineHeight="tight">
-          Simplify Your Shipping Experience
+          Alles, was Sie brauchen, haben wir
         </Heading>
         <Paragraph align="center">
-          You can return any item within 30 days of purchase as long as it’s in
-          its original condition with tags still attached. Simply contact our
-          customer service team, and they will guide you through the process.
-          Please note that certain items, such as swimwear and final sale items,
-          are non-returnable.
+          Bei FastGo glauben wir daran, unseren Kunden persönliche und effiziente Logistiklösungen zu bieten, die ihren individuellen Bedürfnissen entsprechen. Mit jahrelanger Erfahrung und einem Expertenteam setzen wir uns dafür ein, Ihr Unternehmen mit reibungslosen Versandlösungen zu stärken.
         </Paragraph>
       </div>
       {/* image section */}
@@ -29,7 +25,7 @@ export default function Banner() {
             src={image1}
             alt="image1"
           />
-          <Overlay heading="Easy Return" paragraph="Contact Our Team" />
+          <Overlay heading="Einfache Rückgabe" paragraph="Kontaktieren Sie unser Team" />
         </div>
         <div className="col-span-1 h-60 sm:h-auto md:col-span-1 md:row-span-2 relative group">
           <img
@@ -37,7 +33,7 @@ export default function Banner() {
             src={image3}
             alt="image3"
           />
-          <Overlay heading="Trust Us" paragraph="Return Any Item" />
+          <Overlay heading="Vertrauen Sie uns" paragraph="Rückgabe eines beliebigen Artikels" />
         </div>
         <div className="h-60 sm:h-auto col-span-1 md:col-span-2 md:row-span-2 relative group">
           <img
@@ -45,7 +41,7 @@ export default function Banner() {
             src={image4}
             alt="image4"
           />
-                    <Overlay heading="Safe Delivery" paragraph="Next To Your Door" />
+                    <Overlay heading="Sichere Lieferung" paragraph="Neben Ihrer Tür" />
         </div>
         <div className="col-span-1 md:col-span-2 relative group">
           <img
@@ -53,7 +49,7 @@ export default function Banner() {
             src={image2}
             alt="image2"
           />
-          <Overlay heading="Safe Delivery" paragraph="Next To Your Door" />
+          <Overlay heading="" paragraph="" />
         </div>
       </div>
     </div>

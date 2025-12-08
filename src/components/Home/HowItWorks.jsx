@@ -32,16 +32,13 @@ export default function HowItWorks() {
           {/* text content */}
           <div className="flex justify-center flex-col px-4 lg:px-1 pb-12 gap-4 w-full md:w-1/2">
             <h6 className="uppercase font-heading tex-sm font-medium">
-              How It Works
+              So funktioniert es
             </h6>
             <Heading lineHeight="tight">
-              Simplify Your Shipping Experience
+              Vereinfachen Sie Ihr Versand­erlebnis
             </Heading>
             <Paragraph>
-              At FastGo, we believe in providing our clients with personalized
-              and efficient logistics solutions that meet their unique needs.
-              With years of experience and a team of experts, we are dedicated
-              to empowering your business with seamless shipping experiences.
+              Wir machen den Versand einfach und stressfrei. Von der Abholung bis zur Lieferung ist jeder Schritt effizient und zuverlässig, sodass Sie sich auf Ihr Geschäft konzentrieren können, während wir Ihre Logistik übernehmen.
             </Paragraph>
           </div>
         </div>
@@ -50,33 +47,39 @@ export default function HowItWorks() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-12">
           <WorkCard
             src={<Package size={40} color="white" />}
-            heading="Request a quote"
+            heading="Angebot anfordern"
             step="1"
+            paragraph="Teilen Sie uns Ihre Versandanforderungen mit und erhalten Sie ein schnelles, maßgeschneidertes Angebot, um Ihre Waren effizient zu transportieren."
           />
           <WorkCard
             src={<FileText size={40} color="white" />}
-            heading="Provide details"
+            heading="Details angeben"
             step="2"
+            paragraph=" Geben Sie die erforderlichen Informationen zu Ihrer Sendung ein, damit wir die beste Lieferlösung für Sie planen können."
           />
           <WorkCard
             src={<Calendar size={40} color="white" />}
-            heading="Schedule pick-up"
+            heading="Pünktliche Abholung"
             step="3"
+            paragraph="Wir sorgen dafür, dass Ihre Waren jedes Mal pünktlich abgeholt werden, damit Ihr Lieferplan stets eingehalten wird."
           />
           <WorkCard
             src={<Truck size={40} color="white" />}
-            heading="Track your shipment"
+            heading="Sendung verfolgen"
             step="4"
+            paragraph="Verfolgen Sie Ihre Sendung in Echtzeit und bleiben Sie über den gesamten Transportweg von der Abholung bis zur Lieferung informiert."
           />
           <WorkCard
             src={<Home size={40} color="white" />}
-            heading="Receive delivery"
+            heading="Paket Erhalten"
             step="5"
+            paragraph="Erhalten Sie Ihre Waren sicher und pünktlich, und genießen Sie ein reibungsloses und stressfreies Versand­erlebnis."
           />
           <WorkCard
             src={<MessageSquare size={40} color="white" />}
-            heading="Share your feedback"
+            heading="Feedback geben"
             step="6"
+            paragraph="Teilen Sie uns Ihre Erfahrungen mit, damit wir unsere Dienstleistungen weiter verbessern und Sie noch besser betreuen können."
           />
         </div>
       </Container>

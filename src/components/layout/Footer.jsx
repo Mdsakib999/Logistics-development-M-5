@@ -18,7 +18,7 @@ export default function Footer() {
           </p>
           <Button to="/contact" type="secondary">
             <MessageCircleMore />
-            <span>Start  Chat</span>
+            <span>Chat Starten</span>
           </Button>
         </div>
 
@@ -89,7 +89,7 @@ export default function Footer() {
 
         {/* Help Links */}
         <div>
-          <h3 className="text-xl font-medium mb-6">Help</h3>
+          <h3 className="text-xl font-medium mb-6">Helfen</h3>
           <ul className="space-y-4">
             <li>
               <Link

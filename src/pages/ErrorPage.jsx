@@ -2,10 +2,10 @@ import { Home, ArrowLeft, Truck, Package, MapPin, Phone } from 'lucide-react';
 
 export default function ErrorPage() {
   const quickLinks = [
-    { name: 'Home', icon: <Home className="w-5 h-5" />, path: '/' },
-    { name: 'Service', icon: <Package className="w-5 h-5" />, path: '/service' },
-    { name: 'About', icon: <MapPin className="w-5 h-5" />, path: '/about' },
-    { name: 'Contact', icon: <Phone className="w-5 h-5" />, path: '/contact' }
+    { name: 'Hemi', icon: <Home className="w-5 h-5" />, path: '/' },
+    { name: 'Dienstleistungen', icon: <Package className="w-5 h-5" />, path: '/service' },
+    { name: 'Über uns', icon: <MapPin className="w-5 h-5" />, path: '/about' },
+    { name: 'Kontakt', icon: <Phone className="w-5 h-5" />, path: '/contact' }
   ];
 
   return (
@@ -25,10 +25,10 @@ export default function ErrorPage() {
             404
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
-            Page Not Found
+            Seite Nicht Gefunden
           </h2>
           <p className="text-gray-600 text-lg max-w-md mx-auto">
-            The page you're looking for doesn't exist or has been moved.
+            Die gesuchte Seite existiert nicht oder wurde verschoben.
           </p>
         </div>
 
@@ -39,21 +39,21 @@ export default function ErrorPage() {
             className="bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
           >
             <ArrowLeft className="w-5 h-5" />
-            Go Back
+            Geh Zurück
           </button>
           <a
             href="/"
             className="bg-green-500 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
           >
             <Home className="w-5 h-5" />
-            Go Home
+            Nach Hause Gehen
           </a>
         </div>
 
         {/* Quick Links */}
         <div className="border-t border-gray-200 pt-8">
           <h3 className="text-lg font-semibold text-gray-800 mb-6">
-            Quick Links
+            Schnellzugriff
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {quickLinks.map((link, index) => (
@@ -76,21 +76,21 @@ export default function ErrorPage() {
         {/* Contact Info */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-gray-600 mb-4">
-            Need help? Contact our support team
+            Benötigen Sie Hilfe? Kontaktieren Sie unser Support-Team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
+            {/* <a 
               href="tel:+1234567890"
               className="text-green-600 hover:text-green-700 font-medium transition-colors"
             >
               Call: (123) 456-7890
             </a>
-            <span className="hidden sm:inline text-gray-300">|</span>
+            <span className="hidden sm:inline text-gray-300">|</span> */}
             <a 
               href="mailto:support@logistic.com"
               className="text-green-600 hover:text-green-700 font-medium transition-colors"
             >
-              Email: support@logistic.com
+              Email: info@lang-transport.de
             </a>
           </div>
         </div>

@@ -29,7 +29,7 @@ export default function Info() {
               href="mailto:help@info.com"
               className="text-blue-600 font-semibold text-lg hover:text-blue-700 transition-colors block mb-4"
             >
-              lang-gmbh-szb@t-online.de
+              info@lang-transport.de
             </a>
             {/* <div className="flex items-start gap-2 text-gray-600 text-sm">
               <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />

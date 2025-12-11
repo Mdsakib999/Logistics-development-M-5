@@ -55,7 +55,9 @@ export default function TopHeader() {
               <span>
                 <Mail />
               </span>
-              <span>lang-gmbh-szb@t-online.de</span>
+              <span><a href="mailto:info@lang-transport.de" className="hover:text-secondary">
+            info@lang-transport.de
+          </a></span>
             </div>
           </div>
         </div>

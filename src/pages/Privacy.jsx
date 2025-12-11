@@ -44,8 +44,8 @@ const Privacy = () => {
 					</a> */}
           <br />
           <strong>E-Mail: </strong>
-          <a href="mailto:lang-gmbh-szb@t-online.de" className="">
-            lang-gmbh-szb@t-online.de
+          <a href="mailto:info@lang-transport.de" className="">
+            info@lang-transport.de
           </a>
         </p>
 
@@ -92,8 +92,8 @@ const Privacy = () => {
 					</a> */}
           <br />
           <strong>E-Mail: </strong>
-          <a href="mailto:lang-gmbh-szb@t-online.de" className="">
-            lang-gmbh-szb@t-online.de
+          <a href="mailto:info@lang-transport.de" className="">
+            info@lang-transport.de
           </a>
           <br />
         </p>
